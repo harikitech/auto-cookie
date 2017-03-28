@@ -34,7 +34,7 @@
   "license": "MIT",
   "main": "lib/index.js",
   "peerDependencies": {
-    "js-cookie": "latest"
+    "js-cookie": "2.x"
   },
   "repository": {
     "type": "git",
