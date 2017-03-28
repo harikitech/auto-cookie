@@ -1,5 +1,4 @@
 import assert from 'power-assert'
-import Cookie from 'cookie'
 
 describe('auto-cookie', () => {
   const name = 'auto-cookie'
