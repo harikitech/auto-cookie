@@ -20,8 +20,13 @@
     "ghpages": "^0.0.10",
     "js-cookie": "^2.1.3",
     "lite-server": "^2.3.0",
+    "mocha": "^3.2.0",
     "npm-run-all": "^4.0.2",
+    "power-assert": "^1.4.2",
     "rimraf": "^2.6.1",
+    "wdio-mocha-framework": "^0.5.9",
+    "wdio-selenium-standalone-service": "0.0.8",
+    "webdriverio": "^4.6.2",
     "webpack": "^2.3.2"
   },
   "files": [
@@ -42,13 +47,15 @@
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production babel src -d lib && webpack",
-    "clean": "rimraf lib",
+    "clean": "rimraf lib .tmp",
     "deploy": "ghpages --path example",
     "lint": "npm-run-all -p lint:*",
     "lint:flow": "flow",
     "lint:js": "eslint . --cache",
     "prebuild": "npm run clean",
+    "pretest:e2e": "babel test -d .tmp",
     "test": "npm-run-all -p test:*",
-    "test:lint": "npm run lint"
+    "test:lint": "npm run lint",
+    "test:e2e": "wdio wdio.conf.js"
   }
 }
