@@ -1,0 +1,54 @@
+{
+  "name": "auto-cookie",
+  "description": "auto set cookie domain like google-analytics",
+  "version": "0.0.1",
+  "author": "UNCOVER TRUTH Inc.",
+  "bugs": {
+    "url": "https://github.com/uncovertruth/auto-cookie/issues"
+  },
+  "devDependencies": {
+    "@uncovertruth/eslint-config-flowtype": "^1.0.0-beta.0",
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-register": "^6.24.0",
+    "cross-env": "^3.2.4",
+    "eslint": "^3.18.0",
+    "flow-bin": "^0.42.0",
+    "ghpages": "^0.0.10",
+    "js-cookie": "^2.1.3",
+    "lite-server": "^2.3.0",
+    "npm-run-all": "^4.0.2",
+    "rimraf": "^2.6.1",
+    "webpack": "^2.3.2"
+  },
+  "files": [
+    "lib/"
+  ],
+  "homepage": "https://github.com/uncovertruth/auto-cookie#readme",
+  "keywords": [
+    "cookie"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "peerDependencies": {
+    "js-cookie": "2.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/uncovertruth/auto-cookie.git"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production babel src -d lib && webpack",
+    "clean": "rimraf lib",
+    "deploy": "ghpages --path example",
+    "lint": "npm-run-all -p lint:*",
+    "lint:flow": "flow",
+    "lint:js": "eslint . --cache",
+    "prebuild": "npm run clean",
+    "test": "npm-run-all -p test:*",
+    "test:lint": "npm run lint"
+  }
+}
