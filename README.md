@@ -1,6 +1,6 @@
 # auto-cookie
 
-[![Build Status][travis-image]][travis-url] [![dependencies Status](https://david-dm.org/uncovertruth/auto-cookie/status.svg)](https://david-dm.org/uncovertruth/auto-cookie) [![devDependencies Status](https://david-dm.org/uncovertruth/auto-cookie/dev-status.svg)](https://david-dm.org/uncovertruth/auto-cookie?type=dev) [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+[![npm version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![dependencies Status](https://david-dm.org/uncovertruth/auto-cookie/status.svg)](https://david-dm.org/uncovertruth/auto-cookie) [![devDependencies Status](https://david-dm.org/uncovertruth/auto-cookie/dev-status.svg)](https://david-dm.org/uncovertruth/auto-cookie?type=dev) [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 > auto set cookie domain like google analytics
 
 TBA
@@ -20,7 +20,12 @@ npm install auto-cookie js-cookie --save
 
 ## Usage
 
-> TBA
+```js
+import { find, save } from 'auto-cookie'
+
+find(cookieName, expires)  // read
+save(cookieName, data, expires)  // write
+```
 
 ## Contribute
 
@@ -32,5 +37,7 @@ Small note: If editing the README, please conform to the [standard-readme](https
 
 MIT © UNCOVER TRUTH Inc.
 
+[npm-image]: https://badge.fury.io/js/auto-cookie.svg
+[npm-url]: https://www.npmjs.com/package/auto-cookie
 [travis-image]: https://travis-ci.org/uncovertruth/auto-cookie.svg?branch=master
 [travis-url]: https://travis-ci.org/uncovertruth/auto-cookie
