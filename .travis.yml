@@ -1,3 +1,7 @@
+env:
+  global:
+    SAUCE_USERNAME=takasho
+    SAUCE_ACCESS_KEY="Q3lEku74p2FY7DUZBFUXjzPoVIomCeqNIWYvbQFWNmk1tnIBybzTpWBvhGEDiTaxBYAtkzHD54pnw/rSzJMCWVrpQVcToTNMlCUavrg6AV/0+E6GbZL2fprF5Gc4G6aaSfhdnmdikPlcUqU9QjyVsysr1OmaQ9KRaQUC4/1CjdSF6Gr1kWIDwlI3PTvR+WqPRrRkR/BWLKu47Ft8qCWo1tHwjKatSC2sPJFkT4uufv2YVcbGxegU+TEi14FpHS2oi52V1DzJWJc/Vi1eTVe8cML0RNpQR3L7iulTEoMen7RQ87/qQr9Kb0fU1o26v9oJIlGjw2Pgu5Fx9LT11W/USvLGLfn3CPGk9js0qIBA78zKHXC+U7u+JSafT5ew5ReQD7fniwX1bJfxLsZn2T+XYjD072RZQ10HuyPUfu2ezJ5EcPPIiBQnsklhK7+6NdWd0EuI5kG2U4KMNeoJmR3KJPPbKH0356InohdfWUWSofy8QuvxDT9yl6tKEu6dWhgtL68Kil1tTMXdiY+ZcgqKEL1z+qZld2P9yYu/6ltWlBvqdF8h35W4C+wrL88MlGuRp6ziyvJnuyp8gxgl061PuXEpfre0DkrXE+liTG2gb7jAB0ZLYb++JTfmAPSlJaYjffjJxklDEpqPFsurFZNSaoUafmxk0DEOwyMzyEhJZJo="
 sudo: false
 language: node_js
 matrix:
@@ -6,10 +10,7 @@ matrix:
 addon:
   firefox: latest
 addons:
-  sauce_connect:
-    usename: takasho
-  jwt:
-    secure: "Q3lEku74p2FY7DUZBFUXjzPoVIomCeqNIWYvbQFWNmk1tnIBybzTpWBvhGEDiTaxBYAtkzHD54pnw/rSzJMCWVrpQVcToTNMlCUavrg6AV/0+E6GbZL2fprF5Gc4G6aaSfhdnmdikPlcUqU9QjyVsysr1OmaQ9KRaQUC4/1CjdSF6Gr1kWIDwlI3PTvR+WqPRrRkR/BWLKu47Ft8qCWo1tHwjKatSC2sPJFkT4uufv2YVcbGxegU+TEi14FpHS2oi52V1DzJWJc/Vi1eTVe8cML0RNpQR3L7iulTEoMen7RQ87/qQr9Kb0fU1o26v9oJIlGjw2Pgu5Fx9LT11W/USvLGLfn3CPGk9js0qIBA78zKHXC+U7u+JSafT5ew5ReQD7fniwX1bJfxLsZn2T+XYjD072RZQ10HuyPUfu2ezJ5EcPPIiBQnsklhK7+6NdWd0EuI5kG2U4KMNeoJmR3KJPPbKH0356InohdfWUWSofy8QuvxDT9yl6tKEu6dWhgtL68Kil1tTMXdiY+ZcgqKEL1z+qZld2P9yYu/6ltWlBvqdF8h35W4C+wrL88MlGuRp6ziyvJnuyp8gxgl061PuXEpfre0DkrXE+liTG2gb7jAB0ZLYb++JTfmAPSlJaYjffjJxklDEpqPFsurFZNSaoUafmxk0DEOwyMzyEhJZJo="
+  sauce_connect: true
 before_install:
 - export DISPLAY=:99.0
 - sh -e /etc/init.d/xvfb start
