@@ -9,7 +9,12 @@ describe('auto-cookie', () => {
   }
   const client = webdriverio.remote(config)
   it('set cookie', () => {
-    client.url('http://www.0.0.0.0.xip.io:8000')
-    assert(client.getCookie(name) === 'data')
+    client
+      .init()
+      .url('http://www.0.0.0.0.xip.io:8000')
+      .getCookie(name)
+      .then((cookie) => {
+        assert(cookie === 'data')
+      })
   })
 })

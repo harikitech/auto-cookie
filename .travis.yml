@@ -5,6 +5,11 @@ matrix:
   - node_js: stable
 addon:
   firefox: latest
+addons:
+  sauce_connect:
+    usename: takasho
+  jwt:
+    secure: <SAUCE_ACCESS_KEY ENCRYPTED>
 before_install:
 - export DISPLAY=:99.0
 - sh -e /etc/init.d/xvfb start
