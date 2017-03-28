@@ -53,7 +53,6 @@
     "lint:flow": "flow",
     "lint:js": "eslint . --cache",
     "prebuild": "npm run clean",
-    "pretest:e2e": "babel test -d .tmp",
     "test": "npm-run-all -p test:*",
     "test:lint": "npm run lint",
     "test:e2e": "wdio wdio.conf.js"

@@ -1,6 +1,6 @@
 exports.config = {
   specs: [
-    '.tmp/*.js'
+    './test/*.js'
   ],
   capabilities: [
     {browserName: 'chrome'}
@@ -11,5 +11,9 @@ exports.config = {
   baseUrl: 'http://localhost',
   connectionRetryCount: 3,
   framework: 'mocha',
-  services: ['selenium-standalone']
+  services: ['selenium-standalone'],
+  mochaOpts: {
+    ui: 'bdd',
+    compilers: ['js:babel-register']
+  }
 }
