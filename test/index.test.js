@@ -1,4 +1,4 @@
-import assert from 'power-assert'
+import assert from 'assert'
 
 describe('auto-cookie', () => {
   const name = 'auto-cookie'
