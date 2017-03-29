@@ -5,18 +5,15 @@ matrix:
   - node_js: stable
 addon:
   firefox: latest
-  apt:
-    packages:
-      - oracle-java8-installer
 node_js:
 - stable
 - 6
-jdk:
-  - oraclejdk8
 before_install:
 - export DISPLAY=:99.0
 - sh -e /etc/init.d/xvfb start
 - sleep 3
+install:
+  - java --bersion
 before_script:
   - npm start
 script:
