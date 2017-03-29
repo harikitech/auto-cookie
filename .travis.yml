@@ -13,9 +13,9 @@ node_js:
 - stable
 - 6
 before_script:
+  - selenium-stndalone install
   - npm start
 script:
-  - sleep 10
   - npm test
 notifications:
   email: false

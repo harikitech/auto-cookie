@@ -55,7 +55,6 @@
     "lint:js": "eslint . --cache",
     "prebuild": "npm run clean",
     "prestart": "npm run build",
-    "prestart:selenium": "selenium-standalone install",
     "start": "npm-run-all -p start:*",
     "start:lite-server": "lite-server &",
     "start:selenium": "selenium-standalone start &",
