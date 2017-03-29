@@ -12,8 +12,9 @@ before_install:
 node_js:
 - stable
 - 6
-before_script:
+install:
   - selenium-stndalone install
+before_script:
   - npm start
 script:
   - npm test
