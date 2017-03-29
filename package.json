@@ -53,6 +53,7 @@
     "lint:flow": "flow",
     "lint:js": "eslint . --cache",
     "prebuild": "npm run clean",
+    "prestart": "npm run build",
     "start": "lite-server",
     "test": "npm-run-all -p test:*",
     "test:lint": "npm run lint",
