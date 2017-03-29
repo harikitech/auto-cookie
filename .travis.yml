@@ -5,6 +5,9 @@ matrix:
   - node_js: stable
 addon:
   firefox: latest
+  apt:
+    packages:
+      - oracle-java8-installer
 node_js:
 - stable
 - 6
