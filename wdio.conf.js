@@ -3,7 +3,7 @@ exports.config = {
     './test/*.js'
   ],
   capabilities: [
-    {browserName: 'chrome'}
+    {browserName: 'firefox'}
   ],
   sync: true,
   logLevel: 'silent',
