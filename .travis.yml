@@ -13,7 +13,7 @@ node_js:
 - stable
 - 6
 install:
-  - node_modules/.bin/selenium-stndalone install
+  - node_modules/.bin/selenium-standalone install
 before_script:
   - npm start
 script:
