@@ -5,13 +5,13 @@ import { describe, it } from 'mocha'
 
 describe('auto-cookie', () => {
   const name = 'auto-cookie'
-  it('set cookie', () => {
+  it('set cookie', (done) => {
     browser
-      .init()
       .url('http://www.0.0.0.0.xip.io:8000')
       .getCookie(name)
       .then((cookie) => {
-        assert(cookie === 'data')
+        assert(cookie.value === 'data')
+        done()
       })
   })
 })
