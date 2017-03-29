@@ -13,7 +13,7 @@ before_install:
 - sh -e /etc/init.d/xvfb start
 - sleep 3
 install:
-  - java --version
+  - java -version
 before_script:
   - npm start
 script:
