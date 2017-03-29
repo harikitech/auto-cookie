@@ -15,6 +15,7 @@ node_js:
 before_script:
   - npm start
 script:
+  - sleep 10
   - npm test
 notifications:
   email: false
