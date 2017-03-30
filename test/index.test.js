@@ -8,7 +8,7 @@ describe('auto-cookie', () => {
   const name = 'auto-cookie'
   it('set cookie', (done) => {
     browser
-      .url('http://localhost:8000')
+      .url('http://www.0.0.0.0.xip.io:8000')
       .getCookie(name)
       .then((cookie) => {
         assert(cookie.value === 'data')
