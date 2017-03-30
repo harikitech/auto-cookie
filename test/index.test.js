@@ -1,7 +1,8 @@
 /* @flow */
-/* global browser */
 import assert from 'assert'
 import { describe, it } from 'mocha'
+
+declare var browser: any
 
 describe('auto-cookie', () => {
   const name = 'auto-cookie'
