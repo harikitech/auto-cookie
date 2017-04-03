@@ -13,6 +13,7 @@ before_install:
 - sh -e /etc/init.d/xvfb start
 - sleep 3
 before_script:
+  - npm start &
   - sleep 5
 notifications:
   email: false

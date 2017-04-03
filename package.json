@@ -54,6 +54,7 @@
     "lint:js": "eslint . --cache",
     "prebuild": "npm run clean",
     "prestart": "npm run build",
+    "start": "lite-server",
     "test": "npm-run-all -p test:*",
     "test:lint": "npm run lint",
     "test:e2e": "wdio wdio.conf.js"
