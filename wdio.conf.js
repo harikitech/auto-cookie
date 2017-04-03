@@ -7,6 +7,7 @@ exports.config = {
       browserName: 'firefox'
     }
   ],
+  bail: 0,
   sync: true,
   logLevel: 'silent',
   coloredLogs: true,
@@ -15,7 +16,7 @@ exports.config = {
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
   framework: 'mocha',
-  services: ['selenium-standalone'],
+  services: ['firefox-profile', 'selenium-standalone'],
   mochaOpts: {
     ui: 'bdd',
     compilers: ['js:babel-register']
