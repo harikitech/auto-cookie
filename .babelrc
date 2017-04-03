@@ -4,8 +4,10 @@
     "flow"
   ],
   "env": {
-    "presets": [
-      "power-assert"
-    ]
+    "development": {
+      "presets": [
+        "power-assert"
+      ]
+    }
   }
 }
