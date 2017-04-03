@@ -11,7 +11,7 @@ describe('auto-cookie', () => {
       .url('http://www.0.0.0.0.xip.io:8000')
       .getCookie(name)
       .then((cookie) => {
-        assert(cookie.value === 'data')
+        assert.equal(cookie.value, 'data')
         done()
       })
   })

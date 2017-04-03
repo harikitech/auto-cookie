@@ -350,7 +350,7 @@ babel-eslint@^7.1.1:
     babel-types "^6.23.0"
     babylon "^6.16.1"
 
-babel-generator@^6.24.0:
+babel-generator@^6.1.0, babel-generator@^6.24.0:
   version "6.24.0"
   resolved "https://registry.yarnpkg.com/babel-generator/-/babel-generator-6.24.0.tgz#eba270a8cc4ce6e09a61be43465d7c62c1f87c56"
   dependencies:
@@ -458,6 +458,22 @@ babel-plugin-check-es2015-constants@^6.22.0:
   resolved "https://registry.yarnpkg.com/babel-plugin-check-es2015-constants/-/babel-plugin-check-es2015-constants-6.22.0.tgz#35157b101426fd2ffd3da3f75c7d1e91835bbf8a"
   dependencies:
     babel-runtime "^6.22.0"
+
+babel-plugin-empower-assert@^1.2.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-empower-assert/-/babel-plugin-empower-assert-1.3.0.tgz#57f4f0286793e585154e7e3eab675440b922343c"
+
+babel-plugin-espower@^2.1.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/babel-plugin-espower/-/babel-plugin-espower-2.3.2.tgz#5516b8fcdb26c9f0e1d8160749f6e4c65e71271e"
+  dependencies:
+    babel-generator "^6.1.0"
+    babylon "^6.1.0"
+    call-matcher "^1.0.0"
+    core-js "^2.0.0"
+    espower-location-detector "^1.0.0"
+    espurify "^1.6.0"
+    estraverse "^4.1.1"
 
 babel-plugin-syntax-flow@^6.18.0:
   version "6.18.0"
@@ -694,6 +710,13 @@ babel-preset-flow@^6.23.0:
   dependencies:
     babel-plugin-transform-flow-strip-types "^6.22.0"
 
+babel-preset-power-assert@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/babel-preset-power-assert/-/babel-preset-power-assert-1.0.0.tgz#cd77a38d9a5f8da85ae093d69fac7cde4d2e8089"
+  dependencies:
+    babel-plugin-empower-assert "^1.2.0"
+    babel-plugin-espower "^2.1.2"
+
 babel-register@^6.24.0:
   version "6.24.0"
   resolved "https://registry.yarnpkg.com/babel-register/-/babel-register-6.24.0.tgz#5e89f8463ba9970356d02eb07dabe3308b080cfd"
@@ -752,7 +775,7 @@ babel-types@^6.19.0, babel-types@^6.22.0, babel-types@^6.23.0:
     lodash "^4.2.0"
     to-fast-properties "^1.0.1"
 
-babylon@^6.11.0, babylon@^6.15.0, babylon@^6.16.1:
+babylon@^6.1.0, babylon@^6.11.0, babylon@^6.15.0, babylon@^6.16.1:
   version "6.16.1"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.16.1.tgz#30c5a22f481978a9e7f8cdfdf496b11d94b404d3"
 
@@ -999,6 +1022,15 @@ builtin-modules@^1.0.0, builtin-modules@^1.1.1:
 builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
+
+call-matcher@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/call-matcher/-/call-matcher-1.0.1.tgz#5134d077984f712a54dad3cbf62de28dce416ca8"
+  dependencies:
+    core-js "^2.0.0"
+    deep-equal "^1.0.0"
+    espurify "^1.6.0"
+    estraverse "^4.0.0"
 
 call-signature@0.0.2:
   version "0.0.2"
@@ -1381,6 +1413,10 @@ debug@^2.1.1, debug@^2.2.0:
 decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
+
+deep-equal@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/deep-equal/-/deep-equal-1.0.1.tgz#f5d260292b660e084eff4cdbc9f08ad3247448b5"
 
 deep-extend@~0.4.0:
   version "0.4.1"
@@ -1807,6 +1843,15 @@ eslint@^3.18.0:
     table "^3.7.8"
     text-table "~0.2.0"
     user-home "^2.0.0"
+
+espower-location-detector@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/espower-location-detector/-/espower-location-detector-1.0.0.tgz#a17b7ecc59d30e179e2bef73fb4137704cb331b5"
+  dependencies:
+    is-url "^1.2.1"
+    path-is-absolute "^1.0.0"
+    source-map "^0.5.0"
+    xtend "^4.0.0"
 
 espree@^3.4.0:
   version "3.4.0"
@@ -2661,6 +2706,10 @@ is-symbol@^1.0.1:
 is-typedarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-typedarray/-/is-typedarray-1.0.0.tgz#e479c80858df0c1b11ddda6940f96011fcda4a9a"
+
+is-url@^1.2.1:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/is-url/-/is-url-1.2.2.tgz#498905a593bf47cc2d9e7f738372bbf7696c7f26"
 
 is-utf8@^0.2.0:
   version "0.2.1"
