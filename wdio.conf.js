@@ -17,6 +17,7 @@ exports.config = {
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
   framework: 'mocha',
+  reporters: ['dot', 'spec'],
   services: ['firefox-profile', 'selenium-standalone'],
   mochaOpts: {
     ui: 'bdd',

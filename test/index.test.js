@@ -21,9 +21,9 @@ describe('auto-cookie', () => {
       })
   })
 
-  it('should not set cookie around localhost', (done) => {
+  it.skip('should not set cookie around 0.0.0.0', (done) => {
     browser
-      .url('http://localhost:8000')
+      .url('http://0.0.0.0:8000')
       .getCookie(name)
       .then((cookie) => {
         assert(!cookie.value)
