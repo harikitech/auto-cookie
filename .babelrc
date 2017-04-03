@@ -1,7 +1,11 @@
 {
   "presets": [
     "es2015",
-    "flow",
-    "power-assert"
-  ]
+    "flow"
+  ],
+  "env": {
+    "presets": [
+      "power-assert"
+    ]
+  }
 }
