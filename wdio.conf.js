@@ -11,6 +11,8 @@ exports.config = {
   logLevel: 'silent',
   coloredLogs: true,
   baseUrl: 'http://localhost',
+  waitforTimeout: 10000,
+  connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
   framework: 'mocha',
   services: ['selenium-standalone'],
