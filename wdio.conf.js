@@ -7,6 +7,7 @@ exports.config = {
       browserName: 'firefox'
     }
   ],
+  exclude: [],
   bail: 0,
   sync: true,
   logLevel: 'silent',
