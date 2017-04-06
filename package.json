@@ -55,7 +55,9 @@
     "deploy": "ghpages --path example",
     "lint": "eslint . --cache",
     "prebuild": "npm run clean",
+    "prestart": "npm run build",
     "pretest": "npm run build",
+    "start": "node server.js",
     "test": "npm-run-all -p test:*",
     "test:e2e": "wdio wdio.conf.js",
     "test:lint": "npm run lint"
