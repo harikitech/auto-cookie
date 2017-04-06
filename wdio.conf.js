@@ -38,10 +38,17 @@ if (process.env.SAUCE_USERNAME && process.env.SAUCE_ACCESS_KEY && process.env.CI
       {browserName: 'internet explorer', platform: 'Windows 8.1', version: '11'},
       {browserName: 'MicrosoftEdge', platform: 'Windows 10', version: '13.10586'}
     ],
+    waitforTimeout: 100000,
     services: ['sauce'],
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
     sauceConnectOpts: {
+      options: {
+        'selenium-version': '3.1.0',
+        'command-timeout': 600,
+        'idle-timeout': 600,
+        'max-duration': 5400
+      },
       tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER
     },
     sauceConnect: false
