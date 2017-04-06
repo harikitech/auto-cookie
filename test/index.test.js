@@ -1,11 +1,11 @@
 /* @flow */
 import http from 'http'
 import finalhandler from 'finalhandler'
+import serveStatic from 'serve-static'
 import path from 'path'
 
 import assert from 'assert'
 import { describe, before, beforeEach, it } from 'mocha'
-import serveStatic from 'serve-static'
 
 declare var browser: any
 

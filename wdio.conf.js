@@ -40,6 +40,9 @@ if (process.env.SAUCE_USERNAME && process.env.SAUCE_ACCESS_KEY && process.env.CI
     services: ['sauce'],
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
+    sauceConnectOpts: {
+      tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER
+    },
     sauceConnect: false
   }
 }
