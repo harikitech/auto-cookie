@@ -13,13 +13,13 @@ describe('auto-cookie', () => {
   const name = 'auto-cookie'
 
   before(() => {
-    const serve = serveStatic(path.join(__dirname, '../example'))
-
-    const server = http.createServer((req, res) => {
-      serve(req, res, finalhandler(req, res))
-    })
-
-    server.listen(8000)
+    setTimeout(() => {
+      const serve = serveStatic(path.join(__dirname, '../example'))
+      const server = http.createServer((req, res) => {
+        serve(req, res, finalhandler(req, res))
+      })
+      server.listen(8000)
+    }, 0)
   })
 
   beforeEach(() => {

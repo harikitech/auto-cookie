@@ -26,7 +26,6 @@
     "power-assert": "^1.4.2",
     "rimraf": "^2.6.1",
     "serve-static": "^1.12.1",
-    "wdio-firefox-profile-service": "0.0.3",
     "wdio-mocha-framework": "^0.5.9",
     "wdio-sauce-service": "^0.3.1",
     "wdio-selenium-standalone-service": "0.0.7",
@@ -56,6 +55,7 @@
     "deploy": "ghpages --path example",
     "lint": "eslint . --cache",
     "prebuild": "npm run clean",
+    "pretest": "npm run build",
     "test": "npm-run-all -p test:*",
     "test:e2e": "wdio wdio.conf.js",
     "test:lint": "npm run lint"

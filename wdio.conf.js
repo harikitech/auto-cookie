@@ -4,13 +4,13 @@ const config = {
   ],
   capabilities: [
     {
-      browserName: 'firefox'
+      browserName: 'chrome'
     }
   ],
   exclude: [],
   bail: 0,
   sync: true,
-  logLevel: 'silent',
+  logLevel: 'verbose',
   coloredLogs: true,
   waitforTimeout: 10000,
   connectionRetryTimeout: 90000,
@@ -27,6 +27,7 @@ const config = {
 let override = {}
 if (process.env.SAUCE_USERNAME && process.env.SAUCE_ACCESS_KEY && process.env.CI_MODE === 'sauce') {
   override = {
+    logLevel: 'silent',
     capabilities: [
       {browserName: 'iphone', version: '10.0'},
       {browserName: 'android', version: '5.1'},
