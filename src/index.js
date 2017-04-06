@@ -13,8 +13,8 @@ function findOrCreate (name: string, expires: number, data: ?string): string {
   }
 
   const domainParts = removeNaked().split('.')
-  const subDomain = domainParts[domainParts.length - 1]
-  if (domainParts.length === 4 && (parseInt(subDomain, 10) === subDomain)) {
+  const subDomain: any = domainParts[domainParts.length - 1]
+  if (domainParts.length === 4 && (parseInt(subDomain, 10) == subDomain)) {  // eslint-disable-line eqeqeq
     return cookies.get(name)
   }
 

@@ -1,13 +1,18 @@
 /* @flow */
 import assert from 'assert'
-import { describe, beforeEach, it } from 'mocha'
+import { describe, before, beforeEach, it } from 'mocha'
 
 declare var browser: any
 
 describe('auto-cookie', () => {
   const name = 'auto-cookie'
 
-  beforeEach(() => {
+  before(() => {
+    const start = require('./helpers/server')
+    start()
+  })
+
+  beforeEach('clean cookies', () => {
     browser.deleteCookie()
   })
 
@@ -16,17 +21,17 @@ describe('auto-cookie', () => {
       .url('http://www.0.0.0.0.xip.io:8000')
       .getCookie(name)
       .then((cookie) => {
-        assert.equal(cookie.value, 'data')
+        assert(cookie.value === 'data')
         done()
       })
   })
 
-  it.skip('should not set cookie around 0.0.0.0', (done) => {
+  it('should not set cookie around 0.0.0.0', (done) => {
     browser
       .url('http://0.0.0.0:8000')
       .getCookie(name)
       .then((cookie) => {
-        assert(!cookie.value)
+        assert(!cookie)
         done()
       })
   })
