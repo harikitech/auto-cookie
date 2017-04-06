@@ -17,7 +17,7 @@ const config = {
   connectionRetryCount: 3,
   framework: 'mocha',
   reporters: ['dot', 'spec'],
-  services: ['firefox-profile', 'selenium-standalone'],
+  services: ['selenium-standalone'],
   mochaOpts: {
     ui: 'bdd',
     compilers: ['js:babel-register']
