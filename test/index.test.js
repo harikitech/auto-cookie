@@ -1,11 +1,26 @@
 /* @flow */
+import http from 'http'
+import finalhandler from 'finalhandler'
+import path from 'path'
+
 import assert from 'assert'
-import { describe, beforeEach, it } from 'mocha'
+import { describe, before, beforeEach, it } from 'mocha'
+import serveStatic from 'serve-static'
 
 declare var browser: any
 
 describe('auto-cookie', () => {
   const name = 'auto-cookie'
+
+  before(() => {
+    const serve = serveStatic(path.join(__dirname, '../example'))
+
+    const server = http.createServer((req, res) => {
+      serve(req, res, finalhandler(req, res))
+    })
+
+    server.listen(8000)
+  })
 
   beforeEach(() => {
     browser.deleteCookie()
