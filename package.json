@@ -50,7 +50,7 @@
     "url": "git+ssh://git@github.com/uncovertruth/auto-cookie.git"
   },
   "scripts": {
-    "appveyor": "wdio wdio.conf.js --capabilities-browserName=IE,Edge --spec=./tmp/*.test.js",
+    "appveyor": "wdio wdio.conf.js --capabilities-browserName=IE --specs=tmp/*.test.js",
     "build": "cross-env NODE_ENV=production babel src -d lib && webpack",
     "clean": "rimraf lib tmp",
     "deploy": "ghpages --path example",
