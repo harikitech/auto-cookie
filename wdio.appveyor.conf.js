@@ -4,7 +4,7 @@ exports.config = {
   ],
   capabilities: [
     {
-      browserName: 'MSIE'
+      browserName: 'Edge'
     }
   ],
   exclude: [],
