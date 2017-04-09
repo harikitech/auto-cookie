@@ -5,6 +5,5 @@ install:
   - npm install
 
 test_script:
-  - npm run clean
   - npm run appveyor
 build: off
