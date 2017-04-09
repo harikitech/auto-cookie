@@ -4,7 +4,8 @@ exports.config = {
   ],
   capabilities: [
     {
-      browserName: 'firefox'
+      browserName: 'internet explorer',
+      version: '11.0'
     }
   ],
   exclude: [],
@@ -18,6 +19,11 @@ exports.config = {
   framework: 'mocha',
   reporters: ['dot', 'spec'],
   services: ['selenium-standalone'],
+  seleniumArgs: {
+    seleniumArgs: [
+      '-Djna.nosys=true'
+    ]
+  },
   mochaOpts: {
     ui: 'bdd',
     compilers: ['js:babel-register']
