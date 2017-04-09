@@ -1,6 +1,6 @@
 exports.config = {
   specs: [
-    './tmp/*.js'
+    './test/*.js'
   ],
   capabilities: [
     {
