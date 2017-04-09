@@ -4,8 +4,7 @@ exports.config = {
   ],
   capabilities: [
     {
-      browserName: 'internet explorer',
-      version: '11.0'
+      browserName: 'firefox'
     }
   ],
   exclude: [],
