@@ -10,6 +10,7 @@ describe('auto-cookie', () => {
   before(() => {
     const start = require('./helpers/server')
     start()
+    browser.pause(3000)
   })
 
   beforeEach('clean cookies', () => {
