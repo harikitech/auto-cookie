@@ -12,6 +12,7 @@ const config = {
   sync: true,
   logLevel: 'verbose',
   coloredLogs: true,
+  waitforTimeout: 10000,
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
   framework: 'mocha',
@@ -20,7 +21,7 @@ const config = {
   mochaOpts: {
     ui: 'bdd',
     compilers: ['js:babel-register'],
-    timeout: 15000
+    timeout: 60000
   }
 }
 
