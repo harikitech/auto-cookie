@@ -16,7 +16,7 @@ exports.config = {
   sync: true,
   logLevel: 'verbose',
   coloredLogs: true,
-  waitforTimeout: 10000,
+  waitforTimeout: 15000,
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
   framework: 'mocha',
