@@ -50,10 +50,12 @@
     "url": "git+ssh://git@github.com/uncovertruth/auto-cookie.git"
   },
   "scripts": {
+    "appveyor": "wdio wdio.appveyor.conf.js",
     "build": "cross-env NODE_ENV=production babel src -d lib && webpack",
     "clean": "rimraf lib",
     "deploy": "ghpages --path example",
     "lint": "eslint . --cache",
+    "preappveyor": "npm run build",
     "prebuild": "npm run clean",
     "prestart": "npm run build",
     "pretest": "npm run build",
