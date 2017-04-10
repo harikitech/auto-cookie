@@ -6,6 +6,9 @@ exports.config = {
     {
       browserName: 'internet explorer',
       version: '11.0'
+    },
+    {
+      browserName: 'MicrosoftEdge'
     }
   ],
   exclude: [],

@@ -52,7 +52,7 @@
   "scripts": {
     "appveyor": "wdio wdio.appveyor.conf.js",
     "build": "cross-env NODE_ENV=production babel src -d lib && webpack",
-    "clean": "rimraf lib tmp",
+    "clean": "rimraf lib",
     "deploy": "ghpages --path example",
     "lint": "eslint . --cache",
     "preappveyor": "npm run build",
