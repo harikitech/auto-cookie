@@ -17,22 +17,22 @@ describe('auto-cookie', () => {
     browser.deleteCookie()
   })
 
-  it('should not set cookie around 0.0.0.0', (done) => {
-    browser
-      .url('http://0.0.0.0:8000')
-      .getCookie(name)
-      .then((cookie) => {
-        assert(!cookie)
-        done()
-      })
-  })
-
   it('should get cookie around xip.io', (done) => {
     browser
       .url('http://www.0.0.0.0.xip.io:8000')
       .getCookie(name)
       .then((cookie) => {
         assert(cookie.value === 'data')
+        done()
+      })
+  })
+
+  it('should not set cookie around 0.0.0.0', (done) => {
+    browser
+      .url('http://0.0.0.0:8000')
+      .getCookie(name)
+      .then((cookie) => {
+        assert(!cookie)
         done()
       })
   })
