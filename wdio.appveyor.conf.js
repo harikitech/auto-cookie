@@ -4,7 +4,7 @@ exports.config = {
   ],
   capabilities: [
     {
-      browserName: 'MicrosoftEdge'
+      browserName: 'edge'
     }
   ],
   exclude: [],
