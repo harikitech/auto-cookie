@@ -1,3 +1,5 @@
+require('babel-register')
+
 exports.config = {
   specs: [
     './test/*.js'
