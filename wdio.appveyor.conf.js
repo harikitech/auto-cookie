@@ -16,7 +16,6 @@ exports.config = {
   sync: true,
   logLevel: 'verbose',
   coloredLogs: true,
-  waitforTimeout: 15000,
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
   framework: 'mocha',
@@ -29,6 +28,7 @@ exports.config = {
   },
   mochaOpts: {
     ui: 'bdd',
-    compilers: ['js:babel-register']
+    compilers: ['js:babel-register'],
+    timeout: 15000
   }
 }
