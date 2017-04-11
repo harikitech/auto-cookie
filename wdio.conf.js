@@ -21,6 +21,11 @@ const config = {
   mochaOpts: {
     ui: 'bdd',
     compilers: ['js:babel-register']
+  },
+  seleniumArgs: {
+    seleniumArgs: [
+      '-Djna.nosys=true'
+    ]
   }
 }
 
@@ -34,9 +39,7 @@ if (process.env.SAUCE_USERNAME && process.env.SAUCE_ACCESS_KEY && process.env.CI
       {browserName: 'chrome', platform: 'Linux', version: '46'},
       {browserName: 'chrome', version: 'beta'},
       {browserName: 'firefox', platform: 'Linux', version: '44'},
-      {browserName: 'safari', version: '10.0'},
-      {browserName: 'internet explorer', platform: 'Windows 8.1', version: '11'},
-      {browserName: 'MicrosoftEdge', platform: 'Windows 10', version: '13.10586'}
+      {browserName: 'safari', version: '10.0'}
     ],
     waitforTimeout: 100000,
     services: ['sauce'],
