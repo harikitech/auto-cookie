@@ -18,14 +18,18 @@ before_install:
 - export DISPLAY=:99.0
 - sh -e /etc/init.d/xvfb start
 - sleep 3
-notifications:
-  email: false
 deploy:
   provider: npm
+  skip_cleenup: true
   email: develop@uncovertruth.co.jp
   api_key:
     secure: aGKtfwPsNUlNqTfpBU9SJoTOtwli7+LLcjg/HtZJgFcPrQVow+yOzsKuq7KCMN3IBIxf8yK9rIlvknpquyacU8ma5uMRb26BN8AMqfPwspK+sFm3JdGPpQBB5zPELCA+PeYVyYTeTOUB61cBdce9rJ7LPWap3wQOiUAlRkIMlr8PRpOXaCjUHFWHiJH2yRDnnGqjouM9q6SexquvKeAyYuYxD+FeBWXBs74Z7/CG54Emhsr2GDd6jPUAfV4SdfAGWNKpjY/8hL4BejS1CU2cb/uaog8BKD/f9mSq6V+NOjqM1SN9eCDeB8vfhYDytGM686Pu1QiV6a9Zt1t2ePjzjtqhGmLzJ2WZahuQk8Ziv6fBwlmCw6GNe+ImLoYEwfzd1DLZHz4RF7BFmxbRjmwrl9dF4HVWN2XSsPvlhNwQQQmybkQiR1lbCZ+q2kb8cfGAA/BwxkvAYq2b3l/EKxq4N7ZXQpwjbbTrqk+jBjgcVKdEFAZy833sJxNOBvej+AFrV6VkD5TblJLhH3tSFOAbsSxr3YlXiZmEpmpMMJDj2PwUHqU9PBivajr3dxqGxvB47iS3DH4TZtzdaPiM4aFSoWv8nTLYjsSQn0oMcX/3RGAEi9JUbAPT6UHtZgBnP6MZye3ohYCo3oPh8sDZiszIe0WzrqdXQATYLwcevl/8v1Q=
   on:
     repo: uncovertruth/auto-cookie
     tags: true
-    condition: $CI_MODE = local
+    condition: "$CI_MODE = local"
+notifications:
+  email: false
+  slack:
+    rooms:
+      secure: hOg8jbXpOfj+K/g5N1gi5i8qEZiNrF6kTBd32zamDQ8SQiRe6KxgJKwc7osvSrrwx18wgBX7cvx2EsIkB9xbLyvaNVu7hoBHsqZUjHisV/edXXqmGXL+u2VoZw52C933vAeMfhH5vMLk/O2NVPSNiB6VSDqehM81O2mOBo588upqQyRqEc0XIPJnsGMINdddxuMegsEp/hoBrQBBPqQCpYZVdF6JhoPzGT+tYfSAOfqdGrUcFkgOwCCzbID6vNwssap9WqRC5XkULaOaCHv8wM/3imX4Z0CZ2VMl994Frfd7G0JbxO4tUMp5cpJufdx0XjILYP+H268T2Ym2MRED9rAP3W7jP9+tYXYiVy9VvLRSVYAXnzq/ftz2VanK55pUynFqPtDX2V6RHv1MSIbMjVK8+zTuMoaQfo5ZMAb0VDrcgLD0FWW8AHbE2yQF7cJf/QD7mNXJZWVKMTsAdrga+ujXrYcdsVk9fJZJU3iRSdic8goWgn0QUEWDwHmSzpzHpfkzhGGA/IxlSK8w4e8X65H3WU8K61HQy3a0QqABw0h9kU+LXTOMKBIkX9t/ZKTseJg3j25OzLej4Q4XGRqXfS8NNmuzPvTRpDPo2WkkGVeGZxqcwPtuew05En5GKjrEeSNLIRrk1+woUzVrApB2swMbE4uG208GjW3wtnkvl5U=
