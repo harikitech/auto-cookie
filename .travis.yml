@@ -20,3 +20,12 @@ before_install:
 - sleep 3
 notifications:
   email: false
+deploy:
+  provider: npm
+  email: develop@uncovertruth.co.jp
+  api_key:
+    secure: aGKtfwPsNUlNqTfpBU9SJoTOtwli7+LLcjg/HtZJgFcPrQVow+yOzsKuq7KCMN3IBIxf8yK9rIlvknpquyacU8ma5uMRb26BN8AMqfPwspK+sFm3JdGPpQBB5zPELCA+PeYVyYTeTOUB61cBdce9rJ7LPWap3wQOiUAlRkIMlr8PRpOXaCjUHFWHiJH2yRDnnGqjouM9q6SexquvKeAyYuYxD+FeBWXBs74Z7/CG54Emhsr2GDd6jPUAfV4SdfAGWNKpjY/8hL4BejS1CU2cb/uaog8BKD/f9mSq6V+NOjqM1SN9eCDeB8vfhYDytGM686Pu1QiV6a9Zt1t2ePjzjtqhGmLzJ2WZahuQk8Ziv6fBwlmCw6GNe+ImLoYEwfzd1DLZHz4RF7BFmxbRjmwrl9dF4HVWN2XSsPvlhNwQQQmybkQiR1lbCZ+q2kb8cfGAA/BwxkvAYq2b3l/EKxq4N7ZXQpwjbbTrqk+jBjgcVKdEFAZy833sJxNOBvej+AFrV6VkD5TblJLhH3tSFOAbsSxr3YlXiZmEpmpMMJDj2PwUHqU9PBivajr3dxqGxvB47iS3DH4TZtzdaPiM4aFSoWv8nTLYjsSQn0oMcX/3RGAEi9JUbAPT6UHtZgBnP6MZye3ohYCo3oPh8sDZiszIe0WzrqdXQATYLwcevl/8v1Q=
+  on:
+    repo: uncovertruth/auto-cookie
+    tags: true
+    condition: $CI_MODE = local
