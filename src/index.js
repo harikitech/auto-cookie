@@ -14,7 +14,8 @@ function findOrCreate (name: string, expires: number, data: ?string): string {
 
   const domainParts = removeNaked().split('.')
   const subDomain: any = domainParts[domainParts.length - 1]
-  if (domainParts.length === 4 && (parseInt(subDomain, 10) == subDomain)) {  // eslint-disable-line eqeqeq
+  // eslint-disable-next-line eqeqeq
+  if (domainParts.length === 4 && parseInt(subDomain, 10) == subDomain) {
     return cookies.get(name)
   }
 
@@ -34,7 +35,7 @@ function findOrCreate (name: string, expires: number, data: ?string): string {
   if (data) {
     cookies.set(name, data, { domain, expires })
   }
-  return cookies.get(name, {domain: location.hostname, expires})
+  return cookies.get(name, { domain: location.hostname, expires })
 }
 
 export function find (name: string, expires: number): string {
