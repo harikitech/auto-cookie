@@ -16,7 +16,7 @@
     "babel-preset-power-assert": "^1.0.0",
     "babel-register": "^6.24.1",
     "cross-env": "^5.0.1",
-    "eslint": "^3.18.0",
+    "eslint": "^4.1.0",
     "finalhandler": "^1.0.3",
     "flow-bin": "^0.48.0",
     "ghpages": "^0.0.10",
