@@ -1,7 +1,5 @@
 const config = {
-  specs: [
-    './test/*.js'
-  ],
+  specs: ['./test/*.js'],
   capabilities: [
     {
       browserName: 'firefox'
@@ -12,7 +10,7 @@ const config = {
   sync: true,
   logLevel: 'verbose',
   coloredLogs: true,
-  waitforTimeout: 10000,
+  waitforTimeout: 15000,
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
   framework: 'mocha',
@@ -25,18 +23,30 @@ const config = {
 }
 
 let override = {}
-if (process.env.SAUCE_USERNAME && process.env.SAUCE_ACCESS_KEY && process.env.CI_MODE === 'sauce') {
+if (
+  process.env.SAUCE_USERNAME &&
+  process.env.SAUCE_ACCESS_KEY &&
+  process.env.CI_MODE === 'sauce'
+) {
   override = {
     logLevel: 'silent',
     capabilities: [
-      {browserName: 'iphone', version: '10.0'},
-      {browserName: 'android', version: '5.1'},
-      {browserName: 'chrome', platform: 'Linux', version: '46'},
-      {browserName: 'chrome', version: 'beta'},
-      {browserName: 'firefox', platform: 'Linux', version: '44'},
-      {browserName: 'safari', version: '10.0'},
-      {browserName: 'internet explorer', platform: 'Windows 8.1', version: '11'},
-      {browserName: 'MicrosoftEdge', platform: 'Windows 10', version: '13.10586'}
+      { browserName: 'iphone', version: '10.0' },
+      { browserName: 'android', version: '5.1' },
+      { browserName: 'chrome', platform: 'Linux', version: '46' },
+      { browserName: 'chrome', version: 'beta' },
+      { browserName: 'firefox', platform: 'Linux', version: '44' },
+      { browserName: 'safari', version: '10.0' },
+      {
+        browserName: 'internet explorer',
+        platform: 'Windows 8.1',
+        version: '11'
+      },
+      {
+        browserName: 'MicrosoftEdge',
+        platform: 'Windows 10',
+        version: '13.10586'
+      }
     ],
     waitforTimeout: 100000,
     services: ['sauce'],
