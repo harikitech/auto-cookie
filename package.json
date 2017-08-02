@@ -20,7 +20,7 @@
     "cross-env": "^5.0.1",
     "eslint": "^4.3.0",
     "finalhandler": "^1.0.3",
-    "flow-bin": "^0.51.0",
+    "flow-bin": "^0.52.0",
     "ghpages": "^0.0.10",
     "husky": "^0.14.3",
     "js-cookie": "^2.1.3",
