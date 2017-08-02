@@ -6,7 +6,9 @@
   "bugs": {
     "url": "https://github.com/uncovertruth/auto-cookie/issues"
   },
+  "typings": "types/index.d.ts",
   "devDependencies": {
+    "@types/js-cookie": "^2.0.28",
     "@uncovertruth/eslint-config-flowtype": "^1.1.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
@@ -29,6 +31,7 @@
     "prettier-eslint-cli": "^4.1.1",
     "rimraf": "^2.6.1",
     "serve-static": "^1.12.3",
+    "typescript": "^2.4.2",
     "wdio-mocha-framework": "^0.5.10",
     "wdio-sauce-service": "^0.4.0",
     "wdio-selenium-standalone-service": "0.0.7",
@@ -37,7 +40,8 @@
     "webpack": "^3.3.0"
   },
   "files": [
-    "lib/"
+    "lib/",
+    "types/index.d.ts"
   ],
   "homepage": "https://github.com/uncovertruth/auto-cookie#readme",
   "keywords": [
@@ -71,6 +75,7 @@
     "start": "node server.js",
     "test": "npm-run-all -p test:*",
     "test:e2e": "wdio wdio.conf.js",
-    "test:lint": "npm run lint"
+    "test:lint": "npm run lint",
+    "test:ts": "tsc -p types/test/tsconfig.json"
   }
 }
