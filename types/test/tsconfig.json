@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "es5",
+      "dom",
+      "es2015.promise",
+      "es2015.core"
+    ],
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "noEmit": true
+  },
+  "files": [
+    "index.ts",
+    "../index.d.ts"
+  ],
+  "compileOnSave": true
+}
