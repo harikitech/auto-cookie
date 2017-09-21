@@ -1,14 +1,15 @@
-sudo: false
 language: node_js
+dist: precise
+sudo: false
+node_js:
+- stable
+- 6
 matrix:
   allow_failures:
   - node_js: stable
   - env: CI_MODE=sauce
 addon:
   firefox: latest
-node_js:
-- stable
-- 6
 env:
   matrix:
   - CI_MODE=sauce
