@@ -12,4 +12,4 @@ save(name_path, 'setPath', {expires, path})
 
 const name_secure = 'secure-cookie'
 save(name_secure, 'setPath', {expires, path, secure})
-console.log(find(name, expires))
+console.log(find(name, {expires}))

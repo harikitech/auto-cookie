@@ -54,8 +54,8 @@ function findOrCreate (
   )
 }
 
-export function find (name: string, expires: number): string {
-  return findOrCreate(name, { expires })
+export function find (name: string, options: Attributes): string {
+  return findOrCreate(name, options)
 }
 
 export function save (name: string, value: string, options: Attributes): string {
