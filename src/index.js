@@ -1,6 +1,12 @@
 /* @flow */
 import cookies from 'js-cookie'
 
+type Attributes = {
+  expires: number,
+  path?: string,
+  secure?: boolean
+}
+
 function removeNaked (): string {
   const domain = `${location.hostname}`
   return domain.indexOf('www.') === 0 ? domain.substring(4) : domain
@@ -8,22 +14,12 @@ function removeNaked (): string {
 
 function findOrCreate (
   name: string,
-  expires: number,
-  data: ?string,
-  path: ?string,
-  secure: ?boolean
+  options: Attributes,
+  data: ?string
 ): string {
   const value = cookies.get(name)
   if (value) {
     return value
-  }
-
-  let attribute = { expires, secure }
-  if (path) {
-    attribute = Object.assign({}, attribute, { path: path })
-  }
-  if (secure) {
-    attribute = Object.assign({}, attribute, { secure: secure })
   }
 
   const domainParts = removeNaked().split('.')
@@ -34,37 +30,34 @@ function findOrCreate (
   }
 
   let domain = domainParts[domainParts.length - 1]
+  let attr: Attributes = options
 
   for (let i = 2; i <= domainParts.length; i++) {
     domain = `${domainParts[domainParts.length - i]}.${domain}`
+    attr = Object.assign({}, options, { domain })
 
     if (data) {
-      attribute = Object.assign({}, attribute, { domain: domain })
-      cookies.set(name, data, attribute)
+      cookies.set(name, data, attr)
     }
 
-    const storedId = cookies.get(name, { domain, expires })
+    const storedId = cookies.get(name, attr)
     if (storedId) {
       return storedId
     }
   }
   if (data) {
-    attribute = Object.assign({}, attribute, { domain: domain })
-    cookies.set(name, data, attribute)
+    cookies.set(name, data, attr)
   }
-  return cookies.get(name, { domain: location.hostname, expires })
+  return cookies.get(
+    name,
+    Object.assign({}, attr, { domain: location.hostname })
+  )
 }
 
 export function find (name: string, expires: number): string {
-  return findOrCreate(name, expires)
+  return findOrCreate(name, { expires })
 }
 
-export function save (
-  name: string,
-  value: string,
-  expires: number,
-  path: ?string,
-  secure: ?boolean
-): string {
-  return findOrCreate(name, expires, value, path, secure)
+export function save (name: string, value: string, options: Attributes): string {
+  return findOrCreate(name, options, value)
 }
