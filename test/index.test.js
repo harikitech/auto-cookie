@@ -35,19 +35,12 @@ describe('auto-cookie', () => {
         done()
       })
   })
-})
 
-describe('path-cookie', () => {
-  const name = 'path-cookie'
-
-  beforeEach('clean cookies', () => {
-    browser.deleteCookie()
-  })
-
+  const pathCookieName = 'path-cookie'
   it('should get cookie with path', done => {
     browser
       .url('http://www.0.0.0.0.xip.io:8000/path')
-      .getCookie(name)
+      .getCookie(pathCookieName)
       .then(cookie => {
         assert(cookie.value === 'setPath')
         done()
