@@ -27,9 +27,23 @@ describe('auto-cookie', () => {
   })
 
   it('should not set cookie around 0.0.0.0', done => {
-    browser.url('http://0.0.0.0:8000').getCookie(name).then(cookie => {
-      assert(!cookie)
-      done()
-    })
+    browser
+      .url('http://0.0.0.0:8000')
+      .getCookie(name)
+      .then(cookie => {
+        assert(!cookie)
+        done()
+      })
+  })
+
+  const pathCookieName = 'path-cookie'
+  it('should get cookie with path', done => {
+    browser
+      .url('http://www.0.0.0.0.xip.io:8000/path')
+      .getCookie(pathCookieName)
+      .then(cookie => {
+        assert(cookie.value === 'setPath')
+        done()
+      })
   })
 })

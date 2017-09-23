@@ -1,12 +1,22 @@
 /* @flow */
 import cookies from 'js-cookie'
 
+type Attributes = {
+  expires: number,
+  path?: string,
+  secure?: boolean
+}
+
 function removeNaked (): string {
   const domain = `${location.hostname}`
   return domain.indexOf('www.') === 0 ? domain.substring(4) : domain
 }
 
-function findOrCreate (name: string, expires: number, data: ?string): string {
+function findOrCreate (
+  name: string,
+  options: Attributes,
+  data: ?string
+): string {
   const value = cookies.get(name)
   if (value) {
     return value
@@ -20,28 +30,34 @@ function findOrCreate (name: string, expires: number, data: ?string): string {
   }
 
   let domain = domainParts[domainParts.length - 1]
+  let attr: Attributes = options
+
   for (let i = 2; i <= domainParts.length; i++) {
     domain = `${domainParts[domainParts.length - i]}.${domain}`
+    attr = Object.assign({}, options, { domain })
 
     if (data) {
-      cookies.set(name, data, { domain, expires })
+      cookies.set(name, data, attr)
     }
 
-    const storedId = cookies.get(name, { domain, expires })
+    const storedId = cookies.get(name, attr)
     if (storedId) {
       return storedId
     }
   }
   if (data) {
-    cookies.set(name, data, { domain, expires })
+    cookies.set(name, data, attr)
   }
-  return cookies.get(name, { domain: location.hostname, expires })
+  return cookies.get(
+    name,
+    Object.assign({}, attr, { domain: location.hostname })
+  )
 }
 
-export function find (name: string, expires: number): string {
-  return findOrCreate(name, expires)
+export function find (name: string, options: Attributes): string {
+  return findOrCreate(name, options)
 }
 
-export function save (name: string, value: string, expires: number): string {
-  return findOrCreate(name, expires, value)
+export function save (name: string, value: string, options: Attributes): string {
+  return findOrCreate(name, options, value)
 }
