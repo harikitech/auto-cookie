@@ -77,6 +77,6 @@
     "test": "npm-run-all -p test:*",
     "test:e2e": "wdio wdio.conf.js",
     "test:lint": "npm run lint",
-    "test:ts": "tsc -p types/test/tsconfig.json"
+    "test:ts": "tsc -p ./tsconfig.json"
   }
 }
