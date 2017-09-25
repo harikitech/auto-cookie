@@ -18,7 +18,7 @@ function findOrCreate (
   const domainParts = removeNaked().split('.')
   const subDomain: any = domainParts[domainParts.length - 1]
   // eslint-disable-next-line eqeqeq
-  if (domainParts.length === 4 && parseInt(subDomain, 10) == subDomain) {
+  if (domainParts.length === 4 && parseInt(subDomain, 10) === subDomain) {
     return cookies.get(name)
   }
 
@@ -44,10 +44,17 @@ function findOrCreate (
   return cookies.get(name)
 }
 
-export function find (name: string, options: cookies.CookieAttributes): string | undefined {
+export function find (
+  name: string,
+  options: cookies.CookieAttributes
+): string | undefined {
   return findOrCreate(name, options)
 }
 
-export function save (name: string, value: string, options: cookies.CookieAttributes): string | undefined {
+export function save (
+  name: string,
+  value: string,
+  options: cookies.CookieAttributes
+): string | undefined {
   return findOrCreate(name, options, value)
 }

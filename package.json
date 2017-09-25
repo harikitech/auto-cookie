@@ -32,6 +32,7 @@
     "rimraf": "^2.6.1",
     "serve-static": "^1.12.3",
     "ts-loader": "^2.3.7",
+    "tslint": "^5.7.0",
     "typescript": "^2.4.2",
     "wdio-mocha-framework": "^0.5.10",
     "wdio-sauce-service": "^0.4.0",
@@ -50,6 +51,12 @@
   ],
   "license": "MIT",
   "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --parser typescript --write",
+      "tslint --fix",
+      "tslint",
+      "git add"
+    ],
     "*.js": [
       "prettier-eslint --write",
       "eslint",
@@ -68,7 +75,9 @@
     "build": "cross-env NODE_ENV=production babel src -d lib && webpack",
     "clean": "rimraf lib",
     "deploy": "ghpages --path example",
-    "lint": "eslint . --cache",
+    "lint" : "npm-run-all -p lint:*",
+    "lint:es": "eslint . --cache",
+    "lint:ts": "tslint \"src/*.ts\" \"test/*.ts\"",
     "prebuild": "npm run clean",
     "precommit": "lint-staged",
     "prestart": "npm run build",
