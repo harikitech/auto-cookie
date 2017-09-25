@@ -1,11 +1,4 @@
-/* @flow */
-import cookies from 'js-cookie'
-
-type Attributes = {
-  expires: number,
-  path?: string,
-  secure?: boolean
-}
+import * as cookies from 'js-cookie'
 
 function removeNaked (): string {
   const domain = `${location.hostname}`
@@ -14,9 +7,9 @@ function removeNaked (): string {
 
 function findOrCreate (
   name: string,
-  options: Attributes,
-  data: ?string
-): string {
+  options: cookies.CookieAttributes,
+  data?: string
+): string | undefined {
   const value = cookies.get(name)
   if (value) {
     return value
@@ -30,7 +23,7 @@ function findOrCreate (
   }
 
   let domain = domainParts[domainParts.length - 1]
-  let attr: Attributes = options
+  let attr: cookies.CookieAttributes = options
 
   for (let i = 2; i <= domainParts.length; i++) {
     domain = `${domainParts[domainParts.length - i]}.${domain}`
@@ -40,7 +33,7 @@ function findOrCreate (
       cookies.set(name, data, attr)
     }
 
-    const storedId = cookies.get(name, attr)
+    const storedId = cookies.get(name)
     if (storedId) {
       return storedId
     }
@@ -48,16 +41,13 @@ function findOrCreate (
   if (data) {
     cookies.set(name, data, attr)
   }
-  return cookies.get(
-    name,
-    Object.assign({}, attr, { domain: location.hostname })
-  )
+  return cookies.get(name)
 }
 
-export function find (name: string, options: Attributes): string {
+export function find (name: string, options: cookies.CookieAttributes): string | undefined {
   return findOrCreate(name, options)
 }
 
-export function save (name: string, value: string, options: Attributes): string {
+export function save (name: string, value: string, options: cookies.CookieAttributes): string | undefined {
   return findOrCreate(name, options, value)
 }
