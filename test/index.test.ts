@@ -1,5 +1,5 @@
 import 'mocha'
-import * as assert from 'power-assert'
+import * as assert from 'assert'
 import start from './helpers/server'
 
 declare var browser: any
