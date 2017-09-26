@@ -1,9 +1,9 @@
 import * as http from 'http'
 import * as path from 'path'
+import * as finalhandler from 'finalhandler'
+import * as serveStatic from 'serve-static'
 
 declare var __dirname
-const finalhandler = require('finalhandler')
-const serveStatic = require('serve-static')
 
 export default function start () {
   const serve = serveStatic(path.join(__dirname, '../../example'))
