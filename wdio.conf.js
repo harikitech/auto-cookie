@@ -1,5 +1,5 @@
 const config = {
-  specs: ['./test/*.js'],
+  specs: ['./test/*.ts'],
   capabilities: [
     {
       browserName: 'firefox'

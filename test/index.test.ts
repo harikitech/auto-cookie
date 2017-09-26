@@ -1,6 +1,5 @@
-/* @flow */
-import assert from 'assert'
-import { describe, before, beforeEach, it } from 'mocha'
+import * as assert from 'assert'
+import start from './helpers/server'
 
 declare var browser: any
 
@@ -8,12 +7,15 @@ describe('auto-cookie', () => {
   const name = 'auto-cookie'
 
   before(() => {
-    const start = require('./helpers/server')
     start()
   })
 
   beforeEach('clean cookies', () => {
     browser.deleteCookie()
+  })
+
+  it('ok', done => {
+    assert(true, 'true!!!!')
   })
 
   it('should get cookie around xip.io', done => {
