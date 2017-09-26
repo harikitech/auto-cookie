@@ -14,7 +14,7 @@
 ## Table of Contents
 
 - [Code Example](#code-example)
-- [Installation](#installation)
+- [Installation](#install)
 - [Usage](#usage)
 - [Tests](#tests)
 - [Contribute](#contribute)
@@ -24,7 +24,7 @@
 
 see [examples](https://github.com/uncovertruth/auto-cookie/tree/master/example)
 
-## Installation
+## Install
 
 ```sh
 npm install auto-cookie js-cookie --save
