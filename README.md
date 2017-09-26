@@ -1,7 +1,5 @@
 # auto-cookie
 
-[![NPM](https://nodei.co/npm-dl/auto-cookie.png?months=6)](https://nodei.co/npm/auto-cookie/)
-
 [![npm version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![dependencies Status](https://david-dm.org/uncovertruth/auto-cookie/status.svg)](https://david-dm.org/uncovertruth/auto-cookie) [![devDependencies Status](https://david-dm.org/uncovertruth/auto-cookie/dev-status.svg)](https://david-dm.org/uncovertruth/auto-cookie?type=dev) [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme) [![Greenkeeper badge](https://badges.greenkeeper.io/uncovertruth/auto-cookie.svg)](https://greenkeeper.io/)
 
 [![Build Status](https://saucelabs.com/browser-matrix/UNCOVERTRUTH-AUTO-COOKIE.svg)](https://saucelabs.com/open_sauce/user/UNCOVERTRUTH-AUTO-COOKIE/builds)

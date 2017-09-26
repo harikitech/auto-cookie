@@ -13,8 +13,12 @@
     "strictNullChecks": true,
     "noEmit": false,
     "declaration": true,
+    "sourceMap": true,
     "baseUrl": "./",
     "paths": {},
     "outDir": "./lib"
-  }
+  },
+  "include": [
+    "src/**/*"
+  ]
 }
