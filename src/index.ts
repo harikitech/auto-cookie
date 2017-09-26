@@ -17,8 +17,8 @@ function findOrCreate (
 
   const domainParts = removeNaked().split('.')
   const subDomain: any = domainParts[domainParts.length - 1]
-  // eslint-disable-next-line eqeqeq
-  if (domainParts.length === 4 && parseInt(subDomain, 10) === subDomain) {
+  /* tslint:disable:triple-equals */
+  if (domainParts.length === 4 && parseInt(subDomain, 10) == subDomain) {
     return cookies.get(name)
   }
 
