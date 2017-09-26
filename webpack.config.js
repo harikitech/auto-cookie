@@ -13,9 +13,6 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js']
   },
   module: {
-    loaders: [
-      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-      { test: /\.tsx?$/, loader: 'ts-loader' }
-    ]
+    loaders: [{ test: /\.tsx?$/, loader: 'ts-loader' }]
   }
 }
