@@ -11,6 +11,15 @@
 
 > auto set cookie domain like google analytics
 
+## Table of Contents
+
+- [Code Example](#code-example)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Tests](#tests)
+- [Contribute](#contribute)
+- [License](#license)
+
 ## Code Example
 
 see [examples](https://github.com/uncovertruth/auto-cookie/tree/master/example)
