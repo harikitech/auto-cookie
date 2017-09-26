@@ -1,10 +1,9 @@
-declare function require (path: string): any
-declare var __dirname
+import * as http from 'http'
+import * as path from 'path'
 
-const http = require('http')
+declare var __dirname
 const finalhandler = require('finalhandler')
 const serveStatic = require('serve-static')
-const path = require('path')
 
 export default function start () {
   const serve = serveStatic(path.join(__dirname, '../../example'))
