@@ -31,6 +31,10 @@ function findOrCreate (
   options: cookies.CookieAttributes,
   data?: string
 ): string | undefined {
+  const value = cookies.get(name)
+  if (value) {
+    return value
+  }
   const domainParts: Array<string> = removeNaked().split('.')
   const subDomain: any = domainParts[domainParts.length - 1]
   /* tslint:disable:triple-equals */
@@ -49,10 +53,6 @@ export function find (
   name: string,
   options: cookies.CookieAttributes
 ): string | undefined {
-  const value = cookies.get(name)
-  if (value) {
-    return value
-  }
   return findOrCreate(name, options)
 }
 
