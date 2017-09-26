@@ -18,7 +18,7 @@ const config = {
   services: ['selenium-standalone'],
   mochaOpts: {
     ui: 'bdd',
-    compilers: ['js:babel-register'],
+    compilers: ['ts:ts-node/register'],
     timeout: 100000
   }
 }
