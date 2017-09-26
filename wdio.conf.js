@@ -1,4 +1,27 @@
-const config = require("./wdio.conf.json");
+const config = {
+  specs: ["./test/*.ts"],
+  capabilities: [
+    {
+      browserName: "firefox"
+    }
+  ],
+  exclude: [],
+  bail: 0,
+  sync: false,
+  logLevel: "verbose",
+  coloredLogs: true,
+  waitforTimeout: 15000,
+  connectionRetryTimeout: 90000,
+  connectionRetryCount: 3,
+  framework: "mocha",
+  reporters: ["dot", "spec"],
+  services: ["selenium-standalone"],
+  mochaOpts: {
+    ui: "bdd",
+    compilers: ["ts:ts-node/register"],
+    timeout: 100000
+  }
+};
 
 let override = {};
 if (
