@@ -1,27 +1,4 @@
-const config = {
-  specs: ["./test/*.ts"],
-  capabilities: [
-    {
-      browserName: "firefox"
-    }
-  ],
-  exclude: [],
-  bail: 0,
-  sync: false,
-  logLevel: "verbose",
-  coloredLogs: true,
-  waitforTimeout: 15000,
-  connectionRetryTimeout: 90000,
-  connectionRetryCount: 3,
-  framework: "mocha",
-  reporters: ["dot", "spec"],
-  services: ["selenium-standalone"],
-  mochaOpts: {
-    ui: "bdd",
-    compilers: ["ts:ts-node/register"],
-    timeout: 100000
-  }
-};
+const config = require("./wdio.conf.json");
 
 let override = {};
 if (
@@ -58,10 +35,11 @@ if (
         "selenium-version": "3.1.0",
         "command-timeout": 600,
         "idle-timeout": 600,
-        "max-duration": 5400,
-        connectRetries: 3,
-        connectRetryTimeout: 5000
+        "max-duration": 5400
       },
+      downloadRetries: 3,
+      connectRetries: 3,
+      connectRetryTimeout: 5000,
       tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER
     },
     sauceConnect: false
