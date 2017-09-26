@@ -9,7 +9,11 @@
   "typings": "types/index.d.ts",
   "devDependencies": {
     "@types/js-cookie": "^2.0.28",
+    "@types/mocha": "^2.2.43",
+    "@types/node": "^8.0.31",
+    "@types/power-assert": "^1.4.29",
     "@uncovertruth/eslint-config-flowtype": "^1.1.0",
+    "@uncovertruth/tslint-config": "^1.1.0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
@@ -19,6 +23,7 @@
     "babel-register": "^6.24.1",
     "cross-env": "^5.0.1",
     "eslint": "^4.3.0",
+    "espower-typescript": "^8.1.1",
     "finalhandler": "^1.0.3",
     "flow-bin": "^0.55.0",
     "ghpages": "^0.0.10",
@@ -31,6 +36,9 @@
     "prettier-eslint-cli": "^4.1.1",
     "rimraf": "^2.6.1",
     "serve-static": "^1.12.3",
+    "ts-loader": "^2.3.7",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.7.0",
     "typescript": "^2.4.2",
     "wdio-mocha-framework": "^0.5.10",
     "wdio-sauce-service": "^0.4.0",
@@ -40,8 +48,7 @@
     "webpack": "^3.3.0"
   },
   "files": [
-    "lib/",
-    "types/index.d.ts"
+    "lib/"
   ],
   "homepage": "https://github.com/uncovertruth/auto-cookie#readme",
   "keywords": [
@@ -49,9 +56,10 @@
   ],
   "license": "MIT",
   "lint-staged": {
-    "*.js": [
-      "prettier-eslint --write",
-      "eslint",
+    "*.{ts,tsx}": [
+      "prettier --parser typescript --write",
+      "tslint --fix",
+      "tslint",
       "git add"
     ]
   },
@@ -67,15 +75,15 @@
     "build": "cross-env NODE_ENV=production babel src -d lib && webpack",
     "clean": "rimraf lib",
     "deploy": "ghpages --path example",
-    "lint": "eslint . --cache",
+    "lint": "npm-run-all -p lint:*",
+    "lint:ts": "tslint \"src/*.ts\" \"test/*.ts\"",
     "prebuild": "npm run clean",
     "precommit": "lint-staged",
     "prestart": "npm run build",
     "pretest": "npm run build",
-    "start": "node server.js",
+    "start": "ts-node server.ts",
     "test": "npm-run-all -p test:*",
     "test:e2e": "wdio wdio.conf.js",
-    "test:lint": "npm run lint",
-    "test:ts": "tsc -p types/test/tsconfig.json"
+    "test:lint": "npm run lint"
   }
 }

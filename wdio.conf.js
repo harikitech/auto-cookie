@@ -1,5 +1,5 @@
 const config = {
-  specs: ['./test/*.js'],
+  specs: ['./test/*.ts'],
   capabilities: [
     {
       browserName: 'firefox'
@@ -7,7 +7,7 @@ const config = {
   ],
   exclude: [],
   bail: 0,
-  sync: true,
+  sync: false,
   logLevel: 'verbose',
   coloredLogs: true,
   waitforTimeout: 15000,
@@ -18,7 +18,7 @@ const config = {
   services: ['selenium-standalone'],
   mochaOpts: {
     ui: 'bdd',
-    compilers: ['js:babel-register'],
+    compilers: ['ts:ts-node/register'],
     timeout: 100000
   }
 }

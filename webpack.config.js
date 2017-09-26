@@ -3,15 +3,16 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    'app': path.join(__dirname, 'example/index.js')
+    app: path.join(__dirname, 'example/index.ts')
   },
   output: {
     path: path.join(__dirname, 'example/'),
     filename: '[name].bundle.js'
   },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js']
+  },
   module: {
-    loaders: [
-      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ }
-    ]
+    loaders: [{ test: /\.tsx?$/, loader: 'ts-loader' }]
   }
 }

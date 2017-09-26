@@ -1,6 +1,6 @@
-/* @flow */
-import assert from 'assert'
-import { describe, before, beforeEach, it } from 'mocha'
+import 'mocha'
+import * as assert from 'assert'
+import start from './helpers/server'
 
 declare var browser: any
 
@@ -8,7 +8,6 @@ describe('auto-cookie', () => {
   const name = 'auto-cookie'
 
   before(() => {
-    const start = require('./helpers/server')
     start()
   })
 
