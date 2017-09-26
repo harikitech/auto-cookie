@@ -1,4 +1,5 @@
-import * as assert from 'assert'
+import 'mocha'
+import * as assert from 'power-assert'
 import start from './helpers/server'
 
 declare var browser: any
@@ -12,10 +13,6 @@ describe('auto-cookie', () => {
 
   beforeEach('clean cookies', () => {
     browser.deleteCookie()
-  })
-
-  it('ok', done => {
-    assert(true, 'true!!!!')
   })
 
   it('should get cookie around xip.io', done => {

@@ -7,7 +7,7 @@ const config = {
   ],
   exclude: [],
   bail: 0,
-  sync: true,
+  sync: false,
   logLevel: 'verbose',
   coloredLogs: true,
   waitforTimeout: 15000,
