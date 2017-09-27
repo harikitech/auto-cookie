@@ -11,14 +11,18 @@
 
 > auto set cookie domain like google analytics
 
-TBA
-
 ## Table of Contents
 
-- [Install](#install)
+- [Code Example](#code-example)
+- [Installation](#install)
 - [Usage](#usage)
+- [Tests](#tests)
 - [Contribute](#contribute)
 - [License](#license)
+
+## Code Example
+
+see [examples](https://github.com/uncovertruth/auto-cookie/tree/master/example)
 
 ## Install
 
@@ -27,12 +31,20 @@ npm install auto-cookie js-cookie --save
 ```
 
 ## Usage
-
 ```js
 import { find, save } from 'auto-cookie'
 
 find(cookieName, expires)  // read
-save(cookieName, data, expires)  // write
+save(cookieName, data, options)  // write
+```
+
+## Tests
+
+Tests depends on [webdriver](http://webdriver.io/).
+See setup it.
+
+```sh
+npm run test
 ```
 
 ## Contribute
