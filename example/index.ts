@@ -6,6 +6,12 @@ const secure = true
 const nameBasic = 'auto-cookie'
 save(nameBasic, 'data', { expires })
 
+const nameObject = 'object-cookie'
+const s = 'string'
+const n = 999
+const b = true
+save(nameObject, { s, n, b }, { expires })
+
 const namePath = 'path-cookie'
 save(namePath, 'setPath', { expires, path })
 

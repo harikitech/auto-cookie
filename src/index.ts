@@ -9,7 +9,7 @@ function setCookie (
   domainParts: Array<string>,
   name: string,
   options: cookies.CookieAttributes,
-  data: string
+  data: string | object
 ): string | undefined {
   let domain = domainParts[domainParts.length - 1]
   let attr: cookies.CookieAttributes = options
@@ -29,7 +29,7 @@ function setCookie (
 function findOrCreate (
   name: string,
   options: cookies.CookieAttributes,
-  data?: string
+  data?: string | object
 ): string | undefined {
   const value = cookies.get(name)
   if (value) {
@@ -58,7 +58,7 @@ export function find (
 
 export function save (
   name: string,
-  value: string,
+  value: string | object,
   options: cookies.CookieAttributes
 ): string | undefined {
   return findOrCreate(name, options, value)
