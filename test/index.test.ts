@@ -45,4 +45,19 @@ describe('auto-cookie', () => {
         done()
       })
   })
+
+  const ObjectCookieName = 'object-cookie'
+  const s = 'string'
+  const n = 999
+  const b = true
+  const objectValue = { s, n, b }
+  it('should get cookie has object value', done => {
+    browser
+      .url('http://www.0.0.0.0.xip.io:8000')
+      .getCookie(pathCookieName)
+      .then(cookie => {
+        assert(cookie.value === objectValue)
+        done()
+      })
+  })
 })
