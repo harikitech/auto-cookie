@@ -6,9 +6,9 @@
 /******/ 	function __webpack_require__(moduleId) {
 /******/
 /******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
+/******/ 		if(installedModules[moduleId]) {
 /******/ 			return installedModules[moduleId].exports;
-/******/
+/******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
@@ -32,9 +32,6 @@
 /******/
 /******/ 	// expose the module cache
 /******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// identity function for calling harmony imports with the correct context
-/******/ 	__webpack_require__.i = function(value) { return value; };
 /******/
 /******/ 	// define getter function for harmony exports
 /******/ 	__webpack_require__.d = function(exports, name, getter) {
@@ -63,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -72,63 +69,24 @@
 
 "use strict";
 
+Object.defineProperty(exports, "__esModule", { value: true });
+var src_1 = __webpack_require__(1);
+var expires = 1 / 48;
+var path = '/path';
+var secure = true;
+var nameBasic = 'auto-cookie';
+src_1.save(nameBasic, 'data', { expires: expires });
+var nameObject = 'object-cookie';
+var s = 'string';
+var n = 999;
+var b = true;
+src_1.save(nameObject, { s: s, n: n, b: b }, { expires: expires });
+var namePath = 'path-cookie';
+src_1.save(namePath, 'setPath', { expires: expires, path: path });
+var nameSecure = 'secure-cookie';
+src_1.save(nameSecure, 'setPath', { expires: expires, path: path, secure: secure });
+console.log(src_1.find(name, { expires: expires }));
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.find = find;
-exports.save = save;
-
-var _jsCookie = __webpack_require__(2);
-
-var _jsCookie2 = _interopRequireDefault(_jsCookie);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function removeNaked() {
-  var domain = '' + location.hostname;
-  return domain.indexOf('www.') === 0 ? domain.substring(4) : domain;
-}
-
-
-function findOrCreate(name, expires, data) {
-  var value = _jsCookie2.default.get(name);
-  if (value) {
-    return value;
-  }
-
-  var domainParts = removeNaked().split('.');
-  var subDomain = domainParts[domainParts.length - 1];
-  if (domainParts.length === 4 && parseInt(subDomain, 10) === subDomain) {
-    return _jsCookie2.default.get(name);
-  }
-
-  var domain = domainParts[domainParts.length - 1];
-  for (var i = 2; i <= domainParts.length; i++) {
-    domain = domainParts[domainParts.length - i] + '.' + domain;
-
-    if (data) {
-      _jsCookie2.default.set(name, data, { domain: domain, expires: expires });
-    }
-
-    var storedId = _jsCookie2.default.get(name, { domain: domain, expires: expires });
-    if (storedId) {
-      return storedId;
-    }
-  }
-  if (data) {
-    _jsCookie2.default.set(name, data, { domain: domain, expires: expires });
-  }
-  return _jsCookie2.default.get(name, { domain: location.hostname, expires: expires });
-}
-
-function find(name, expires) {
-  return findOrCreate(name, expires);
-}
-
-function save(name, value, expires) {
-  return findOrCreate(name, expires, value);
-}
 
 /***/ }),
 /* 1 */
@@ -136,21 +94,60 @@ function save(name, value, expires) {
 
 "use strict";
 
+Object.defineProperty(exports, "__esModule", { value: true });
+var cookies = __webpack_require__(2);
+function removeNaked() {
+    var domain = "" + location.hostname;
+    return domain.indexOf('www.') === 0 ? domain.substring(4) : domain;
+}
+function setCookie(domainParts, name, options, data) {
+    var domain = domainParts[domainParts.length - 1];
+    var attr = options;
+    for (var i = 2; i <= domainParts.length; i++) {
+        domain = domainParts[domainParts.length - i] + "." + domain;
+        attr = Object.assign({}, options, { domain: domain });
+        cookies.set(name, data, options);
+        var storedId = cookies.get(name);
+        if (storedId) {
+            return storedId;
+        }
+    }
+    cookies.set(name, data, attr);
+    return cookies.get(name);
+}
+function findOrCreate(name, options, data) {
+    var value = cookies.get(name);
+    if (value) {
+        return value;
+    }
+    var domainParts = removeNaked().split('.');
+    var subDomain = domainParts[domainParts.length - 1];
+    /* tslint:disable:triple-equals */
+    if (domainParts.length === 4 && parseInt(subDomain, 10) == subDomain) {
+        return cookies.get(name);
+    }
+    var created;
+    if (data) {
+        created = setCookie(domainParts, name, options, data);
+    }
+    return cookies.get(name);
+}
+function find(name, options) {
+    return findOrCreate(name, options);
+}
+exports.find = find;
+function save(name, value, options) {
+    return findOrCreate(name, options, value);
+}
+exports.save = save;
 
-var _src = __webpack_require__(0);
-
-var name = 'auto-cookie';
-
-var expires = 1 / 48;
-(0, _src.save)(name, 'data', expires);
-console.log((0, _src.find)(name, expires));
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
- * JavaScript Cookie v2.1.3
+ * JavaScript Cookie v2.1.4
  * https://github.com/js-cookie/js-cookie
  *
  * Copyright 2006, 2015 Klaus Hartl & Fagner Brack
@@ -211,6 +208,9 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 					attributes.expires = expires;
 				}
 
+				// We're using "expires" because "max-age" is not supported by IE
+				attributes.expires = attributes.expires ? attributes.expires.toUTCString() : '';
+
 				try {
 					result = JSON.stringify(value);
 					if (/^[\{\[]/.test(result)) {
@@ -229,13 +229,19 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 				key = key.replace(/%(23|24|26|2B|5E|60|7C)/g, decodeURIComponent);
 				key = key.replace(/[\(\)]/g, escape);
 
-				return (document.cookie = [
-					key, '=', value,
-					attributes.expires ? '; expires=' + attributes.expires.toUTCString() : '', // use expires attribute, max-age is not supported by IE
-					attributes.path ? '; path=' + attributes.path : '',
-					attributes.domain ? '; domain=' + attributes.domain : '',
-					attributes.secure ? '; secure' : ''
-				].join(''));
+				var stringifiedAttributes = '';
+
+				for (var attributeName in attributes) {
+					if (!attributes[attributeName]) {
+						continue;
+					}
+					stringifiedAttributes += '; ' + attributeName;
+					if (attributes[attributeName] === true) {
+						continue;
+					}
+					stringifiedAttributes += '=' + attributes[attributeName];
+				}
+				return (document.cookie = key + '=' + value + stringifiedAttributes);
 			}
 
 			// Read
