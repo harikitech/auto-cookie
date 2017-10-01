@@ -3,7 +3,6 @@ dist: precise
 sudo: false
 node_js:
 - stable
-- 7 
 - 6
 matrix:
   allow_failures:
