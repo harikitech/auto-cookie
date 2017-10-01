@@ -72,7 +72,7 @@
     "lint": "run-p lint:*",
     "lint:ts": "tslint \"src/*.ts\" \"test/*.ts\"",
     "precommit": "lint-staged",
-    "prepublish": "npm run clean & npm run build:lib",
+    "prepublish": "npm run build",
     "prestart": "npm run build",
     "pretest": "npm run build",
     "start": "ts-node server.ts",
