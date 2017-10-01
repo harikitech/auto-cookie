@@ -30,7 +30,7 @@ deploy:
   on:
     repo: uncovertruth/auto-cookie
     tags: true
-    condition: "$CI_MODE = local"
+    condition: "$CMD = test:sauce"
 notifications:
   email: false
   slack:
