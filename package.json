@@ -20,7 +20,6 @@
     "js-cookie": "^2.1.4",
     "lint-staged": "^4.2.3",
     "mocha": "^3.5.3",
-    "npm-run-all": "^4.1.1",
     "power-assert": "^1.4.4",
     "prettier": "^1.7.3",
     "rimraf": "^2.6.2",
@@ -64,20 +63,16 @@
     "url": "git+ssh://git@github.com/uncovertruth/auto-cookie.git"
   },
   "scripts": {
-    "build": "run-s clean build:*",
-    "build:example": "webpack",
-    "build:lib": "cross-env NODE_ENV=production tsc",
+    "build": "cross-env NODE_ENV=production tsc && webpack",
     "clean": "rimraf lib",
     "deploy": "gh-pages -d example",
-    "lint": "run-p lint:*",
-    "lint:ts": "tslint \"src/*.ts\" \"test/*.ts\"",
+    "lint": "tslint \"src/*.ts\" \"test/*.ts\"",
+    "prebuild": "npm run clean",
     "precommit": "lint-staged",
     "prepublish": "npm run build",
     "prestart": "npm run build",
     "pretest": "npm run build",
     "start": "ts-node server.ts",
-    "test": "run-p test:*",
-    "test:e2e": "wdio wdio.conf.js",
-    "test:lint": "npm run lint"
+    "test": "wdio wdio.conf.js"
   }
 }
