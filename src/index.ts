@@ -5,7 +5,7 @@ function removeNaked (): string {
   return domain.indexOf('www.') === 0 ? domain.substring(4) : domain
 }
 
-export function _set (
+function setCookie (
   domainParts: Array<string>,
   name: string,
   options: cookies.CookieAttributes,
@@ -17,8 +17,7 @@ export function _set (
     domain = `${domainParts[domainParts.length - i]}.${domain}`
     attr.domain = domain
     cookies.set(name, data, attr)
-    const storedId = cookies.get(name)
-    if (storedId) {
+    if (cookies.get(name)) {
       return domain
     }
   }
@@ -43,7 +42,7 @@ function findOrCreate (
   }
 
   if (data) {
-    _set(domainParts, name, options, data)
+    setCookie(domainParts, name, options, data)
   }
   return cookies.get(name)
 }

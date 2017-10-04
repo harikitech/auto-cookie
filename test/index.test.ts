@@ -5,59 +5,44 @@ import start from './helpers/server'
 declare var browser: any
 
 describe('auto-cookie', () => {
-  const name = 'auto-cookie'
+  const COOKIE_NAME = 'auto-cookie'
 
-  before(() => {
-    start()
-  })
+  before(() => start())
+  beforeEach('clean cookies', () => browser.deleteCookie())
 
-  beforeEach('clean cookies', () => {
-    browser.deleteCookie()
-  })
-
-  it('should get cookie around xip.io', done => {
+  it('should get cookie around xip.io', () =>
     browser
       .url('http://www.0.0.0.0.xip.io:8000')
-      .getCookie(name)
+      .getCookie(COOKIE_NAME)
       .then(cookie => {
         assert(cookie.value === 'data')
-        done()
       })
-  })
+      .execute(() => document.cookie)
+      .then(data => {
+        assert(data === '')
+      }))
 
-  it('should not set cookie around 0.0.0.0', done => {
+  it('should not set cookie around 0.0.0.0', () =>
     browser
       .url('http://0.0.0.0:8000')
-      .getCookie(name)
+      .getCookie(COOKIE_NAME)
       .then(cookie => {
         assert(!cookie)
-        done()
-      })
-  })
+      }))
 
-  const pathCookieName = 'path-cookie'
-  it('should get cookie with path', done => {
+  it('should get cookie with path', () =>
     browser
       .url('http://www.0.0.0.0.xip.io:8000/path')
-      .getCookie(pathCookieName)
+      .getCookie('path-cookie')
       .then(cookie => {
         assert(cookie.value === 'setPath')
-        done()
-      })
-  })
+      }))
 
-  const ObjectCookieName = 'object-cookie'
-  const s = 'string'
-  const n = 999
-  const b = true
-  const objectValue = { s, n, b }
-  it('should get cookie has object value', done => {
+  it('should get cookie has object value', () =>
     browser
       .url('http://www.0.0.0.0.xip.io:8000')
-      .getCookie(pathCookieName)
+      .getCookie('object-cookie')
       .then(cookie => {
-        assert(cookie.value === objectValue)
-        done()
-      })
-  })
+        assert(cookie.value === { s: 'string', n: 999, b: true })
+      }))
 })

@@ -6,11 +6,14 @@
   "bugs": {
     "url": "https://github.com/uncovertruth/auto-cookie/issues"
   },
+  "dependencies": {},
   "devDependencies": {
+    "@types/finalhandler": "^0.0.32",
     "@types/js-cookie": "^2.1.0",
     "@types/mocha": "^2.2.43",
     "@types/node": "^8.0.31",
     "@types/power-assert": "^1.4.29",
+    "@types/serve-static": "^1.7.32",
     "@uncovertruth/tslint-config": "^1.1.0",
     "cross-env": "^5.0.5",
     "espower-typescript": "^8.1.1",
@@ -70,8 +73,8 @@
     "prebuild": "npm run clean",
     "precommit": "lint-staged",
     "prepublish": "npm run build",
-    "prestart": "npm run build",
-    "pretest": "npm run build",
+    "prestart": "webpack",
+    "pretest": "webpack",
     "start": "ts-node server.ts",
     "test": "wdio wdio.conf.js",
     "test:sauce": "cross-env CI_MODE=sauce wdio wdio.conf.js"
