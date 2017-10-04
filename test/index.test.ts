@@ -14,11 +14,11 @@ describe('auto-cookie', () => {
     browser
       .url('http://www.0.0.0.0.xip.io:8000')
       .getCookie(COOKIE_NAME)
-      .then(cookie => {
+      .then((cookie: any) => {
         assert(cookie.value === 'data')
       })
       .execute(() => document.cookie)
-      .then(data => {
+      .then((data: string) => {
         assert(data === '')
       }))
 
@@ -26,7 +26,7 @@ describe('auto-cookie', () => {
     browser
       .url('http://0.0.0.0:8000')
       .getCookie(COOKIE_NAME)
-      .then(cookie => {
+      .then((cookie: any) => {
         assert(!cookie)
       }))
 
@@ -34,7 +34,7 @@ describe('auto-cookie', () => {
     browser
       .url('http://www.0.0.0.0.xip.io:8000/path')
       .getCookie('path-cookie')
-      .then(cookie => {
+      .then((cookie: any) => {
         assert(cookie.value === 'setPath')
       }))
 
@@ -42,7 +42,7 @@ describe('auto-cookie', () => {
     browser
       .url('http://www.0.0.0.0.xip.io:8000')
       .getCookie('object-cookie')
-      .then(cookie => {
+      .then((cookie: any) => {
         assert(cookie.value === { s: 'string', n: 999, b: true })
       }))
 })
