@@ -15,14 +15,13 @@ function setCookie (
   let attr: cookies.CookieAttributes = options
   for (let i = 2; i <= domainParts.length; i++) {
     domain = `${domainParts[domainParts.length - i]}.${domain}`
-    attr = Object.assign({}, options, { domain })
-    cookies.set(name, data, options)
-    const storedId = cookies.get(name)
-    if (storedId) {
-      return storedId
+    attr.domain = domain
+    cookies.set(name, data, attr)
+    if (cookies.get(name)) {
+      return domain
     }
   }
-  cookies.set(name, data, attr)
+  cookies.set(name, data, options)
   return cookies.get(name)
 }
 
@@ -42,9 +41,8 @@ function findOrCreate (
     return cookies.get(name)
   }
 
-  let created
   if (data) {
-    created = setCookie(domainParts, name, options, data)
+    setCookie(domainParts, name, options, data)
   }
   return cookies.get(name)
 }
@@ -53,6 +51,7 @@ export function find (
   name: string,
   options: cookies.CookieAttributes
 ): string | undefined {
+  options = options || {}
   return findOrCreate(name, options)
 }
 
@@ -61,5 +60,6 @@ export function save (
   value: string | object,
   options: cookies.CookieAttributes
 ): string | undefined {
+  options = options || {}
   return findOrCreate(name, options, value)
 }

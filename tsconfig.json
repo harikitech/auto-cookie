@@ -9,16 +9,22 @@
       "es2015.core"
     ],
     "strict": true,
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "strictNullChecks": true,
     "noEmit": false,
     "declaration": true,
     "sourceMap": true,
     "baseUrl": "./",
     "paths": {},
-    "outDir": "./lib"
+    "outDir": "./lib",
+    "types": [
+      "node"
+    ]
   },
   "include": [
-    "src/**/*"
+    "src"
+  ],
+  "exclude": [
+    "test"
   ]
 }

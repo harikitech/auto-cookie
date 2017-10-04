@@ -18,7 +18,7 @@ const config = {
   services: ["selenium-standalone"],
   mochaOpts: {
     ui: "bdd",
-    compilers: ["ts:ts-node/register"],
+    require: ["espower-typescript/guess"],
     timeout: 100000
   }
 };
