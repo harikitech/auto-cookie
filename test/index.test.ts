@@ -5,9 +5,15 @@ import start from './helpers/server'
 declare var browser: any
 
 describe('auto-cookie', () => {
+  let server
   const COOKIE_NAME = 'auto-cookie'
 
-  before(() => start())
+  before(() => {
+    server = start()
+    return server
+  })
+
+  after(() => server.close())
   beforeEach('clean cookies', () => browser.deleteCookie())
 
   it('should get cookie around xip.io', () =>
@@ -16,10 +22,7 @@ describe('auto-cookie', () => {
       .getCookie(COOKIE_NAME)
       .then((cookie: any) => {
         assert(cookie.value === 'data')
-      })
-      .execute(() => document.cookie)
-      .then((data: string) => {
-        assert(data === '')
+        assert(cookie.domain === '.xip.io')
       }))
 
   it('should not set cookie around 0.0.0.0', () =>
@@ -36,6 +39,7 @@ describe('auto-cookie', () => {
       .getCookie('path-cookie')
       .then((cookie: any) => {
         assert(cookie.value === 'setPath')
+        assert(cookie.domain === '.xip.io')
       }))
 
   it('should get cookie has object value', () =>
@@ -43,6 +47,7 @@ describe('auto-cookie', () => {
       .url('http://www.0.0.0.0.xip.io:8000')
       .getCookie('object-cookie')
       .then((cookie: any) => {
-        assert(cookie.value === { s: 'string', n: 999, b: true })
+        assert.deepEqual(cookie.value, { s: 'string', n: 999, b: true })
+        assert(cookie.domain === '.xip.io')
       }))
 })
