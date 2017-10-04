@@ -51,6 +51,7 @@ export function find (
   name: string,
   options: cookies.CookieAttributes
 ): string | undefined {
+  options = options || {}
   return findOrCreate(name, options)
 }
 
@@ -59,5 +60,6 @@ export function save (
   value: string | object,
   options: cookies.CookieAttributes
 ): string | undefined {
+  options = options || {}
   return findOrCreate(name, options, value)
 }
