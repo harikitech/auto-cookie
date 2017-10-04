@@ -47,7 +47,11 @@ describe('auto-cookie', () => {
       .url('http://www.0.0.0.0.xip.io:8000')
       .getCookie('object-cookie')
       .then((cookie: any) => {
-        assert(typeof cookie.value === 'object')
+        assert.deepEqual(JSON.parse(cookie.value), {
+          s: 'string',
+          n: 999,
+          b: true
+        })
         assert(cookie.domain === '.xip.io')
       }))
 })
