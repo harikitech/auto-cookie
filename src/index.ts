@@ -27,8 +27,8 @@ function setCookie (
 
 function findOrCreate (
   name: string,
-  options: cookies.CookieAttributes,
-  data?: string | object
+  data?: string | object,
+  options?: cookies.CookieAttributes
 ): string | undefined {
   const value = cookies.get(name)
   if (value) {
@@ -42,17 +42,13 @@ function findOrCreate (
   }
 
   if (data) {
-    setCookie(domainParts, name, options, data)
+    setCookie(domainParts, name, options || {}, data)
   }
   return cookies.get(name)
 }
 
-export function find (
-  name: string,
-  options: cookies.CookieAttributes
-): string | undefined {
-  options = options || {}
-  return findOrCreate(name, options)
+export function find (name: string): string | undefined {
+  return findOrCreate(name)
 }
 
 export function save (
@@ -60,6 +56,5 @@ export function save (
   value: string | object,
   options: cookies.CookieAttributes
 ): string | undefined {
-  options = options || {}
-  return findOrCreate(name, options, value)
+  return findOrCreate(name, value, options)
 }

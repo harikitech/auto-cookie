@@ -40,6 +40,7 @@ describe('auto-cookie', () => {
       .then((cookie: any) => {
         assert(cookie.value === 'setPath')
         assert(cookie.domain === '.xip.io')
+        assert(cookie.domain === 'path')
       }))
 
   it('should get cookie has object value', () =>
