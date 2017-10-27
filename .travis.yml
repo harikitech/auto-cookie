@@ -31,7 +31,7 @@ deploy:
   on:
     repo: uncovertruth/auto-cookie
     tags: true
-    condition: "$CMD = test:sauce"
+    condition: "$CMD = test"
 notifications:
   email: false
   slack:
