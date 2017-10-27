@@ -1,7 +1,7 @@
 {
   "name": "auto-cookie",
   "description": "auto set cookie domain like google-analytics",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "UNCOVER TRUTH Inc.",
   "bugs": {
     "url": "https://github.com/uncovertruth/auto-cookie/issues"
