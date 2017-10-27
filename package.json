@@ -58,6 +58,7 @@
     ]
   },
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "peerDependencies": {
     "js-cookie": "2.x"
   },
