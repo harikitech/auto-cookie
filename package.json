@@ -21,7 +21,7 @@
     "gh-pages": "^1.0.0",
     "husky": "^0.14.3",
     "js-cookie": "^2.1.4",
-    "lint-staged": "^4.2.3",
+    "lint-staged": "^5.0.0",
     "mocha": "^3.5.3",
     "power-assert": "^1.4.4",
     "prettier": "^1.7.4",
