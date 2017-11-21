@@ -1,5 +1,5 @@
-import 'mocha'
 import * as assert from 'assert'
+import 'mocha'
 import start from './helpers/server'
 
 declare var browser: any
@@ -40,7 +40,7 @@ describe('auto-cookie', () => {
       .then((cookie: any) => {
         assert(cookie.value === 'setPath')
         assert(cookie.domain === '.xip.io')
-        assert(cookie.domain === 'path')
+        assert(cookie.path === '/path')
       }))
 
   it('should get cookie has object value', () =>
