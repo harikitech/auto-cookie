@@ -72,20 +72,11 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var src_1 = __webpack_require__(1);
 var expires = 1 / 48;
+src_1.save('auto-cookie', 'data', { expires: expires });
+src_1.save('object-cookie', { s: 'string', n: 99, b: true }, { expires: expires });
 var path = '/path';
-var secure = true;
-var nameBasic = 'auto-cookie';
-src_1.save(nameBasic, 'data', { expires: expires });
-var nameObject = 'object-cookie';
-var s = 'string';
-var n = 999;
-var b = true;
-src_1.save(nameObject, { s: s, n: n, b: b }, { expires: expires });
-var namePath = 'path-cookie';
-src_1.save(namePath, 'setPath', { expires: expires, path: path });
-var nameSecure = 'secure-cookie';
-src_1.save(nameSecure, 'setPath', { expires: expires, path: path, secure: secure });
-console.log(src_1.find(name, { expires: expires }));
+src_1.save('path-cookie', 'setPath', { expires: expires, path: path });
+src_1.save('secure-cookie', 'setPath', { expires: expires, path: path, secure: true });
 
 
 /***/ }),
@@ -105,39 +96,36 @@ function setCookie(domainParts, name, options, data) {
     var attr = options;
     for (var i = 2; i <= domainParts.length; i++) {
         domain = domainParts[domainParts.length - i] + "." + domain;
-        attr = Object.assign({}, options, { domain: domain });
-        cookies.set(name, data, options);
-        var storedId = cookies.get(name);
-        if (storedId) {
-            return storedId;
+        attr.domain = domain;
+        cookies.set(name, data, attr);
+        if (cookies.get(name)) {
+            return domain;
         }
     }
-    cookies.set(name, data, attr);
+    cookies.set(name, data, options);
     return cookies.get(name);
 }
-function findOrCreate(name, options, data) {
+function findOrCreate(name, data, options) {
     var value = cookies.get(name);
     if (value) {
         return value;
     }
     var domainParts = removeNaked().split('.');
     var subDomain = domainParts[domainParts.length - 1];
-    /* tslint:disable:triple-equals */
     if (domainParts.length === 4 && parseInt(subDomain, 10) == subDomain) {
         return cookies.get(name);
     }
-    var created;
     if (data) {
-        created = setCookie(domainParts, name, options, data);
+        setCookie(domainParts, name, options || {}, data);
     }
     return cookies.get(name);
 }
-function find(name, options) {
-    return findOrCreate(name, options);
+function find(name) {
+    return findOrCreate(name);
 }
 exports.find = find;
 function save(name, value, options) {
-    return findOrCreate(name, options, value);
+    return findOrCreate(name, value, options);
 }
 exports.save = save;
 
@@ -147,7 +135,7 @@ exports.save = save;
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
- * JavaScript Cookie v2.1.4
+ * JavaScript Cookie v2.2.0
  * https://github.com/js-cookie/js-cookie
  *
  * Copyright 2006, 2015 Klaus Hartl & Fagner Brack
@@ -261,7 +249,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 				var parts = cookies[i].split('=');
 				var cookie = parts.slice(1).join('=');
 
-				if (cookie.charAt(0) === '"') {
+				if (!this.json && cookie.charAt(0) === '"') {
 					cookie = cookie.slice(1, -1);
 				}
 
