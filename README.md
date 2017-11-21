@@ -34,7 +34,7 @@ npm install auto-cookie js-cookie --save
 ```js
 import { find, save } from 'auto-cookie'
 
-find(cookieName, expires)  // read
+find(cookieName)  // read
 save(cookieName, data, options)  // write
 ```
 
