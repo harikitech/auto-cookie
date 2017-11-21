@@ -8,9 +8,8 @@ describe('auto-cookie', () => {
   let server
   const COOKIE_NAME = 'auto-cookie'
 
-  before(() => {
-    server = start()
-    return server
+  before(done => {
+    server = start(done)
   })
 
   after(() => server.close())

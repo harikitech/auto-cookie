@@ -58,7 +58,6 @@
     ]
   },
   "main": "lib/index.js",
-  "types": "lib/index.d.ts",
   "peerDependencies": {
     "js-cookie": "2.x"
   },
@@ -79,5 +78,6 @@
     "start": "ts-node server.ts",
     "test": "wdio wdio.conf.js",
     "test:sauce": "cross-env CI_MODE=sauce wdio wdio.conf.js"
-  }
+  },
+  "types": "lib/index.d.ts"
 }
