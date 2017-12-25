@@ -28,7 +28,7 @@
     "rimraf": "^2.6.2",
     "serve-static": "^1.13.1",
     "ts-loader": "^3.2.0",
-    "ts-node": "^4.0.1",
+    "ts-node": "^4.1.0",
     "tslint": "^5.8.0",
     "typescript": "^2.6.2",
     "wdio-mocha-framework": "^0.5.12",
