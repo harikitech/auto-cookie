@@ -32,7 +32,7 @@
     "tslint": "^5.8.0",
     "typescript": "^2.6.2",
     "wdio-mocha-framework": "^0.5.12",
-    "wdio-sauce-service": "^0.4.4",
+    "wdio-sauce-service": "^0.4.6",
     "wdio-selenium-standalone-service": "^0.0.9",
     "wdio-spec-reporter": "^0.1.2",
     "webdriverio": "^4.9.9",
