@@ -10,7 +10,7 @@
   "devDependencies": {
     "@types/finalhandler": "^0.0.32",
     "@types/js-cookie": "^2.1.0",
-    "@types/mocha": "^2.2.44",
+    "@types/mocha": "^2.2.45",
     "@types/node": "^8.5.2",
     "@types/power-assert": "^1.4.29",
     "@types/serve-static": "^1.13.1",
