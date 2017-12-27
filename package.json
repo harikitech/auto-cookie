@@ -24,7 +24,7 @@
     "lint-staged": "^6.0.0",
     "mocha": "^4.0.1",
     "power-assert": "^1.4.4",
-    "prettier": "^1.8.2",
+    "prettier": "^1.9.2",
     "rimraf": "^2.6.2",
     "serve-static": "^1.13.1",
     "ts-loader": "^3.2.0",
