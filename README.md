@@ -5,7 +5,6 @@
 [![dependencies Status](https://david-dm.org/uncovertruth/auto-cookie/status.svg)](https://david-dm.org/uncovertruth/auto-cookie)
 [![devDependencies Status](https://david-dm.org/uncovertruth/auto-cookie/dev-status.svg)](https://david-dm.org/uncovertruth/auto-cookie?type=dev)
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-[![Greenkeeper badge](https://badges.greenkeeper.io/uncovertruth/auto-cookie.svg)](https://greenkeeper.io/)
 
 [![Build Status](https://saucelabs.com/browser-matrix/UNCOVERTRUTH-AUTO-COOKIE.svg)](https://saucelabs.com/open_sauce/user/UNCOVERTRUTH-AUTO-COOKIE/builds)
 
@@ -13,12 +12,12 @@
 
 ## Table of Contents
 
-- [Code Example](#code-example)
-- [Installation](#install)
-- [Usage](#usage)
-- [Tests](#tests)
-- [Contribute](#contribute)
-- [License](#license)
+* [Code Example](#code-example)
+* [Installation](#install)
+* [Usage](#usage)
+* [Tests](#tests)
+* [Contribute](#contribute)
+* [License](#license)
 
 ## Code Example
 
@@ -31,11 +30,12 @@ npm install auto-cookie js-cookie --save
 ```
 
 ## Usage
-```js
-import { find, save } from 'auto-cookie'
 
-find(cookieName)  // read
-save(cookieName, data, options)  // write
+```js
+import { find, save } from "auto-cookie";
+
+find(cookieName); // read
+save(cookieName, data, options); // write
 ```
 
 ## Tests
