@@ -1,0 +1,9 @@
+{
+  "parser": "typescript-eslint-parser",
+  "extends": [
+    "@uncovertruth/eslint-config"
+  ],
+  "env": {
+    "mocha": true
+  }
+}
