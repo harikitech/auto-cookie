@@ -5266,6 +5266,13 @@ typescript-eslint-parser@^11.0.0:
     lodash.unescape "4.0.1"
     semver "5.4.1"
 
+typescript-eslint-parser@^12.0.0:
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/typescript-eslint-parser/-/typescript-eslint-parser-12.0.0.tgz#caea4b4e89e83f25765b310b924a03ba95a6dd19"
+  dependencies:
+    lodash.unescape "4.0.1"
+    semver "5.4.1"
+
 typescript-simple@^8.0.5:
   version "8.0.5"
   resolved "https://registry.yarnpkg.com/typescript-simple/-/typescript-simple-8.0.5.tgz#b5007a48db5d242c2ad5dbde306fe90410803476"
