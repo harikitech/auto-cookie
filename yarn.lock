@@ -1829,14 +1829,14 @@ espower-source@^2.0.0:
     path-is-absolute "^1.0.0"
     xtend "^4.0.0"
 
-espower-typescript@^8.1.2:
-  version "8.1.2"
-  resolved "https://registry.yarnpkg.com/espower-typescript/-/espower-typescript-8.1.2.tgz#d6af29a9bfb1e41956c7d3a31e1174721a406b80"
+espower-typescript@^8.1.3:
+  version "8.1.3"
+  resolved "https://registry.yarnpkg.com/espower-typescript/-/espower-typescript-8.1.3.tgz#5d0566680badba1ca447e9d55f20e396a39d2bd6"
   dependencies:
     espower-source "^2.0.0"
     minimatch "^3.0.3"
     typescript "^2.2.1"
-    typescript-simple "^8.0.5"
+    typescript-simple "^8.0.6"
 
 espower@^2.0.0:
   version "2.1.0"
@@ -5771,9 +5771,9 @@ typescript-eslint-parser@^12.0.0:
     lodash.unescape "4.0.1"
     semver "5.4.1"
 
-typescript-simple@^8.0.5:
-  version "8.0.5"
-  resolved "https://registry.yarnpkg.com/typescript-simple/-/typescript-simple-8.0.5.tgz#b5007a48db5d242c2ad5dbde306fe90410803476"
+typescript-simple@^8.0.6:
+  version "8.0.6"
+  resolved "https://registry.yarnpkg.com/typescript-simple/-/typescript-simple-8.0.6.tgz#567143bc6882012c045a60efc38a239a986f1af8"
   dependencies:
     typescript "^2.2.1"
 
