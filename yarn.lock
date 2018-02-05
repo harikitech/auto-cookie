@@ -6026,9 +6026,9 @@ wdio-sync@0.7.1:
     fibers "~2.0.0"
     object.assign "^4.0.3"
 
-webdriverio@^4.10.1:
-  version "4.10.1"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-4.10.1.tgz#42f7a487b73379b2743a2fae50b3142615f61170"
+webdriverio@^4.10.2:
+  version "4.10.2"
+  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-4.10.2.tgz#0d28622802c966015afe34b3ac566dc339f22e43"
   dependencies:
     archiver "~2.1.0"
     babel-runtime "^6.26.0"
