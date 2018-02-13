@@ -29,7 +29,7 @@
     "prettier-eslint-cli": "^4.7.0",
     "rimraf": "^2.6.2",
     "serve-static": "^1.13.2",
-    "size-limit": "^0.14.0",
+    "size-limit": "^0.14.1",
     "ts-loader": "^3.5.0",
     "ts-node": "^4.1.0",
     "tslint": "^5.9.1",
