@@ -26,7 +26,7 @@
     "lint-staged": "^6.1.0",
     "mocha": "^5.0.1",
     "power-assert": "^1.4.4",
-    "prettier-eslint-cli": "^4.7.0",
+    "prettier-eslint-cli": "^4.7.1",
     "rimraf": "^2.6.2",
     "serve-static": "^1.13.2",
     "size-limit": "^0.14.1",
