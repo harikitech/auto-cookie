@@ -12,7 +12,7 @@ function setCookie (
   data: string | object
 ): string | undefined {
   let domain = domainParts[domainParts.length - 1]
-  let attr: cookies.CookieAttributes = options
+  const attr: cookies.CookieAttributes = options
   for (let i = 2; i <= domainParts.length; i++) {
     domain = `${domainParts[domainParts.length - i]}.${domain}`
     attr.domain = domain
@@ -25,7 +25,7 @@ function setCookie (
   return cookies.get(name)
 }
 
-function findOrCreate (
+export function save (
   name: string,
   data?: string | object,
   options?: cookies.CookieAttributes
@@ -45,16 +45,4 @@ function findOrCreate (
     setCookie(domainParts, name, options || {}, data)
   }
   return cookies.get(name)
-}
-
-export function find (name: string): string | undefined {
-  return findOrCreate(name)
-}
-
-export function save (
-  name: string,
-  value: string | object,
-  options: cookies.CookieAttributes
-): string | undefined {
-  return findOrCreate(name, value, options)
 }

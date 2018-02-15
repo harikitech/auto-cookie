@@ -1,7 +1,7 @@
 {
   "name": "auto-cookie",
   "description": "auto set cookie domain like google-analytics",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "author": "UNCOVER TRUTH Inc.",
   "bugs": {
     "url": "https://github.com/uncovertruth/auto-cookie/issues"
@@ -90,7 +90,7 @@
   "size-limit": [
     {
       "path": "lib/index.js",
-      "limit": "320 B"
+      "limit": "300 B"
     }
   ],
   "types": "lib/index.d.ts"
