@@ -17,7 +17,7 @@
     "@uncovertruth/eslint-config": "^3.4.0",
     "@uncovertruth/tslint-config": "^1.3.0",
     "cross-env": "^5.1.3",
-    "eslint": "^4.17.0",
+    "eslint": "^4.18.0",
     "espower-typescript": "^8.1.3",
     "finalhandler": "^1.1.0",
     "gh-pages": "^1.1.0",
