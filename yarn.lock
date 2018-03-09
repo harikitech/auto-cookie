@@ -1176,10 +1176,6 @@ browser-resolve@^1.11.2:
   dependencies:
     resolve "1.1.7"
 
-browser-stdout@1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/browser-stdout/-/browser-stdout-1.3.0.tgz#f351d32969d32fa5d7a5567154263d928ae3bd1f"
-
 browser-stdout@1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/browser-stdout/-/browser-stdout-1.3.1.tgz#baa559ee14ced73452229bad7326467c61fabd60"
@@ -2128,10 +2124,6 @@ detect-indent@^4.0.0:
 diff-match-patch@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/diff-match-patch/-/diff-match-patch-1.0.0.tgz#1cc3c83a490d67f95d91e39f6ad1f2e086b63048"
-
-diff@3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/diff/-/diff-3.3.1.tgz#aa8567a6eed03c531fc89d3f711cd0e5259dec75"
 
 diff@3.5.0, diff@^3.1.0, diff@^3.2.0, diff@^3.3.0, diff@^3.3.1:
   version "3.5.0"
@@ -4847,22 +4839,7 @@ mkdirp@0.5.1, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkd
   dependencies:
     minimist "0.0.8"
 
-mocha@^4.0.0:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/mocha/-/mocha-4.0.1.tgz#0aee5a95cf69a4618820f5e51fa31717117daf1b"
-  dependencies:
-    browser-stdout "1.3.0"
-    commander "2.11.0"
-    debug "3.1.0"
-    diff "3.3.1"
-    escape-string-regexp "1.0.5"
-    glob "7.1.2"
-    growl "1.10.3"
-    he "1.1.1"
-    mkdirp "0.5.1"
-    supports-color "4.4.0"
-
-mocha@^5.0.1:
+mocha@^5.0.0, mocha@^5.0.1:
   version "5.0.4"
   resolved "https://registry.yarnpkg.com/mocha/-/mocha-5.0.4.tgz#6b7aa328472da1088e69d47e75925fd3a3bb63c6"
   dependencies:
@@ -7576,11 +7553,11 @@ wdio-dot-reporter@~0.0.8:
   resolved "https://registry.yarnpkg.com/wdio-dot-reporter/-/wdio-dot-reporter-0.0.9.tgz#929b2adafd49d6b0534fda068e87319b47e38fe5"
 
 wdio-mocha-framework@^0.5.12:
-  version "0.5.12"
-  resolved "https://registry.yarnpkg.com/wdio-mocha-framework/-/wdio-mocha-framework-0.5.12.tgz#84633c697275896b46f7922cd7b4cb0cd59049cc"
+  version "0.5.13"
+  resolved "https://registry.yarnpkg.com/wdio-mocha-framework/-/wdio-mocha-framework-0.5.13.tgz#f4da119456cb673b8c058fb60936132ec752a9d4"
   dependencies:
     babel-runtime "^6.23.0"
-    mocha "^4.0.0"
+    mocha "^5.0.0"
     wdio-sync "0.7.1"
 
 wdio-sauce-service@^0.4.8:
