@@ -2,13 +2,11 @@ import * as assert from 'assert'
 import 'mocha'
 import start from './helpers/server'
 
-declare var browser: any
-
 describe('auto-cookie', () => {
   let server
   const COOKIE_NAME = 'auto-cookie'
 
-  before(done => {
+  before((done) => {
     server = start(done)
   })
 

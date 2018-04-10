@@ -14,6 +14,7 @@
     "@types/node": "9.6.2",
     "@types/power-assert": "1.4.29",
     "@types/serve-static": "1.13.1",
+    "@types/webdriverio": "4.10.1",
     "@uncovertruth/eslint-config": "4.2.0",
     "@uncovertruth/tslint-config": "4.2.0",
     "cross-env": "5.1.4",
