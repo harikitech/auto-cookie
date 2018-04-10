@@ -81,6 +81,12 @@
     "@types/express-serve-static-core" "*"
     "@types/mime" "*"
 
+"@types/webdriverio@^4.10.1":
+  version "4.10.1"
+  resolved "https://registry.yarnpkg.com/@types/webdriverio/-/webdriverio-4.10.1.tgz#efa8ae7d4aab0952bfba1676feb0c0cf920a52bc"
+  dependencies:
+    "@types/node" "*"
+
 "@uncovertruth/eslint-config@4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@uncovertruth/eslint-config/-/eslint-config-4.2.0.tgz#be24586f4840239d837cf5d3fb64035db0739004"
@@ -92,9 +98,9 @@
     eslint-plugin-promise "^3.7.0"
     eslint-plugin-standard "^3.0.1"
 
-"@uncovertruth/tslint-config@4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@uncovertruth/tslint-config/-/tslint-config-4.0.0.tgz#cfb3a14efe935e24c407f8baac8ae55a5bdfbb13"
+"@uncovertruth/tslint-config@4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@uncovertruth/tslint-config/-/tslint-config-4.2.0.tgz#b4d6a047435bd34a36c5a55ec79c78791698d728"
   dependencies:
     tslint-config-standard "^7.0.0"
 
