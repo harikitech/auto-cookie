@@ -6,7 +6,7 @@ function removeNaked (): string {
 }
 
 function setCookie (
-  domainParts: Array<string>,
+  domainParts: string[],
   name: string,
   options: cookies.CookieAttributes,
   data: string | object
@@ -34,7 +34,7 @@ export function save (
   if (value) {
     return value
   }
-  const domainParts: Array<string> = removeNaked().split('.')
+  const domainParts: string[] = removeNaked().split('.')
   const subDomain: any = domainParts[domainParts.length - 1]
   /* tslint:disable:triple-equals */
   if (domainParts.length === 4 && parseInt(subDomain, 10) == subDomain) {
