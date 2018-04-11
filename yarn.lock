@@ -98,9 +98,9 @@
     eslint-plugin-promise "^3.7.0"
     eslint-plugin-standard "^3.0.1"
 
-"@uncovertruth/tslint-config@4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@uncovertruth/tslint-config/-/tslint-config-4.2.0.tgz#b4d6a047435bd34a36c5a55ec79c78791698d728"
+"@uncovertruth/tslint-config@4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@uncovertruth/tslint-config/-/tslint-config-4.3.0.tgz#37fbfa81fc6835500fbff74765c1af354a483b48"
   dependencies:
     tslint-config-standard "^7.0.0"
 
