@@ -32,7 +32,7 @@
     "serve-static": "1.13.2",
     "size-limit": "0.17.0",
     "ts-loader": "4.2.0",
-    "ts-node": "6.0.2",
+    "ts-node": "6.0.3",
     "tslint": "5.10.0",
     "typescript": "2.8.3",
     "typescript-eslint-parser": "15.0.0",
