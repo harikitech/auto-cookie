@@ -31,7 +31,7 @@
     "rimraf": "2.6.2",
     "serve-static": "1.13.2",
     "size-limit": "0.18.1",
-    "ts-loader": "4.3.0",
+    "ts-loader": "4.3.1",
     "ts-node": "6.0.5",
     "tslint": "5.10.0",
     "typescript": "2.9.1",
