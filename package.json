@@ -16,7 +16,7 @@
     "@types/serve-static": "1.13.2",
     "@types/webdriverio": "4.10.2",
     "@uncovertruth/eslint-config": "4.2.0",
-    "@uncovertruth/tslint-config": "4.3.1",
+    "@uncovertruth/tslint-config": "4.3.2",
     "cross-env": "5.1.6",
     "eslint": "4.19.1",
     "espower-typescript": "8.1.3",
