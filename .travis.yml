@@ -40,8 +40,7 @@ deploy:
   local-dir: example
   on:
     repo: uncovertruth/auto-cookie
-    # tags: true
-    all_branches: true
+    tags: true
     condition: "$CMD = 'test'"
 notifications:
   email: false
