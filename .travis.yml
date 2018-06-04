@@ -12,7 +12,6 @@ env:
   matrix:
   - CMD=test:sauce
   - CMD=test
-  - CMD=build
   - CMD=lint
 before_install:
 - export DISPLAY=:99.0
@@ -20,8 +19,10 @@ before_install:
 - sleep 5
 script:
 - npm run $CMD
+before_deploy:
+- npm run build
 deploy:
-  provider: npm
+- provider: npm
   skip_cleanup: true
   email: develop@uncovertruth.co.jp
   api_key:
@@ -30,6 +31,18 @@ deploy:
     repo: uncovertruth/auto-cookie
     tags: true
     condition: "$CMD = test"
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token:
+    secure: lZFJI/yhD/IzB0aAw53o1IzFBMTpF/ec3oGN/JV5JYZ1QVrAkRzlX3CAbeLTYY/7vTuuXs39XyG9gtvYNM3wlAbCZhNk6a6HfHfq3yzfId0TX8I5FmUoXY4Qmp4O61K1CDOKgd+dKwVoyU6OKdmnMAXu1YZC9QBWKrV49+yiBhmJdfPtj3Zj6S3NzzuPCMGZNeY4LCuaaddwjGSt3BqbmY1rmi+UJyWIpNKrAA4rPUzptBkLr6XN0Xz+1/4q+hW96vU6z1fVn5bt0h3hwRVCB2KiKrhZy0Gy7uxokLNs33gSFqeB4kU8f2Q1+1CPnUE/XWqM3qtPzcgs6t0GtPf+FXp6YVMB9xb7ofopeK8nRfco4TJK/wyKx3px72Abu/yu+oKr5OovUZOERdPrwN4I6ZYYH22Kq+Sl44g74cwKzFZYzqEzV+2pNd975KKnK8jWvGNNL0PeFI21A/RMsGnkVjkAFORIaWr1nb+SAd8CIGVIsWEo0v4HM9XYrcdsHkhUrCSru4yJYg1qDF1nYonNdbuUgHCuSeXKd4rBufI6FgfOR3YFNV0MlVZ+0i24o4c+9Fm1vi7/hrHfP2zWW43uQ7U2mHPHkR4HM7H9sTwwuFyGQoUFjShYcKYnZs922FaAkKlbMGEY8hG+xpVoT67cy1aStFjDhmouj9MVnIhvnbk=
+  keep-history: true
+  local-dir: example
+  on:
+    repo: uncovertruth/auto-cookie
+    # tags: true
+    all_branches: true
+    condition: "$CMD = 'test'"
 notifications:
   email: false
   slack:
