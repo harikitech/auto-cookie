@@ -31,7 +31,7 @@
     "serve-static": "1.13.2",
     "size-limit": "0.18.2",
     "ts-loader": "4.4.1",
-    "ts-node": "6.1.2",
+    "ts-node": "6.2.0",
     "tslint": "5.10.0",
     "typescript": "2.9.2",
     "typescript-eslint-parser": "16.0.0",
