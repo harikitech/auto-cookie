@@ -69,9 +69,9 @@
     "@types/express-serve-static-core" "*"
     "@types/mime" "*"
 
-"@types/webdriverio@4.10.2":
-  version "4.10.2"
-  resolved "https://registry.yarnpkg.com/@types/webdriverio/-/webdriverio-4.10.2.tgz#03d377604d1ad3208a9b151163eaa6b6d5b1ae2d"
+"@types/webdriverio@4.10.3":
+  version "4.10.3"
+  resolved "https://registry.yarnpkg.com/@types/webdriverio/-/webdriverio-4.10.3.tgz#05861e9134ab41a693a42cd9bf4186593096f004"
   dependencies:
     "@types/node" "*"
 
