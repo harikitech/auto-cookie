@@ -1,9 +1,11 @@
 import * as assert from 'assert'
+import * as http from 'http'
 import 'mocha'
+import 'webdriverio'
 import start from './helpers/server'
 
 describe('auto-cookie', () => {
-  let server
+  let server: http.Server
   const COOKIE_NAME = 'auto-cookie'
 
   before((done) => {
