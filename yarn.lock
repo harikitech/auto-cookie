@@ -2725,9 +2725,9 @@ https-proxy-agent@^2.2.1:
     agent-base "^4.1.0"
     debug "^3.1.0"
 
-humanize-duration@~3.12.0:
-  version "3.12.1"
-  resolved "https://registry.yarnpkg.com/humanize-duration/-/humanize-duration-3.12.1.tgz#e9a531519d001ee600b6400fc353fed4fa3b235f"
+humanize-duration@~3.15.0:
+  version "3.15.0"
+  resolved "https://registry.yarnpkg.com/humanize-duration/-/humanize-duration-3.15.0.tgz#9fe3124c4a013f9d71e4b25a143afa6853f90844"
 
 husky@0.14.3:
   version "0.14.3"
@@ -5997,13 +5997,13 @@ wdio-selenium-standalone-service@0.0.10:
     fs-extra "^0.30.0"
     selenium-standalone "^6.13.0"
 
-wdio-spec-reporter@0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/wdio-spec-reporter/-/wdio-spec-reporter-0.1.4.tgz#17af34f8e830f3c684f2d6486dba406bfc0648eb"
+wdio-spec-reporter@0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/wdio-spec-reporter/-/wdio-spec-reporter-0.1.5.tgz#6d6f865deac6b36f96988c1204cc81099b75fc7e"
   dependencies:
     babel-runtime "~6.26.0"
     chalk "^2.3.0"
-    humanize-duration "~3.12.0"
+    humanize-duration "~3.15.0"
 
 wdio-sync@0.7.1:
   version "0.7.1"
