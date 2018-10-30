@@ -2173,9 +2173,9 @@ fd-slicer@~1.1.0:
   dependencies:
     pend "~1.2.0"
 
-fibers@~2.0.0:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/fibers/-/fibers-2.0.2.tgz#36db63ea61c543174e2264675fea8c2783371366"
+fibers@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/fibers/-/fibers-3.0.0.tgz#d898fc1a8c2e892efd0d547cfc06d9e82e88f12f"
 
 figgy-pudding@^3.1.0, figgy-pudding@^3.5.1:
   version "3.5.1"
@@ -3561,7 +3561,7 @@ mkdirp@0.5.1, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
   dependencies:
     minimist "0.0.8"
 
-mocha@5.2.0, mocha@^5.0.0:
+mocha@5.2.0, mocha@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/mocha/-/mocha-5.2.0.tgz#6d8ae508f59167f940f2b5b3c4a612ae50c90ae6"
   dependencies:
@@ -5634,13 +5634,13 @@ wdio-dot-reporter@~0.0.8:
   version "0.0.9"
   resolved "https://registry.yarnpkg.com/wdio-dot-reporter/-/wdio-dot-reporter-0.0.9.tgz#929b2adafd49d6b0534fda068e87319b47e38fe5"
 
-wdio-mocha-framework@0.6.3:
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/wdio-mocha-framework/-/wdio-mocha-framework-0.6.3.tgz#36706122cc8dda927901ac05e3c96116f66a7aa4"
+wdio-mocha-framework@0.6.4:
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/wdio-mocha-framework/-/wdio-mocha-framework-0.6.4.tgz#291b05b5f8735716023e1228e461f66ff2e7e1c9"
   dependencies:
     babel-runtime "^6.23.0"
-    mocha "^5.0.0"
-    wdio-sync "0.7.2"
+    mocha "^5.2.0"
+    wdio-sync "0.7.3"
 
 wdio-sauce-service@0.4.12:
   version "0.4.12"
@@ -5664,12 +5664,12 @@ wdio-spec-reporter@0.1.5:
     chalk "^2.3.0"
     humanize-duration "~3.15.0"
 
-wdio-sync@0.7.2:
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/wdio-sync/-/wdio-sync-0.7.2.tgz#13b7a2b2c123af15515b7eadc7b8d92b62d92966"
+wdio-sync@0.7.3:
+  version "0.7.3"
+  resolved "https://registry.yarnpkg.com/wdio-sync/-/wdio-sync-0.7.3.tgz#858c7439c18c0dbdcd2e25e29db8a0ea2f34bc04"
   dependencies:
     babel-runtime "^6.26.0"
-    fibers "~2.0.0"
+    fibers "^3.0.0"
     object.assign "^4.0.3"
 
 webdriverio@4.14.0:
