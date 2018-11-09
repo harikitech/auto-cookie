@@ -34,7 +34,7 @@
     "ts-node": "7.0.1",
     "tslint": "5.11.0",
     "typescript": "3.1.6",
-    "typescript-eslint-parser": "17.0.1",
+    "typescript-eslint-parser": "20.1.1",
     "wdio-mocha-framework": "0.6.4",
     "wdio-sauce-service": "0.4.13",
     "wdio-selenium-standalone-service": "0.0.10",
