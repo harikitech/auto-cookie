@@ -39,7 +39,7 @@
     "wdio-sauce-service": "0.4.13",
     "wdio-selenium-standalone-service": "0.0.10",
     "wdio-spec-reporter": "0.1.5",
-    "webdriverio": "4.14.0",
+    "webdriverio": "4.14.1",
     "webpack": "4.26.1",
     "webpack-cli": "3.1.2"
   },
