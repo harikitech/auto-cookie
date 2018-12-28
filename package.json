@@ -11,7 +11,7 @@
     "@types/finalhandler": "0.0.33",
     "@types/js-cookie": "2.2.0",
     "@types/mocha": "5.2.5",
-    "@types/node": "9.6.40",
+    "@types/node": "10.12.18",
     "@types/power-assert": "1.5.0",
     "@types/serve-static": "1.13.2",
     "@types/webdriverio": "4.13.0",
@@ -37,9 +37,9 @@
     "typescript-eslint-parser": "21.0.2",
     "wdio-mocha-framework": "0.6.4",
     "wdio-sauce-service": "0.4.14",
-    "wdio-selenium-standalone-service": "0.0.10",
+    "wdio-selenium-standalone-service": "0.0.12",
     "wdio-spec-reporter": "0.1.5",
-    "webdriverio": "4.14.1",
+    "webdriverio": "5.0.3",
     "webpack": "4.28.2",
     "webpack-cli": "3.1.2"
   },
@@ -75,7 +75,7 @@
     "url": "git+ssh://git@github.com/uncovertruth/auto-cookie.git"
   },
   "scripts": {
-    "build": "tsc && webpack --env=production && size-limit",
+    "build": "tsc && webpack --mode=production && size-limit",
     "clean": "rimraf lib",
     "lint": "tslint '{src,test}/*.ts'",
     "prebuild": "npm run clean",
