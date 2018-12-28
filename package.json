@@ -21,7 +21,7 @@
     "eslint": "5.11.1",
     "espower-typescript": "9.0.1",
     "finalhandler": "1.1.1",
-    "husky": "0.14.3",
+    "husky": "1.2.1",
     "js-cookie": "2.2.0",
     "lint-staged": "8.1.0",
     "mocha": "5.2.0",
