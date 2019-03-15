@@ -18,7 +18,7 @@
     "@uncovertruth/eslint-config": "4.5.0",
     "@uncovertruth/tslint-config": "4.5.0",
     "cross-env": "5.2.0",
-    "eslint": "5.15.1",
+    "eslint": "5.15.2",
     "espower-typescript": "9.0.1",
     "finalhandler": "1.1.1",
     "husky": "1.3.1",
