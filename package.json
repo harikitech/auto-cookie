@@ -33,7 +33,7 @@
     "ts-loader": "5.3.3",
     "ts-node": "8.0.3",
     "tslint": "5.14.0",
-    "typescript": "3.3.3333",
+    "typescript": "3.3.4000",
     "typescript-eslint-parser": "21.0.2",
     "wdio-mocha-framework": "0.6.4",
     "wdio-sauce-service": "0.4.14",
