@@ -9,7 +9,7 @@
   "dependencies": {},
   "devDependencies": {
     "@types/finalhandler": "0.0.33",
-    "@types/js-cookie": "2.2.1",
+    "@types/js-cookie": "2.2.2",
     "@types/mocha": "5.2.6",
     "@types/node": "9.6.47",
     "@types/power-assert": "1.5.0",
