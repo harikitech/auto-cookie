@@ -61,9 +61,9 @@
   dependencies:
     "@types/node" "*"
 
-"@types/js-cookie@2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@types/js-cookie/-/js-cookie-2.2.1.tgz#aa6f6d5e5aaf7d97959e9fa938ac2501cf1a76f4"
+"@types/js-cookie@2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@types/js-cookie/-/js-cookie-2.2.2.tgz#84e8848e14d44418726ceb52dd887c7bfe45d678"
 
 "@types/mime@*":
   version "2.0.0"
