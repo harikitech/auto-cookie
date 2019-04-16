@@ -32,7 +32,7 @@
     "size-limit": "0.22.0",
     "ts-loader": "5.3.3",
     "ts-node": "8.1.0",
-    "tslint": "5.15.0",
+    "tslint": "5.16.0",
     "typescript": "3.4.3",
     "typescript-eslint-parser": "21.0.2",
     "wdio-mocha-framework": "0.6.4",
