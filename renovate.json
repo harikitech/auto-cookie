@@ -1,15 +1,29 @@
 {
+  "timezone": "Asia/Tokyo",
   "extends": [
-    "config:base"
+    "config:base",
+    "schedule:daily"
   ],
-  "automerge": true,
-  "major": {
-    "automerge": false
-  },
+  "packageRules": [
+    {
+      "packagePatterns": [
+        "*"
+      ]
+    },
+    {
+      "depTypeList": [
+        "dependencies"
+      ],
+      "groupName": "dependencies"
+    },
+    {
+      "depTypeList": [
+        "devDependencies"
+      ],
+      "groupName": "devDependencies"
+    }
+  ],
   "labels": [
-    "dependencies"
-  ],
-  "devDependencies": {
-    "automerge": true
-  }
+    "dependency"
+  ]
 }
