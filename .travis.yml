@@ -2,7 +2,7 @@ sudo: false
 language: node_js
 jdk:
 - oraclejdk8
-node_js: lts/*
+node_js: 10
 addon:
   firefox: latest
 stages:
