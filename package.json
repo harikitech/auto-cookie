@@ -2,11 +2,10 @@
   "name": "auto-cookie",
   "description": "auto set cookie domain like google-analytics",
   "version": "2.0.0",
-  "author": "UNCOVER TRUTH Inc.",
+  "author": "harikitech",
   "bugs": {
-    "url": "https://github.com/uncovertruth/auto-cookie/issues"
+    "url": "https://github.com/harikitech/auto-cookie/issues"
   },
-  "dependencies": {},
   "devDependencies": {
     "@types/finalhandler": "0.0.33",
     "@types/js-cookie": "2.2.2",
@@ -15,8 +14,6 @@
     "@types/power-assert": "1.5.0",
     "@types/serve-static": "1.13.2",
     "@types/webdriverio": "4.13.3",
-    "@uncovertruth/eslint-config": "4.5.0",
-    "@uncovertruth/tslint-config": "4.5.0",
     "cross-env": "5.2.0",
     "eslint": "5.16.0",
     "espower-typescript": "9.0.2",
@@ -26,15 +23,12 @@
     "lint-staged": "8.2.0",
     "mocha": "5.2.0",
     "power-assert": "1.6.1",
-    "prettier-eslint-cli": "4.7.1",
     "rimraf": "2.6.3",
     "serve-static": "1.14.1",
     "size-limit": "0.22.0",
     "ts-loader": "5.4.5",
     "ts-node": "8.2.0",
-    "tslint": "5.17.0",
     "typescript": "3.5.1",
-    "typescript-eslint-parser": "21.0.2",
     "wdio-mocha-framework": "0.6.4",
     "wdio-sauce-service": "0.4.14",
     "wdio-selenium-standalone-service": "0.0.10",
@@ -46,24 +40,14 @@
   "files": [
     "lib/"
   ],
-  "homepage": "https://github.com/uncovertruth/auto-cookie#readme",
+  "homepage": "https://github.com/harikitech/auto-cookie#readme",
   "keywords": [
     "cookie"
   ],
   "license": "MIT",
   "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "git add"
-    ],
-    "*.ts": [
-      "prettier-eslint --parser typescript --write",
-      "tslint --fix",
-      "git add"
-    ],
-    "*.md": [
-      "prettier --parser markdown --write",
-      "git add"
+    "*.{js,ts,md}": [
+      "prettier --write"
     ]
   },
   "main": "lib/index.js",
@@ -72,7 +56,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/uncovertruth/auto-cookie.git"
+    "url": "git+ssh://git@github.com/harikitech/auto-cookie.git"
   },
   "scripts": {
     "build": "tsc && webpack --env=production && size-limit",
