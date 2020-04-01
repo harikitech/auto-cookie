@@ -1,2 +1,2 @@
-import start from './test/helpers/server'
-start()
+import start from "./test/helpers/server";
+start();

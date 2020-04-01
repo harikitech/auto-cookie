@@ -59,11 +59,6 @@
       "pre-commit": "lint-staged"
     }
   },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "all"
-  },
   "license": "MIT",
   "lint-staged": {
     "*.{js,ts,md}": [

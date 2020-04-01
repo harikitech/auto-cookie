@@ -31,9 +31,9 @@ npm install auto-cookie js-cookie --save
 ## Usage
 
 ```js
-import { save } from 'auto-cookie'
+import { save } from "auto-cookie";
 
-save(cookieName, data, options) // write
+save(cookieName, data, options); // write
 ```
 
 ## Tests
