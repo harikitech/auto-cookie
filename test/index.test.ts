@@ -13,7 +13,7 @@ describe('auto-cookie', () => {
   })
 
   after(() => server.close())
-  beforeEach('clean cookies', () => browser.deleteCookie(COOKIE_NAME))
+  beforeEach('clean cookies', () => browser.deleteAllCookies())
 
   it('should get cookie around xip.io', async () => {
     await browser.url('http://www.0.0.0.0.xip.io:8000')
@@ -32,7 +32,7 @@ describe('auto-cookie', () => {
     await browser.url('http://www.0.0.0.0.xip.io:8000/path')
     const [cookie] = await browser.getCookies(['path-cookie'])
     assert(cookie.value === 'setPath')
-    assert(cookie.domain === '.xip.io')
+    assert(cookie.domain === '.0.0.0.0.xip.io')
     assert(cookie.path === '/path')
   })
 
