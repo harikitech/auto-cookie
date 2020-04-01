@@ -1,10 +1,43 @@
 {
   "name": "auto-cookie",
-  "description": "auto set cookie domain like google-analytics",
   "version": "2.0.0",
+  "description": "auto set cookie domain like google-analytics",
+  "license": "WTFPL",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/harikitech/auto-cookie.git"
+  },
   "author": "harikitech",
+  "homepage": "https://github.com/harikitech/auto-cookie#readme",
   "bugs": {
     "url": "https://github.com/harikitech/auto-cookie/issues"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc && webpack --env=production && size-limit",
+    "clean": "rimraf lib",
+    "lint": "run-s -l lint:*",
+    "lint:eslint": "eslint . --ext=ts,tsx",
+    "lint:prettier": "prettier {src,test}/**/*.ts --check",
+    "lint:ts": "tsc -p . --noEmit",
+    "prebuild": "npm run clean",
+    "prepublish": "npm run build",
+    "prestart": "webpack",
+    "pretest": "webpack",
+    "start": "ts-node server.ts",
+    "test": "wdio wdio.conf.js"
+  },
+  "files": [
+    "lib/"
+  ],
+  "keywords": [
+    "cookie"
+  ],
+  "peerDependencies": {
+    "js-cookie": "2.x"
+  },
+  "dependencies": {
+    "@types/mocha": "^7.0.2"
   },
   "devDependencies": {
     "@9renpoto/eslint-config-typescript": "^5.5.1",
@@ -39,13 +72,7 @@
     "webpack": "4.33.0",
     "webpack-cli": "3.3.4"
   },
-  "files": [
-    "lib/"
-  ],
-  "homepage": "https://github.com/harikitech/auto-cookie#readme",
-  "keywords": [
-    "cookie"
-  ],
+  "types": "lib/index.d.ts",
   "eslintConfig": {
     "extends": [
       "@9renpoto/eslint-config-typescript"
@@ -59,42 +86,15 @@
       "pre-commit": "lint-staged"
     }
   },
-  "license": "MIT",
   "lint-staged": {
-    "*.{js,ts,md}": [
+    "*.{js,ts,md,json}": [
       "prettier --write"
     ]
-  },
-  "main": "lib/index.js",
-  "peerDependencies": {
-    "js-cookie": "2.x"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/harikitech/auto-cookie.git"
-  },
-  "scripts": {
-    "lint": "run-s -l lint:*",
-    "lint:ts": "tsc -p . --noEmit",
-    "lint:eslint": "eslint . --ext=ts,tsx",
-    "lint:prettier": "prettier {src,test}/**/*.ts --check",
-    "build": "tsc && webpack --env=production && size-limit",
-    "clean": "rimraf lib",
-    "prebuild": "npm run clean",
-    "prepublish": "npm run build",
-    "prestart": "webpack",
-    "pretest": "webpack",
-    "start": "ts-node server.ts",
-    "test": "wdio wdio.conf.js"
   },
   "size-limit": [
     {
       "path": "lib/index.js",
       "limit": "300 B"
     }
-  ],
-  "types": "lib/index.d.ts",
-  "dependencies": {
-    "@types/mocha": "^7.0.2"
-  }
+  ]
 }
