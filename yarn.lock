@@ -383,9 +383,10 @@
     "@types/node" "*"
     "@types/range-parser" "*"
 
-"@types/finalhandler@0.0.33":
-  version "0.0.33"
-  resolved "https://registry.yarnpkg.com/@types/finalhandler/-/finalhandler-0.0.33.tgz#517a6d6159072b3c2a8da40b3876cf10167b8380"
+"@types/finalhandler@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@types/finalhandler/-/finalhandler-1.1.0.tgz#7c62084bac116918c55ad3f884f7c68ca8921124"
+  integrity sha512-iMD07b+UPNuqA6cm3yjbTJUfFfZNZpDc6MGQGK60jy5sdqX1W4wUC5RAi3FhaW72+RmVnzYxba8byPP9FWL8/w==
   dependencies:
     "@types/node" "*"
 
