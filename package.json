@@ -67,7 +67,7 @@
     "ts-node": "8.2.0",
     "typescript": "3.8.3",
     "wdio-chromedriver-service": "^5.0.2",
-    "webpack": "4.33.0",
+    "webpack": "4.42.1",
     "webpack-cli": "3.3.11"
   },
   "types": "lib/index.d.ts",
