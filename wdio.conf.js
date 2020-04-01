@@ -1,27 +1,27 @@
 exports.config = {
-  runner: 'local',
-  specs: ['./test/*.ts'],
+  runner: "local",
+  specs: ["./test/*.ts"],
   exclude: [],
   maxInstances: 10,
   capabilities: [
     {
       maxInstances: 5,
-      browserName: 'chrome',
+      browserName: "chrome",
     },
   ],
-  logLevel: 'info',
+  logLevel: "info",
   bail: 0,
-  baseUrl: 'http://localhost',
-  waitforTimeout: 10000,
+  baseUrl: "http://localhost",
+  waitforTimeout: 15000,
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
-  services: ['chromedriver'],
-  framework: 'mocha',
-  reporters: ['spec'],
+  services: ["chromedriver"],
+  framework: "mocha",
+  reporters: ["spec"],
   mochaOpts: {
-    ui: 'bdd',
-    require: ['espower-typescript/guess'],
-    timeout: 60000,
+    ui: "bdd",
+    require: ["espower-typescript/guess"],
+    timeout: 100000,
   },
   //
   // =====
@@ -151,4 +151,4 @@ exports.config = {
    */
   //onReload: function(oldSessionId, newSessionId) {
   //}
-}
+};
