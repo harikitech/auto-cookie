@@ -621,12 +621,12 @@
     strip-ansi "^6.0.0"
 
 "@wdio/mocha-framework@^6.0.8":
-  version "6.0.11"
-  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-6.0.11.tgz#eb81cfa677edc7ef2b736d73622440aa27d5fd9f"
-  integrity sha512-OXrI0I9bSEp7ibcjFo7guQxcxFeX2/OZ/RpoofhrGUQdbLVRh6aVMKMHf/1UFZrdn8ZCdmWWVMIjLewt9jHVMg==
+  version "6.0.12"
+  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-6.0.12.tgz#63096bd956aa8b6f43836d2d1a52b4d8e0ec4fa0"
+  integrity sha512-PNWJgXwSna0fOKEiRrAq9Od8WKHZzgzfwtKFdgdQtUWAhHg7JnRMiMnEl+FQ6UXh30gZxVwU7TyZPU+2AnsQ/Q==
   dependencies:
-    "@wdio/logger" "6.0.11"
-    "@wdio/utils" "6.0.11"
+    "@wdio/logger" "6.0.12"
+    "@wdio/utils" "6.0.12"
     mocha "^7.0.1"
 
 "@wdio/protocols@6.0.11":
