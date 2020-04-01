@@ -1,12 +1,11 @@
 # auto-cookie
 
 [![npm version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
+![Node CI](https://github.com/harikitech/auto-cookie/workflows/Node%20CI/badge.svg)
+
 [![dependencies Status](https://david-dm.org/harikitech/auto-cookie/status.svg)](https://david-dm.org/harikitech/auto-cookie)
 [![devDependencies Status](https://david-dm.org/harikitech/auto-cookie/dev-status.svg)](https://david-dm.org/harikitech/auto-cookie?type=dev)
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-
-[![Build Status](https://saucelabs.com/browser-matrix/harikitech-AUTO-COOKIE.svg)](https://saucelabs.com/open_sauce/user/harikitech-AUTO-COOKIE/builds)
 
 > auto set cookie domain like google analytics
 
@@ -58,5 +57,3 @@ MIT © UNCOVER TRUTH Inc.
 
 [npm-image]: https://badge.fury.io/js/auto-cookie.svg
 [npm-url]: https://www.npmjs.com/package/auto-cookie
-[travis-image]: https://travis-ci.org/harikitech/auto-cookie.svg?branch=master
-[travis-url]: https://travis-ci.org/harikitech/auto-cookie
