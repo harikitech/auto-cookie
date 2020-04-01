@@ -591,6 +591,16 @@
     async-exit-hook "^2.0.1"
     stream-buffers "^3.0.2"
 
+"@wdio/logger@6.0.11":
+  version "6.0.11"
+  resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-6.0.11.tgz#fa2717dec9ece80fffcbfcbde247b6383c31f612"
+  integrity sha512-9Nb3x/D8W/NL8VtudCwdH31jq9mD7Bj7/FXYPJmVSxCzCz6+UgtfV2buHI9h4HLecrOyH4J18AkhgnfFkdl0xQ==
+  dependencies:
+    chalk "^3.0.0"
+    loglevel "^1.6.0"
+    loglevel-plugin-prefix "^0.8.4"
+    strip-ansi "^6.0.0"
+
 "@wdio/logger@6.0.8":
   version "6.0.8"
   resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-6.0.8.tgz#05bff1c02f207588bd834ee3bc1cff01f506b486"
@@ -602,12 +612,12 @@
     strip-ansi "^6.0.0"
 
 "@wdio/mocha-framework@^6.0.8":
-  version "6.0.8"
-  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-6.0.8.tgz#66885815ca0a01d7b758e3618c4226ebe77b473a"
-  integrity sha512-nLqwrzv+VriQWFk37nlrgzdFbf1Gz8fjX+viK+YaeLsD6/AsP2bMn5VHJJFk+hXFNib21dGKhkce9+sKmqK1Sw==
+  version "6.0.11"
+  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-6.0.11.tgz#eb81cfa677edc7ef2b736d73622440aa27d5fd9f"
+  integrity sha512-OXrI0I9bSEp7ibcjFo7guQxcxFeX2/OZ/RpoofhrGUQdbLVRh6aVMKMHf/1UFZrdn8ZCdmWWVMIjLewt9jHVMg==
   dependencies:
-    "@wdio/logger" "6.0.8"
-    "@wdio/utils" "6.0.8"
+    "@wdio/logger" "6.0.11"
+    "@wdio/utils" "6.0.11"
     mocha "^7.0.1"
 
 "@wdio/protocols@6.0.8":
@@ -660,6 +670,13 @@
   dependencies:
     "@wdio/logger" "6.0.8"
     fibers "^4.0.1"
+
+"@wdio/utils@6.0.11":
+  version "6.0.11"
+  resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-6.0.11.tgz#f8d3a68203fe840d68e08a1850256414cc27022a"
+  integrity sha512-raB3v+2zq1TlQhzdhwwe3/WhEOul1mlXDyth2B6GewB1ORGHQzgwqjLRbVS95eXPrV1m1nXFk1IihtH3zaSDmQ==
+  dependencies:
+    "@wdio/logger" "6.0.11"
 
 "@wdio/utils@6.0.8":
   version "6.0.8"
