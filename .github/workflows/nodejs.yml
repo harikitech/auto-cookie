@@ -25,9 +25,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - uses: nanasess/setup-chromedriver@master
-    - run: |
-        export DISPLAY=:99
-        chromedriver --url-base=/ &
     - run: yarn install --frozen-lockfile
     - run: yarn lint
     - run: yarn test
