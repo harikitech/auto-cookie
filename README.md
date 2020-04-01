@@ -53,7 +53,7 @@ Small note: If editing the README, please conform to the [standard-readme](https
 
 ## License
 
-MIT © UNCOVER TRUTH Inc.
+MIT © harikitech
 
 [npm-image]: https://badge.fury.io/js/auto-cookie.svg
 [npm-url]: https://www.npmjs.com/package/auto-cookie
