@@ -23,6 +23,7 @@ exports.config = {
     require: ["espower-typescript/guess"],
     timeout: 100000,
   },
+  port: 9515,
   //
   // =====
   // Hooks
