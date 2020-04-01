@@ -68,7 +68,7 @@
     "typescript": "3.8.3",
     "wdio-chromedriver-service": "^5.0.2",
     "webpack": "4.33.0",
-    "webpack-cli": "3.3.4"
+    "webpack-cli": "3.3.11"
   },
   "types": "lib/index.d.ts",
   "eslintConfig": {
