@@ -2,7 +2,6 @@
 
 [![npm version][npm-image]][npm-url]
 ![Node CI](https://github.com/harikitech/auto-cookie/workflows/Node%20CI/badge.svg)
-
 [![dependencies Status](https://david-dm.org/harikitech/auto-cookie/status.svg)](https://david-dm.org/harikitech/auto-cookie)
 [![devDependencies Status](https://david-dm.org/harikitech/auto-cookie/dev-status.svg)](https://david-dm.org/harikitech/auto-cookie?type=dev)
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
