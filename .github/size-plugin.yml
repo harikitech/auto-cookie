@@ -1,5 +1,5 @@
-base-branches: # base branches against which bot can open a pull request.
+base-branches:
     - master
-size-files: # list(string/object) of size*.json files
-    ## In case of multiple builds.
-    - lib/index.js
+size-files:
+    - dir: lib
+      filename: index.js
