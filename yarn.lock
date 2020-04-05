@@ -604,13 +604,6 @@
   resolved "https://registry.yarnpkg.com/@wdio/protocols/-/protocols-6.0.12.tgz#b5f5c176e2021033452a738dcf3e4ece7b991c60"
   integrity sha512-MeOXn3AirCosPFirIZhpxKWCq71Z146MiVpBRVPZHpVvzCPQ6eR8ECKcH4XOD9SyZxqESlpbDXtZkCgQqglOIw==
 
-"@wdio/repl@6.0.12":
-  version "6.0.12"
-  resolved "https://registry.yarnpkg.com/@wdio/repl/-/repl-6.0.12.tgz#67553af52c79915b7c0dabdd0c5c50706094d9b3"
-  integrity sha512-lmVTlevd7k7sIX4Ukev9UdZSEAwXHP8zgG28GsReBAx1pohm+T0qephJiYwsq539P8twPlLURWELF2HTPCLQGg==
-  dependencies:
-    "@wdio/utils" "6.0.12"
-
 "@wdio/repl@6.0.13":
   version "6.0.13"
   resolved "https://registry.yarnpkg.com/@wdio/repl/-/repl-6.0.13.tgz#2e6b6808cc6363c34de23a2392d98863ca2e2b43"
@@ -656,13 +649,6 @@
   dependencies:
     "@wdio/logger" "6.0.12"
     fibers "^4.0.1"
-
-"@wdio/utils@6.0.12":
-  version "6.0.12"
-  resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-6.0.12.tgz#7fee932deffdae999986d3970bde8794e550a64f"
-  integrity sha512-cjMo6Tcs0k6j+ENcT58uEQqzosoGbQcsouFscJnOw0oW8/26tZoShc5nXOKweqscVaqsTlVsoZLELi05sCI2Zw==
-  dependencies:
-    "@wdio/logger" "6.0.12"
 
 "@wdio/utils@6.0.13":
   version "6.0.13"
@@ -2047,19 +2033,6 @@ detect-libc@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
   integrity sha1-+hN8S9aY7fVc1c0CrFWfkaTEups=
-
-devtools@6.0.12:
-  version "6.0.12"
-  resolved "https://registry.yarnpkg.com/devtools/-/devtools-6.0.12.tgz#c8a659d50b51eaa0ed284a467739c05b0aa66b06"
-  integrity sha512-5wRZKvfGjJK13CCzu4HUW9Z+rn4EetODqw2TWnI483bpqk71lvh0CrhdeggTYh0NIaV3JVkSfZ184uF8V7iirA==
-  dependencies:
-    "@wdio/config" "6.0.12"
-    "@wdio/logger" "6.0.12"
-    "@wdio/protocols" "6.0.12"
-    "@wdio/utils" "6.0.12"
-    chrome-launcher "^0.11.1"
-    puppeteer-core "^2.1.1"
-    uuid "^7.0.2"
 
 devtools@6.0.13:
   version "6.0.13"
@@ -4040,9 +4013,9 @@ lines-and-columns@^1.1.6:
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
 lint-staged@^10.1.1:
-  version "10.1.1"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.1.1.tgz#1c8569b66d684e6e3553cd760c03053f41fca152"
-  integrity sha512-wAeu/ePaBAOfwM2+cVbgPWDtn17B0Sxiv0NvNEqDAIvB8Yhvl60vafKFiK4grcYn87K1iK+a0zVoETvKbdT9/Q==
+  version "10.1.2"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.1.2.tgz#beaefc58037ea9e02fe7639cb323d584312a7957"
+  integrity sha512-Vtbe8rhWbJxPNlnXk6jczRh6wvAVjGg+VhELAIjLakOjTACdB4qJOD4W2R8oUXLRCqL1t9WMUsXbSlVK34A8Lg==
   dependencies:
     chalk "^3.0.0"
     commander "^4.0.1"
@@ -6747,18 +6720,6 @@ wdio-chromedriver-service@^6.0.1:
   resolved "https://registry.yarnpkg.com/wdio-chromedriver-service/-/wdio-chromedriver-service-6.0.1.tgz#9c9339b68c7bc497d499aadd5eb1790ab0a36254"
   integrity sha512-GcFW6vRk9tmZkcXoB+/Ti5f8A8rry4h9sxEw4dB3hHHh+xvkPYXqq79HeMo3PG8GGpGfXQ8NVaNWiyWEBOEybw==
 
-webdriver@6.0.12:
-  version "6.0.12"
-  resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-6.0.12.tgz#5be82fa9a580ee405686941dd5ddd1541f9a3a8d"
-  integrity sha512-Y7oAUHt+V5zMsizb5vOUv0+dRdVfs5eF120LoRGOiACHtwyG1up3CWFt7cglZURqA36jNdR+tgWEk9RiGNV3wA==
-  dependencies:
-    "@wdio/config" "6.0.12"
-    "@wdio/logger" "6.0.12"
-    "@wdio/protocols" "6.0.12"
-    "@wdio/utils" "6.0.12"
-    got "^10.7.0"
-    lodash.merge "^4.6.1"
-
 webdriver@6.0.13:
   version "6.0.13"
   resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-6.0.13.tgz#9a26ef51d9604fde710c0766363315295dc3de99"
@@ -6770,28 +6731,6 @@ webdriver@6.0.13:
     "@wdio/utils" "6.0.13"
     got "^10.7.0"
     lodash.merge "^4.6.1"
-
-webdriverio@6.0.12:
-  version "6.0.12"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-6.0.12.tgz#7e4bf018d3e6f565833881470c7dfaddfb67d834"
-  integrity sha512-1epO8vnlAjD5FnxSmUxayVqhSVG9RV0StBViLFfrzlPo7OxyK2VUIEZa05W4QvNUnBAEm5QIF2+EZoyY9HacpA==
-  dependencies:
-    "@wdio/config" "6.0.12"
-    "@wdio/logger" "6.0.12"
-    "@wdio/repl" "6.0.12"
-    "@wdio/utils" "6.0.12"
-    archiver "^3.0.0"
-    css-value "^0.0.1"
-    devtools "6.0.12"
-    grapheme-splitter "^1.0.2"
-    lodash.clonedeep "^4.5.0"
-    lodash.isobject "^3.0.2"
-    lodash.isplainobject "^4.0.6"
-    lodash.zip "^4.2.0"
-    resq "^1.6.0"
-    rgb2hex "^0.1.0"
-    serialize-error "^6.0.0"
-    webdriver "6.0.12"
 
 webdriverio@6.0.13:
   version "6.0.13"
