@@ -598,9 +598,9 @@
     strip-ansi "^6.0.0"
 
 "@wdio/mocha-framework@^6.0.8":
-  version "6.0.13"
-  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-6.0.13.tgz#2116d88261251083bc5cf0c12a8a732383e45066"
-  integrity sha512-TNGvl51llDS5kmxV6ArvbjCJqO4r+cwbCPQEMV5sdi2WPtI+EwVuGuY+OMqizCTVObpNM6NuE3qqvlEYuk8yvQ==
+  version "6.0.15"
+  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-6.0.15.tgz#cd14cf23e2886ddf30f864ce1f7360d6bd412e42"
+  integrity sha512-juNEJmihZ0zjP6Fx/b9jbB6AsJ73n2C8rz8BS2r6TaEhHIfxMwvLKucZOAVG2CpxP4MPQYl3qtj319yE6sF6Eg==
   dependencies:
     "@wdio/logger" "6.0.12"
     "@wdio/utils" "6.0.13"
@@ -1514,17 +1514,6 @@ chownr@^1.1.1:
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-1.1.4.tgz#6fc9d7b42d32a583596337666e7d08084da2cc6b"
   integrity sha512-jJ0bqzaylmJtVnNgzTeSOs8DPavpbYgEr/b0YL8/2GO3xJEhInFmhKMUnEJQjZumK7KXGFhUy89PrsJWlakBVg==
 
-chrome-launcher@^0.11.1:
-  version "0.11.2"
-  resolved "https://registry.yarnpkg.com/chrome-launcher/-/chrome-launcher-0.11.2.tgz#c9a248dbccd3a08565553acf61adff879bcc982c"
-  integrity sha512-jx0kJDCXdB2ARcDMwNCtrf04oY1Up4rOmVu+fqJ5MTPOOIG8EhRcEU9NZfXZc6dMw9FU8o1r21PNp8V2M0zQ+g==
-  dependencies:
-    "@types/node" "*"
-    is-wsl "^2.1.0"
-    lighthouse-logger "^1.0.0"
-    mkdirp "0.5.1"
-    rimraf "^2.6.1"
-
 chrome-launcher@^0.13.1:
   version "0.13.1"
   resolved "https://registry.yarnpkg.com/chrome-launcher/-/chrome-launcher-0.13.1.tgz#cd5ed4952b630b9fccf2037b211cba81e5aae044"
@@ -2051,20 +2040,6 @@ detect-libc@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
   integrity sha1-+hN8S9aY7fVc1c0CrFWfkaTEups=
-
-devtools@6.0.13:
-  version "6.0.13"
-  resolved "https://registry.yarnpkg.com/devtools/-/devtools-6.0.13.tgz#2f440c9753c420f75629964216b8f27e0ea0299f"
-  integrity sha512-2Rj0E6XErT8d30YbizWRZBdk4s2UN2trxBJvj6r7zdIK2EGV36MqKWPzEs9MVUrX0s6JCN8dIUfjRU8eIGFTKw==
-  dependencies:
-    "@wdio/config" "6.0.12"
-    "@wdio/logger" "6.0.12"
-    "@wdio/protocols" "6.0.12"
-    "@wdio/utils" "6.0.13"
-    chrome-launcher "^0.11.1"
-    puppeteer-core "^2.1.1"
-    ua-parser-js "^0.7.21"
-    uuid "^7.0.2"
 
 devtools@6.0.14:
   version "6.0.14"
@@ -4493,10 +4468,6 @@ minimatch@3.0.4, minimatch@^3.0.3, minimatch@^3.0.4, minimatch@~3.0.2:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimist@0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
-
 minimist@^1.1.1, minimist@^1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
@@ -4528,12 +4499,6 @@ mixin-deep@^1.2.0:
   dependencies:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
-
-mkdirp@0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
-  dependencies:
-    minimist "0.0.8"
 
 mkdirp@0.5.3:
   version "0.5.3"
@@ -6763,18 +6728,6 @@ wdio-chromedriver-service@^6.0.1:
   resolved "https://registry.yarnpkg.com/wdio-chromedriver-service/-/wdio-chromedriver-service-6.0.1.tgz#9c9339b68c7bc497d499aadd5eb1790ab0a36254"
   integrity sha512-GcFW6vRk9tmZkcXoB+/Ti5f8A8rry4h9sxEw4dB3hHHh+xvkPYXqq79HeMo3PG8GGpGfXQ8NVaNWiyWEBOEybw==
 
-webdriver@6.0.13:
-  version "6.0.13"
-  resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-6.0.13.tgz#9a26ef51d9604fde710c0766363315295dc3de99"
-  integrity sha512-cioLnYtj93VGd7xR9rw0s3b2dpM9ETIXSB1choHlwKeSIpVyHbA7rGWu+QVc7s4kkW7VULIJ2GrNotwmyoTRmQ==
-  dependencies:
-    "@wdio/config" "6.0.12"
-    "@wdio/logger" "6.0.12"
-    "@wdio/protocols" "6.0.12"
-    "@wdio/utils" "6.0.13"
-    got "^10.7.0"
-    lodash.merge "^4.6.1"
-
 webdriver@6.0.14:
   version "6.0.14"
   resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-6.0.14.tgz#c4b7210c88514206060c96d81574147302c9be34"
@@ -6786,28 +6739,6 @@ webdriver@6.0.14:
     "@wdio/utils" "6.0.13"
     got "^10.7.0"
     lodash.merge "^4.6.1"
-
-webdriverio@6.0.13:
-  version "6.0.13"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-6.0.13.tgz#32b4ce1016a3e6b6ce031039ac94728ca2b7c500"
-  integrity sha512-/f8ExnUjQuADaVXllmXigUoi5AFnB+bUROcqoC3enXLRYhOJMeNjN/HLnmpclCEF3PndvP5005pAnJiFgcYxKw==
-  dependencies:
-    "@wdio/config" "6.0.12"
-    "@wdio/logger" "6.0.12"
-    "@wdio/repl" "6.0.13"
-    "@wdio/utils" "6.0.13"
-    archiver "^3.0.0"
-    css-value "^0.0.1"
-    devtools "6.0.13"
-    grapheme-splitter "^1.0.2"
-    lodash.clonedeep "^4.5.0"
-    lodash.isobject "^3.0.2"
-    lodash.isplainobject "^4.0.6"
-    lodash.zip "^4.2.0"
-    resq "^1.6.0"
-    rgb2hex "^0.1.0"
-    serialize-error "^6.0.0"
-    webdriver "6.0.13"
 
 webdriverio@6.0.14:
   version "6.0.14"
