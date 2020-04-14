@@ -650,12 +650,12 @@
     webdriverio "6.0.16"
 
 "@wdio/spec-reporter@^6.0.8":
-  version "6.0.14"
-  resolved "https://registry.yarnpkg.com/@wdio/spec-reporter/-/spec-reporter-6.0.14.tgz#88af6fd2f1d39b5125f57e21058ef129e8009553"
-  integrity sha512-d8D/J/f+rSIHpw4KwdV6WO2DY8kEHOa0WfKsOMqNTHltkT9UVbCjAEkI2Opgj0vj56X+Xt25EY3e1vFkuoyqOw==
+  version "6.0.16"
+  resolved "https://registry.yarnpkg.com/@wdio/spec-reporter/-/spec-reporter-6.0.16.tgz#0cd1edc7bef53b18212d2fb9377b6d1db6477dbe"
+  integrity sha512-0Pe0xlOvZRg96zbz9ge1uwy1FGO2VrkQ2e0zoXjmC90QUfIP/o2liy4XUnlvWBJpUvEDbdRr2vJpaP9FOSAUgQ==
   dependencies:
     "@wdio/reporter" "6.0.14"
-    chalk "^3.0.0"
+    chalk "^4.0.0"
     easy-table "^1.1.1"
     pretty-ms "^6.0.0"
 
