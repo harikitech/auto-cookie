@@ -597,13 +597,23 @@
     loglevel-plugin-prefix "^0.8.4"
     strip-ansi "^6.0.0"
 
-"@wdio/mocha-framework@^6.0.8":
-  version "6.0.15"
-  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-6.0.15.tgz#cd14cf23e2886ddf30f864ce1f7360d6bd412e42"
-  integrity sha512-juNEJmihZ0zjP6Fx/b9jbB6AsJ73n2C8rz8BS2r6TaEhHIfxMwvLKucZOAVG2CpxP4MPQYl3qtj319yE6sF6Eg==
+"@wdio/logger@6.0.16":
+  version "6.0.16"
+  resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-6.0.16.tgz#eef00e8369d8a5c86080a27d8bab41ad7dcdd2b2"
+  integrity sha512-VbH5UnQIG/3sSMV+Y38+rOdwyK9mVA9vuL7iOngoTafHwUjL1MObfN/Cex84L4mGxIgfxCu6GV48iUmSuQ7sqA==
   dependencies:
-    "@wdio/logger" "6.0.12"
-    "@wdio/utils" "6.0.13"
+    chalk "^4.0.0"
+    loglevel "^1.6.0"
+    loglevel-plugin-prefix "^0.8.4"
+    strip-ansi "^6.0.0"
+
+"@wdio/mocha-framework@^6.0.8":
+  version "6.0.16"
+  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-6.0.16.tgz#8393756e01ee437ded77da3b6ba84a6f54d65c18"
+  integrity sha512-yAQNJ/VsreZZloWtz8K67T93RM2C8C5+JljIjIzqre66DiU9GzDNpIiPvRHUnXXjoFaPnLVZQuRuC9NcAA3Qcg==
+  dependencies:
+    "@wdio/logger" "6.0.16"
+    "@wdio/utils" "6.0.16"
     mocha "^7.0.1"
 
 "@wdio/protocols@6.0.12":
@@ -664,6 +674,13 @@
   dependencies:
     "@wdio/logger" "6.0.12"
     is-base64 "^1.1.0"
+
+"@wdio/utils@6.0.16":
+  version "6.0.16"
+  resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-6.0.16.tgz#7ed1d90e7e16c7f5bf591c621fe66e7726bebc54"
+  integrity sha512-Nbg2HEh/wbMvYnBA12CLvdGBAQfEEsOmqi1TvPNND0cZXIITwbgKzw8cP7tlBgDt7JsQZ9WCupGXt+XbjC9aVg==
+  dependencies:
+    "@wdio/logger" "6.0.16"
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
