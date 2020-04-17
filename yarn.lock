@@ -545,9 +545,9 @@
     tsutils "^3.17.1"
 
 "@wdio/cli@^6.0.9":
-  version "6.0.16"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.0.16.tgz#908f101a0dc458556656348c30b9bce713b53b49"
-  integrity sha512-A+rv3BCnFwRlM+EKk7EBKKucq0ZFyVLtTLml+wbmwQS1F3wTJFavJKQkavPOOxpurRv2MjhwWDwQv72YjPj5RA==
+  version "6.0.18"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.0.18.tgz#0ac7e5609100b4bf7c66a12da1debedf69934c9c"
+  integrity sha512-EGO+tENsJE/LSWo79tL6AlJS2UaMEmmUYwAx56UtHAPeocKf/XzOa4G5miOuT/6Ie8FR8iQSyiay2IiOd7qasg==
   dependencies:
     "@wdio/config" "6.0.16"
     "@wdio/logger" "6.0.16"
@@ -563,7 +563,7 @@
     lodash.pickby "^4.6.0"
     lodash.union "^4.6.0"
     log-update "^4.0.0"
-    webdriverio "6.0.16"
+    webdriverio "6.0.18"
     yargs "^15.0.1"
     yarn-install "^1.0.0"
 
