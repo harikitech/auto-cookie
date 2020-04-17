@@ -650,9 +650,9 @@
     pretty-ms "^6.0.0"
 
 "@wdio/sync@^6.0.8":
-  version "6.0.16"
-  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-6.0.16.tgz#8d4ce648212fa9a452280cb3d1ba81036b5922f8"
-  integrity sha512-p7uXovsWb9lEYSXx3UkGB93JQVfy1psyJQwKgF3TZia2fv9hEk4V/tvZaSe25+DGwcHvolUekvKkD+5oSM2d/w==
+  version "6.0.18"
+  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-6.0.18.tgz#55f8e76f0ebb9e2951514df06df57967d9420238"
+  integrity sha512-FRKgLl8xgsBBzbmzKQucF+Q1XOHXuuV6oY2l7APe252TJu9XXT4bJPB0Punp9VnqHSGwJR97lbNk/cgOfzAd8g==
   dependencies:
     "@wdio/logger" "6.0.16"
     fibers "^4.0.1"
