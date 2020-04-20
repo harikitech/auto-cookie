@@ -6477,10 +6477,10 @@ traverse@^0.6.6:
   version "0.6.6"
   resolved "https://registry.yarnpkg.com/traverse/-/traverse-0.6.6.tgz#cbdf560fd7b9af632502fed40f918c157ea97137"
 
-ts-loader@7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-7.0.0.tgz#7c74dfa8956e3e33b91d98d4ed7b6f7575c35c25"
-  integrity sha512-qq9iPK235Xf/uPS1I72CIwB8qpbW0rys3entnXO+rIo2km50lMmeHKCNn1m047W6Sk4kceF6n5NWEnq/V8xdYQ==
+ts-loader@7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-7.0.1.tgz#ac9ae9eb8f5ebd0aa7b78b44db20691b6e31251b"
+  integrity sha512-wdGs9xO8UnwASwbluehzXciBtc9HfGlYA8Aiv856etLmdv8mJfAxCkt3YpS4g7G1IsGxaCVKQ102Qh0zycpeZQ==
   dependencies:
     chalk "^2.3.0"
     enhanced-resolve "^4.0.0"
@@ -6726,18 +6726,6 @@ wdio-chromedriver-service@^6.0.1:
   resolved "https://registry.yarnpkg.com/wdio-chromedriver-service/-/wdio-chromedriver-service-6.0.2.tgz#7d02fa52b3c61be83a510229236362071f1debee"
   integrity sha512-iESFUNXPvtk7xc0/DGwR4nRvm7SPUvbBeS2JkHg71Q0w1M7k6fUDtD5SzRuO1R3QWTStUfsgOB08r1dkcrzIvQ==
 
-webdriver@6.0.16:
-  version "6.0.16"
-  resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-6.0.16.tgz#f278873e90ff9381f8437c2343b4c8077827fdaa"
-  integrity sha512-oYT+sWu409mQeB3T7mCpmg2vNa2V9DVEjxmvJe/TCHFn0J/z9G/BumDJUGHyp8QYCzUAKGmyzgyNrl86jq2Wgw==
-  dependencies:
-    "@wdio/config" "6.0.16"
-    "@wdio/logger" "6.0.16"
-    "@wdio/protocols" "6.0.12"
-    "@wdio/utils" "6.0.16"
-    got "^10.7.0"
-    lodash.merge "^4.6.1"
-
 webdriver@6.0.18:
   version "6.0.18"
   resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-6.0.18.tgz#da3a803d37c2938855bb8c476ae2acbe8855fc2a"
@@ -6749,28 +6737,6 @@ webdriver@6.0.18:
     "@wdio/utils" "6.0.16"
     got "^10.7.0"
     lodash.merge "^4.6.1"
-
-webdriverio@6.0.16:
-  version "6.0.16"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-6.0.16.tgz#5f4ee119d8fe79d92ba0c10de55ecacb69d1f2b1"
-  integrity sha512-Pb0wU42tKQBIYR3EnhE9+HzrTr7N/5j2jzaG6HNQcdr0lrwZT64qQRR0pK51ObAGPvhkAgLzH38O5h12RreuSQ==
-  dependencies:
-    "@wdio/config" "6.0.16"
-    "@wdio/logger" "6.0.16"
-    "@wdio/repl" "6.0.16"
-    "@wdio/utils" "6.0.16"
-    archiver "^3.0.0"
-    css-value "^0.0.1"
-    devtools "6.0.16"
-    grapheme-splitter "^1.0.2"
-    lodash.clonedeep "^4.5.0"
-    lodash.isobject "^3.0.2"
-    lodash.isplainobject "^4.0.6"
-    lodash.zip "^4.2.0"
-    resq "^1.6.0"
-    rgb2hex "^0.1.0"
-    serialize-error "^6.0.0"
-    webdriver "6.0.16"
 
 webdriverio@6.0.18:
   version "6.0.18"
