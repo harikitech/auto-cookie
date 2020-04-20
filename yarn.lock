@@ -598,12 +598,12 @@
     strip-ansi "^6.0.0"
 
 "@wdio/mocha-framework@^6.0.8":
-  version "6.0.16"
-  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-6.0.16.tgz#8393756e01ee437ded77da3b6ba84a6f54d65c18"
-  integrity sha512-yAQNJ/VsreZZloWtz8K67T93RM2C8C5+JljIjIzqre66DiU9GzDNpIiPvRHUnXXjoFaPnLVZQuRuC9NcAA3Qcg==
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-6.1.0.tgz#23be313e6ca668fb7ad29c7e2ca73d269095d5ff"
+  integrity sha512-f+A/xpIQTOU6OAIeWqLoClVvgHM24K5KC9k1K4lc1wCb14E9tHmZ2E0swXtHCHisTmaxzXWfmZcJYBUTbbeaKg==
   dependencies:
     "@wdio/logger" "6.0.16"
-    "@wdio/utils" "6.0.16"
+    "@wdio/utils" "6.1.0"
     mocha "^7.0.1"
 
 "@wdio/protocols@6.0.12":
@@ -661,6 +661,13 @@
   version "6.0.16"
   resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-6.0.16.tgz#7ed1d90e7e16c7f5bf591c621fe66e7726bebc54"
   integrity sha512-Nbg2HEh/wbMvYnBA12CLvdGBAQfEEsOmqi1TvPNND0cZXIITwbgKzw8cP7tlBgDt7JsQZ9WCupGXt+XbjC9aVg==
+  dependencies:
+    "@wdio/logger" "6.0.16"
+
+"@wdio/utils@6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-6.1.0.tgz#34b5d47e9a686a975d8e855568c21d57357f7297"
+  integrity sha512-DTIdSF0aNBfF5piJYYbWbxrhxes8XxTXJK0oIX9+HqWTlwp6W/RNbeGsJGD/FziS6XbToQeehYSfVSQowHQejw==
   dependencies:
     "@wdio/logger" "6.0.16"
 
