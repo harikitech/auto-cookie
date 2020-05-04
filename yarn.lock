@@ -6161,9 +6161,11 @@ wcwidth@>=1.0.1, wcwidth@^1.0.1:
     defaults "^1.0.3"
 
 wdio-chromedriver-service@^6.0.1:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/wdio-chromedriver-service/-/wdio-chromedriver-service-6.0.2.tgz#7d02fa52b3c61be83a510229236362071f1debee"
-  integrity sha512-iESFUNXPvtk7xc0/DGwR4nRvm7SPUvbBeS2JkHg71Q0w1M7k6fUDtD5SzRuO1R3QWTStUfsgOB08r1dkcrzIvQ==
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/wdio-chromedriver-service/-/wdio-chromedriver-service-6.0.3.tgz#ac1ff82f772dce9b77500e9df5384c73786d8b5a"
+  integrity sha512-1KZUQH1/b5iD/3B/VJ3EOy8fArNA7cuIop9GPFxxRAmkA33qeCrx+5TbZ6hQl6+GUZtRQoqGeUUZ5y0W0afQLw==
+  dependencies:
+    fs-extra "^9.0.0"
 
 webdriver@6.1.4:
   version "6.1.4"
