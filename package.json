@@ -88,5 +88,9 @@
     "*.{js,ts,md,json}": [
       "prettier --write"
     ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
   }
 }
