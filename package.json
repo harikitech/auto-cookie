@@ -50,7 +50,7 @@
     "@wdio/sync": "^6.0.8",
     "chromedriver": "^81.0.0",
     "eslint": "^7.0.0",
-    "eslint-plugin-mocha": "^6.3.0",
+    "eslint-plugin-mocha": "^7.0.0",
     "espower-typescript": "9.0.2",
     "finalhandler": "1.1.2",
     "husky": "^4.2.3",
