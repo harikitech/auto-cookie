@@ -311,9 +311,9 @@
     tsutils "^3.17.1"
 
 "@wdio/cli@^6.0.9":
-  version "6.1.11"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.1.11.tgz#a819c6eb42d9397d04ca7cb30182a74dabcc0a01"
-  integrity sha512-xH/val+A2rimVgWnT7P7V7/DH7+r1bQ88a3LjM1UJIEnjVBhglx+fysjFCnRV205IhkW5lej0XLUlIJmMFdhiA==
+  version "6.1.12"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.1.12.tgz#80a2174962632758ff54b8fe6faf802a28e3f0a6"
+  integrity sha512-KXGTCNcoEywYqT67qyv58I/YGowinfNWlzRoD2uP/shVZn8a0ebZam8CyXl3SJtL9pfELUcaIO1Hqxwtf6BBAg==
   dependencies:
     "@wdio/config" "6.1.2"
     "@wdio/logger" "6.0.16"
@@ -329,7 +329,7 @@
     lodash.pickby "^4.6.0"
     lodash.union "^4.6.0"
     log-update "^4.0.0"
-    webdriverio "6.1.11"
+    webdriverio "6.1.12"
     yargs "^15.0.1"
     yarn-install "^1.0.0"
 
@@ -5310,6 +5310,13 @@ serialize-error@^6.0.0:
   dependencies:
     type-fest "^0.12.0"
 
+serialize-error@^7.0.0:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/serialize-error/-/serialize-error-7.0.1.tgz#f1360b0447f61ffb483ec4157c737fab7d778e18"
+  integrity sha512-8I8TjW5KMOKsZQTvoxjuSIa7foAwPWGOts+6o7sgjz41/qMD9VQHEDxi6PBvK2l0MXUmqZyNpUK+T2tQaaElvw==
+  dependencies:
+    type-fest "^0.13.1"
+
 serialize-javascript@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-2.1.2.tgz#ecec53b0e0317bdc95ef76ab7074b7384785fa61"
@@ -6005,6 +6012,11 @@ type-fest@^0.12.0:
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.12.0.tgz#f57a27ab81c68d136a51fd71467eff94157fa1ee"
   integrity sha512-53RyidyjvkGpnWPMF9bQgFtWp+Sl8O2Rp13VavmJgfAP9WWG6q6TkrKU8iyJdnwnfgHI6k2hTlgqH4aSdjoTbg==
 
+type-fest@^0.13.1:
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.13.1.tgz#0172cb5bce80b0bd542ea348db50c7e21834d934"
+  integrity sha512-34R7HTnG0XIJcBSn5XhDd7nNFPRcXYRZrBB2O2jdKqYODldSzBAqzsWoZYYvduky73toYS/ESqxPvkDf/F0XMg==
+
 type-fest@^0.8.1:
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
@@ -6216,10 +6228,10 @@ webdriver@6.1.8:
     got "^11.0.2"
     lodash.merge "^4.6.1"
 
-webdriverio@6.1.11:
-  version "6.1.11"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-6.1.11.tgz#40d214678111ac3436bac525ff10bce16b1f4561"
-  integrity sha512-b6nP19da0HlqqD3ApYZc3yCraMwUjWLX+ghaT0kCIA8lBbVCEhXhJNAgPrEZJUfYJPKmYe7f0Gibn821fCMCQQ==
+webdriverio@6.1.12:
+  version "6.1.12"
+  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-6.1.12.tgz#3e32d5cb66b7a115093e914cee5206e955f84fa9"
+  integrity sha512-i3x6x3CSRl2CkYFWvuvhf1NcUbBZeTuw6jdLiHUB3OaxdoP/nCuCzTx2ZT9uhZgZNDk081tK0auJBGF0S9p+ow==
   dependencies:
     "@wdio/config" "6.1.2"
     "@wdio/logger" "6.0.16"
@@ -6235,7 +6247,7 @@ webdriverio@6.1.11:
     lodash.zip "^4.2.0"
     resq "^1.6.0"
     rgb2hex "^0.1.0"
-    serialize-error "^6.0.0"
+    serialize-error "^7.0.0"
     webdriver "6.1.11"
 
 webdriverio@6.1.9:
