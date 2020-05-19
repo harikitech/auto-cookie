@@ -42,7 +42,7 @@
     "@types/js-cookie": "2.2.6",
     "@types/mocha": "^7.0.2",
     "@types/power-assert": "1.5.3",
-    "@types/serve-static": "1.13.3",
+    "@types/serve-static": "1.13.4",
     "@wdio/cli": "^6.0.9",
     "@wdio/local-runner": "^6.0.9",
     "@wdio/mocha-framework": "^6.0.8",
