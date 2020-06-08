@@ -304,13 +304,13 @@
     tsutils "^3.17.1"
 
 "@wdio/cli@^6.0.9":
-  version "6.1.16"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.1.16.tgz#dba0e1c84b11e8b9361af4c3ecd1597be4f07629"
-  integrity sha512-q7JaEiLU2mdOibeKAQFqdWTS2evdkwgWSft1rmWDN7idiV39uncTTUcwlXBKE2a9yDk/8qn6EEXdBLthOCfyOA==
+  version "6.1.17"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.1.17.tgz#a4932ad0e3990fe2ae08a7f6fa0e8aecc402abf0"
+  integrity sha512-jEOaNNs3Rd/xUkdzgG/VREqu0CAoimUEVlT2UcN9Ab0p9zTcT6FPqZ7tfKtCyQ1wNczSFZ8VOA0qtwrPlOQibw==
   dependencies:
     "@wdio/config" "6.1.14"
     "@wdio/logger" "6.0.16"
-    "@wdio/utils" "6.1.8"
+    "@wdio/utils" "6.1.17"
     async-exit-hook "^2.0.1"
     chalk "^4.0.0"
     chokidar "^3.0.0"
@@ -322,7 +322,7 @@
     lodash.pickby "^4.6.0"
     lodash.union "^4.6.0"
     log-update "^4.0.0"
-    webdriverio "6.1.16"
+    webdriverio "6.1.17"
     yargs "^15.0.1"
     yarn-install "^1.0.0"
 
