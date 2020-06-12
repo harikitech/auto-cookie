@@ -378,13 +378,6 @@
   dependencies:
     "@wdio/utils" "6.1.17"
 
-"@wdio/repl@6.1.8":
-  version "6.1.8"
-  resolved "https://registry.yarnpkg.com/@wdio/repl/-/repl-6.1.8.tgz#05be98245e309073e052a8c12a317bc9c25ce8f6"
-  integrity sha512-C647KvDIcOHYN24eFbiM2xE+etPEACvRYkEp7BPLyopEABDr0I3Qdb5MLhopC5eMAVHp70/WT27H1CE2v9iILQ==
-  dependencies:
-    "@wdio/utils" "6.1.8"
-
 "@wdio/reporter@6.1.14":
   version "6.1.14"
   resolved "https://registry.yarnpkg.com/@wdio/reporter/-/reporter-6.1.14.tgz#1885d280654b7b8e14b7be33a5cbf1471d32fb1e"
@@ -427,13 +420,6 @@
   version "6.1.17"
   resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-6.1.17.tgz#99890c83dc856879c85894430e62eff56ee4d98d"
   integrity sha512-CvXzRq7JeTiMKDyK52LlWghoCOXX1x5bx6tWOIPQh3S4eTQOCAogxVjhzrfgDNV/A+dfIkfByA6n8AifNbupPQ==
-  dependencies:
-    "@wdio/logger" "6.0.16"
-
-"@wdio/utils@6.1.8":
-  version "6.1.8"
-  resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-6.1.8.tgz#117b54735b942a768020814de666fd29f35fbbb1"
-  integrity sha512-qzvD8qCPpIpDrZ0HNOx1hTlfKY26p8WByUXgr52ll6DXxtAYXZLIJ8GAYFJUi87NVfwtv6+O7owQGSM/jtr8AQ==
   dependencies:
     "@wdio/logger" "6.0.16"
 
@@ -1754,20 +1740,6 @@ detect-libc@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
   integrity sha1-+hN8S9aY7fVc1c0CrFWfkaTEups=
-
-devtools@6.1.16:
-  version "6.1.16"
-  resolved "https://registry.yarnpkg.com/devtools/-/devtools-6.1.16.tgz#40afd85f9ee767bd752e9b012ffd1274d7098f56"
-  integrity sha512-Px/K/xYY+fTW8D5yt7p6ZZJfkfHHulKVr2Y+BJSCQyKNSY/hiZFT6KAjoUFrAastLCqqs1gW2Dy/OGb0qWm+Hg==
-  dependencies:
-    "@wdio/config" "6.1.14"
-    "@wdio/logger" "6.0.16"
-    "@wdio/protocols" "6.1.14"
-    "@wdio/utils" "6.1.8"
-    chrome-launcher "^0.13.1"
-    puppeteer-core "^3.0.0"
-    ua-parser-js "^0.7.21"
-    uuid "^8.0.0"
 
 devtools@6.1.17:
   version "6.1.17"
@@ -3610,9 +3582,9 @@ lines-and-columns@^1.1.6:
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
 lint-staged@^10.1.1:
-  version "10.2.9"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.2.9.tgz#6013ecfa80829cd422446b545fd30a96bca3098c"
-  integrity sha512-ziRAuXEqvJLSXg43ezBpHxRW8FOJCXISaXU//BWrxRrp5cBdRkIx7g5IsB3OI45xYGE0S6cOacfekSjDyDKF2g==
+  version "10.2.10"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.2.10.tgz#f0f78bf8786bbe90e1775a0dc540f7f12b6a79b2"
+  integrity sha512-dgelFaNH6puUGAcU+OVMgbfpKSerNYsPSn6+nlbRDjovL0KigpsVpCu0PFZG6BJxX8gnHJqaZlR9krZamQsb0w==
   dependencies:
     chalk "^4.0.0"
     cli-truncate "2.1.0"
@@ -6168,18 +6140,6 @@ wdio-chromedriver-service@^6.0.1:
   dependencies:
     fs-extra "^9.0.0"
 
-webdriver@6.1.14:
-  version "6.1.14"
-  resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-6.1.14.tgz#fbdc264c80665550219970911ca39ba97e65e789"
-  integrity sha512-6fXoGDnxWfJn9zqfYbc6+VEV5N1obd3K7iuRmJ7w/hH9d9XDxcrcx147T5egiy1qziko61hqYE/x9VtSQbjPcA==
-  dependencies:
-    "@wdio/config" "6.1.14"
-    "@wdio/logger" "6.0.16"
-    "@wdio/protocols" "6.1.14"
-    "@wdio/utils" "6.1.8"
-    got "^11.0.2"
-    lodash.merge "^4.6.1"
-
 webdriver@6.1.17:
   version "6.1.17"
   resolved "https://registry.yarnpkg.com/webdriver/-/webdriver-6.1.17.tgz#669249677625d5e29caf90a2e3dab6ed2240eb9c"
@@ -6191,28 +6151,6 @@ webdriver@6.1.17:
     "@wdio/utils" "6.1.17"
     got "^11.0.2"
     lodash.merge "^4.6.1"
-
-webdriverio@6.1.16:
-  version "6.1.16"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-6.1.16.tgz#af5f52eb5dca16f394ea3987a270adb9fdc546db"
-  integrity sha512-vk6/XeErNnMooebCtxwIR//LqrastXO9gXL+eVUGNRAuG5omp8XCdT+MK2fmlw53xhcPULQ/y3h8ysYlPnPeyA==
-  dependencies:
-    "@wdio/config" "6.1.14"
-    "@wdio/logger" "6.0.16"
-    "@wdio/repl" "6.1.8"
-    "@wdio/utils" "6.1.8"
-    archiver "^4.0.1"
-    css-value "^0.0.1"
-    devtools "6.1.16"
-    grapheme-splitter "^1.0.2"
-    lodash.clonedeep "^4.5.0"
-    lodash.isobject "^3.0.2"
-    lodash.isplainobject "^4.0.6"
-    lodash.zip "^4.2.0"
-    resq "^1.6.0"
-    rgb2hex "^0.2.0"
-    serialize-error "^7.0.0"
-    webdriver "6.1.14"
 
 webdriverio@6.1.17:
   version "6.1.17"
