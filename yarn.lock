@@ -1736,20 +1736,6 @@ detect-libc@^1.0.3:
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
   integrity sha1-+hN8S9aY7fVc1c0CrFWfkaTEups=
 
-devtools@6.1.19:
-  version "6.1.19"
-  resolved "https://registry.yarnpkg.com/devtools/-/devtools-6.1.19.tgz#d8f634762c2175708f1f87095ea5d87c232fb648"
-  integrity sha512-3d3Bcw1X5RJibqs9NGiK35fkT9QlRuO39/MC8v15esnUXUNuLTemKvhw7BPVYGq0qXfCbnIO9Usm+sBq1Q78xg==
-  dependencies:
-    "@wdio/config" "6.1.14"
-    "@wdio/logger" "6.0.16"
-    "@wdio/protocols" "6.1.14"
-    "@wdio/utils" "6.1.17"
-    chrome-launcher "^0.13.1"
-    puppeteer-core "^4.0.0"
-    ua-parser-js "^0.7.21"
-    uuid "^8.0.0"
-
 devtools@6.1.20:
   version "6.1.20"
   resolved "https://registry.yarnpkg.com/devtools/-/devtools-6.1.20.tgz#0286709c0a009923d6ddb5d0ad90a508904bbf77"
@@ -2159,9 +2145,9 @@ eslint-visitor-keys@^1.1.0, eslint-visitor-keys@^1.2.0:
   integrity sha512-WFb4ihckKil6hu3Dp798xdzSfddwKKU3+nGniKF6HfeW6OLd2OUDEPP7TcHtB5+QXOKg2s6B2DaMPE1Nn/kxKQ==
 
 eslint@^7.0.0:
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.3.0.tgz#f9f1fc3dc1227985d0db88769f2bbac7b4b875d7"
-  integrity sha512-dJMVXwfU5PT1cj2Nv2VPPrKahKTGdX+5Dh0Q3YuKt+Y2UhdL2YbzsVaBMyG9HC0tBismlv/r1+eZqs6SMIV38Q==
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.3.1.tgz#76392bd7e44468d046149ba128d1566c59acbe19"
+  integrity sha512-cQC/xj9bhWUcyi/RuMbRtC3I0eW8MH0jhRELSvpKYkWep3C6YZ2OkvcvJVUeO6gcunABmzptbXBuDoXsjHmfTA==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.10.0"
@@ -6074,28 +6060,6 @@ webdriver@6.1.17:
     "@wdio/utils" "6.1.17"
     got "^11.0.2"
     lodash.merge "^4.6.1"
-
-webdriverio@6.1.19:
-  version "6.1.19"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-6.1.19.tgz#f5b9eb513b4a51a8b3c0957f0a568489337c094b"
-  integrity sha512-0ib3oZc8YZg1+NrPs9dLKWdbzUlZcsajhvW1N1bSBEjq1IeQNeahxKF0bchld1hAEQgpISksMfRvlMTB2HbNzA==
-  dependencies:
-    "@wdio/config" "6.1.14"
-    "@wdio/logger" "6.0.16"
-    "@wdio/repl" "6.1.17"
-    "@wdio/utils" "6.1.17"
-    archiver "^4.0.1"
-    css-value "^0.0.1"
-    devtools "6.1.19"
-    grapheme-splitter "^1.0.2"
-    lodash.clonedeep "^4.5.0"
-    lodash.isobject "^3.0.2"
-    lodash.isplainobject "^4.0.6"
-    lodash.zip "^4.2.0"
-    resq "^1.6.0"
-    rgb2hex "^0.2.0"
-    serialize-error "^7.0.0"
-    webdriver "6.1.17"
 
 webdriverio@6.1.20:
   version "6.1.20"
