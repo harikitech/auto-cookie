@@ -331,13 +331,13 @@
     glob "^7.1.2"
 
 "@wdio/local-runner@^6.0.9":
-  version "6.1.20"
-  resolved "https://registry.yarnpkg.com/@wdio/local-runner/-/local-runner-6.1.20.tgz#7f014643c6f6ceb0955bb7594ae9b344cceec316"
-  integrity sha512-N6j+LvNgfUiNfp8lrtzfG1pd7mkHkAxoNW4Ry/Z+f5msYQjFdM7V0O+GdA3KFy42/djO2eo2ovFGqdZettUwfQ==
+  version "6.1.22"
+  resolved "https://registry.yarnpkg.com/@wdio/local-runner/-/local-runner-6.1.22.tgz#e11350896c53c8c6349f949be3d033670350b30d"
+  integrity sha512-i7wIUDG4giJQehNg8N78vMi+GS5NGaOmz9OsyhW6jy0ZC7Pmx8pLG9S9Su99WPYth4TE9VXwnhZu64oUTxHYAQ==
   dependencies:
     "@wdio/logger" "6.0.16"
     "@wdio/repl" "6.1.17"
-    "@wdio/runner" "6.1.20"
+    "@wdio/runner" "6.1.22"
     async-exit-hook "^2.0.1"
     stream-buffers "^3.0.2"
 
@@ -380,10 +380,10 @@
   dependencies:
     fs-extra "^9.0.0"
 
-"@wdio/runner@6.1.20":
-  version "6.1.20"
-  resolved "https://registry.yarnpkg.com/@wdio/runner/-/runner-6.1.20.tgz#dc410754fea747bf6e208ef25f87387c42e93ac0"
-  integrity sha512-TYaYsFcJ3LvdxSJiX5WGDREOPI+TJXmC/lR9EuU898lh4jm26MuaV4a/KlW/yoAcrH6e60Z2txlxrqBkAZOyMw==
+"@wdio/runner@6.1.22":
+  version "6.1.22"
+  resolved "https://registry.yarnpkg.com/@wdio/runner/-/runner-6.1.22.tgz#827a93e45b29ddaccdb45f3dac30b6d3194d59c3"
+  integrity sha512-EWon74uKMEO/kPzoIQ71n/qI3c+OoILrpqzu0qvnF39n4XrLrHcqxuy7VMtGGG7uP7fnCQdCKP9f80wc8JWLTA==
   dependencies:
     "@wdio/config" "6.1.14"
     "@wdio/logger" "6.0.16"
@@ -391,7 +391,7 @@
     deepmerge "^4.0.0"
     gaze "^1.1.2"
     webdriver "6.1.17"
-    webdriverio "6.1.20"
+    webdriverio "6.1.22"
 
 "@wdio/spec-reporter@^6.0.8":
   version "6.1.14"
