@@ -299,9 +299,9 @@
     tsutils "^3.17.1"
 
 "@wdio/cli@^6.0.9":
-  version "6.1.20"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.1.20.tgz#461e209cfd3fc8359074b9e0528f1956b0c0acc8"
-  integrity sha512-uPl6Aj19TeeaHVp94wJH8gvaD8GVTQuqcbKWthFGckQsuRoh8YgEToA6/EndEIccRsaqqcRDu8rwufyNUABmJQ==
+  version "6.1.22"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.1.22.tgz#3e4633718761b2c00ac87957f2af44fc5ded36cb"
+  integrity sha512-/Z8Vef7m2qb2+Wsv0e9PKSUzsKynf0IgB4TT1bo5xhPjusm4DqWH+ptBuCkXXXoJBHSSyzZFqP2cSnByjICAWQ==
   dependencies:
     "@wdio/config" "6.1.14"
     "@wdio/logger" "6.0.16"
@@ -317,7 +317,7 @@
     lodash.pickby "^4.6.0"
     lodash.union "^4.6.0"
     log-update "^4.0.0"
-    webdriverio "6.1.20"
+    webdriverio "6.1.22"
     yargs "^15.0.1"
     yarn-install "^1.0.0"
 
@@ -1740,6 +1740,20 @@ devtools@6.1.20:
   version "6.1.20"
   resolved "https://registry.yarnpkg.com/devtools/-/devtools-6.1.20.tgz#0286709c0a009923d6ddb5d0ad90a508904bbf77"
   integrity sha512-xSLip35gydJvjw7xPnj+Wu/5QPo0TK+kR1X5CmRZQNPA0WvhRirUBN7bz7gClDyGbcNNNh8klNY9yJm6N9+gFA==
+  dependencies:
+    "@wdio/config" "6.1.14"
+    "@wdio/logger" "6.0.16"
+    "@wdio/protocols" "6.1.14"
+    "@wdio/utils" "6.1.17"
+    chrome-launcher "^0.13.1"
+    puppeteer-core "^4.0.0"
+    ua-parser-js "^0.7.21"
+    uuid "^8.0.0"
+
+devtools@6.1.22:
+  version "6.1.22"
+  resolved "https://registry.yarnpkg.com/devtools/-/devtools-6.1.22.tgz#7b55a41b497e131b47a33147e5297c7809d7fa51"
+  integrity sha512-6m8UCXjDvJgcxm2MuL7TSss2c14KlOZ972jyGdUZi8omjeIa1s2ZrXYFGPK2Gl3XKvl8k8Co3d97W8AHODZgEg==
   dependencies:
     "@wdio/config" "6.1.14"
     "@wdio/logger" "6.0.16"
@@ -6073,6 +6087,28 @@ webdriverio@6.1.20:
     archiver "^4.0.1"
     css-value "^0.0.1"
     devtools "6.1.20"
+    grapheme-splitter "^1.0.2"
+    lodash.clonedeep "^4.5.0"
+    lodash.isobject "^3.0.2"
+    lodash.isplainobject "^4.0.6"
+    lodash.zip "^4.2.0"
+    resq "^1.6.0"
+    rgb2hex "^0.2.0"
+    serialize-error "^7.0.0"
+    webdriver "6.1.17"
+
+webdriverio@6.1.22:
+  version "6.1.22"
+  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-6.1.22.tgz#c230d639e141e64c16240dbcce49e13183cb46c8"
+  integrity sha512-OBiur+Lybs3V+//OtU+9/qwTsLwRIicsVyYCBSqVFGBu3shk0zM6BppfB6uHeRSBmMGSRtA4od1K/rFysX1j6w==
+  dependencies:
+    "@wdio/config" "6.1.14"
+    "@wdio/logger" "6.0.16"
+    "@wdio/repl" "6.1.17"
+    "@wdio/utils" "6.1.17"
+    archiver "^4.0.1"
+    css-value "^0.0.1"
+    devtools "6.1.22"
     grapheme-splitter "^1.0.2"
     lodash.clonedeep "^4.5.0"
     lodash.isobject "^3.0.2"
