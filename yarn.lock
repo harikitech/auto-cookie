@@ -299,9 +299,9 @@
     tsutils "^3.17.1"
 
 "@wdio/cli@^6.0.9":
-  version "6.1.22"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.1.22.tgz#3e4633718761b2c00ac87957f2af44fc5ded36cb"
-  integrity sha512-/Z8Vef7m2qb2+Wsv0e9PKSUzsKynf0IgB4TT1bo5xhPjusm4DqWH+ptBuCkXXXoJBHSSyzZFqP2cSnByjICAWQ==
+  version "6.1.23"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.1.23.tgz#6612db5d6885cc7aa9589e485ab75c37a3a901fa"
+  integrity sha512-yruz0JuOpq+My+bjFSLNRk1oNluJYJ2N7rJAw5+EUnZBDQ+vwBobq/SqevOqwHtBcT7uKpyoUIG48UQJ3gzTRQ==
   dependencies:
     "@wdio/config" "6.1.14"
     "@wdio/logger" "6.0.16"
@@ -317,7 +317,7 @@
     lodash.pickby "^4.6.0"
     lodash.union "^4.6.0"
     log-update "^4.0.0"
-    webdriverio "6.1.22"
+    webdriverio "6.1.23"
     yargs "^15.0.1"
     yarn-install "^1.0.0"
 
@@ -1736,10 +1736,10 @@ detect-libc@^1.0.3:
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
   integrity sha1-+hN8S9aY7fVc1c0CrFWfkaTEups=
 
-devtools@6.1.20:
-  version "6.1.20"
-  resolved "https://registry.yarnpkg.com/devtools/-/devtools-6.1.20.tgz#0286709c0a009923d6ddb5d0ad90a508904bbf77"
-  integrity sha512-xSLip35gydJvjw7xPnj+Wu/5QPo0TK+kR1X5CmRZQNPA0WvhRirUBN7bz7gClDyGbcNNNh8klNY9yJm6N9+gFA==
+devtools@6.1.22:
+  version "6.1.22"
+  resolved "https://registry.yarnpkg.com/devtools/-/devtools-6.1.22.tgz#7b55a41b497e131b47a33147e5297c7809d7fa51"
+  integrity sha512-6m8UCXjDvJgcxm2MuL7TSss2c14KlOZ972jyGdUZi8omjeIa1s2ZrXYFGPK2Gl3XKvl8k8Co3d97W8AHODZgEg==
   dependencies:
     "@wdio/config" "6.1.14"
     "@wdio/logger" "6.0.16"
@@ -1750,10 +1750,10 @@ devtools@6.1.20:
     ua-parser-js "^0.7.21"
     uuid "^8.0.0"
 
-devtools@6.1.22:
-  version "6.1.22"
-  resolved "https://registry.yarnpkg.com/devtools/-/devtools-6.1.22.tgz#7b55a41b497e131b47a33147e5297c7809d7fa51"
-  integrity sha512-6m8UCXjDvJgcxm2MuL7TSss2c14KlOZ972jyGdUZi8omjeIa1s2ZrXYFGPK2Gl3XKvl8k8Co3d97W8AHODZgEg==
+devtools@6.1.23:
+  version "6.1.23"
+  resolved "https://registry.yarnpkg.com/devtools/-/devtools-6.1.23.tgz#637ffefc48e8de6ce0d90ab0840880ae9ad7f5b2"
+  integrity sha512-+9b3bURLZED3sPVPQluGQFTuv/evRfQugM8dr+eybhOIfkSTGIlyks82QlaxMjHEBiaRXk3AFSl1f110T2tTKA==
   dependencies:
     "@wdio/config" "6.1.14"
     "@wdio/logger" "6.0.16"
@@ -6075,28 +6075,6 @@ webdriver@6.1.17:
     got "^11.0.2"
     lodash.merge "^4.6.1"
 
-webdriverio@6.1.20:
-  version "6.1.20"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-6.1.20.tgz#0970408b65d7869fe84f72695c94c3211c0b7076"
-  integrity sha512-MqM5SWG+IjcWQvJbjS9z0Lx0JGR3J52HdcU3zcjNGE/+WceKaSDWdJRp/kfXpu2qGixse6gZU6m94pQx1uU9Rg==
-  dependencies:
-    "@wdio/config" "6.1.14"
-    "@wdio/logger" "6.0.16"
-    "@wdio/repl" "6.1.17"
-    "@wdio/utils" "6.1.17"
-    archiver "^4.0.1"
-    css-value "^0.0.1"
-    devtools "6.1.20"
-    grapheme-splitter "^1.0.2"
-    lodash.clonedeep "^4.5.0"
-    lodash.isobject "^3.0.2"
-    lodash.isplainobject "^4.0.6"
-    lodash.zip "^4.2.0"
-    resq "^1.6.0"
-    rgb2hex "^0.2.0"
-    serialize-error "^7.0.0"
-    webdriver "6.1.17"
-
 webdriverio@6.1.22:
   version "6.1.22"
   resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-6.1.22.tgz#c230d639e141e64c16240dbcce49e13183cb46c8"
@@ -6109,6 +6087,28 @@ webdriverio@6.1.22:
     archiver "^4.0.1"
     css-value "^0.0.1"
     devtools "6.1.22"
+    grapheme-splitter "^1.0.2"
+    lodash.clonedeep "^4.5.0"
+    lodash.isobject "^3.0.2"
+    lodash.isplainobject "^4.0.6"
+    lodash.zip "^4.2.0"
+    resq "^1.6.0"
+    rgb2hex "^0.2.0"
+    serialize-error "^7.0.0"
+    webdriver "6.1.17"
+
+webdriverio@6.1.23:
+  version "6.1.23"
+  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-6.1.23.tgz#04094f34e9dc709d501b1fac5b599d0195465846"
+  integrity sha512-3Zx8uWNeilOmg5wsAcFmJBoh8M38At+WD72VHMtR+h+aAjOnY0SIPSgIWu+iE0b50TtmcIZcK59iWpGoxz/SNA==
+  dependencies:
+    "@wdio/config" "6.1.14"
+    "@wdio/logger" "6.0.16"
+    "@wdio/repl" "6.1.17"
+    "@wdio/utils" "6.1.17"
+    archiver "^4.0.1"
+    css-value "^0.0.1"
+    devtools "6.1.23"
     grapheme-splitter "^1.0.2"
     lodash.clonedeep "^4.5.0"
     lodash.isobject "^3.0.2"
