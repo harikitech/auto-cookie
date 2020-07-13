@@ -40,7 +40,7 @@
     "@9renpoto/eslint-config-typescript": "^6.0.0",
     "@types/finalhandler": "1.1.0",
     "@types/js-cookie": "2.2.6",
-    "@types/mocha": "^7.0.2",
+    "@types/mocha": "^8.0.0",
     "@types/power-assert": "1.5.3",
     "@types/serve-static": "1.13.4",
     "@wdio/cli": "^6.0.9",
