@@ -306,13 +306,13 @@
     tsutils "^3.17.1"
 
 "@wdio/cli@^6.0.9":
-  version "6.3.5"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.3.5.tgz#fc931b26704e1df0f650eb41e5ccab28961df5d8"
-  integrity sha512-xRmfYn+H9f1286W/2ZRkRapwdIuQCZPSbH8j0BEdoq6+kuBTY6SKwe+s+VBtc4Xe1aCQpL9aCUnLxyF45vDdTg==
+  version "6.3.6"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.3.6.tgz#98aabe3f75f113160719dfdc2b1871b431456c4e"
+  integrity sha512-KYM/PdtUk1Hqt9RuynNDUgQi5SEZmCVdUQt0z7tJTKhF4pEoRx0qBTqSS9l6jPtCRIRMP0ue8F+2iklILjpLkw==
   dependencies:
     "@wdio/config" "6.1.14"
     "@wdio/logger" "6.0.16"
-    "@wdio/utils" "6.3.0"
+    "@wdio/utils" "6.3.6"
     async-exit-hook "^2.0.1"
     chalk "^4.0.0"
     chokidar "^3.0.0"
@@ -325,7 +325,7 @@
     lodash.union "^4.6.0"
     mkdirp "^1.0.4"
     recursive-readdir "^2.2.2"
-    webdriverio "6.3.5"
+    webdriverio "6.3.6"
     yargs "^15.0.1"
     yarn-install "^1.0.0"
 
@@ -1253,7 +1253,7 @@ chardet@^0.7.0:
   resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
   integrity sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==
 
-chokidar@3.3.1, chokidar@^3.0.0:
+chokidar@3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.3.1.tgz#c84e5b3d18d9a4d77558fef466b1bf16bbeb3450"
   integrity sha512-4QYCEWOcK3OJrxwvyyAOxFuhpvOVCYkr33LPfFNBjAD/w3sEzWsp2BUOkI4l9bHvWioAd0rc6NlHUOEaWkTeqg==
@@ -1287,7 +1287,7 @@ chokidar@^2.1.8:
   optionalDependencies:
     fsevents "^1.2.7"
 
-chokidar@^3.4.1:
+chokidar@^3.0.0, chokidar@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.4.1.tgz#e905bdecf10eaa0a0b1db0c664481cc4cbc22ba1"
   integrity sha512-TQTJyr2stihpC4Sya9hs2Xh+O2wf+igjL36Y75xx2WdHuiICcn/XJza46Jwt0eT5hVpQOzo3FpY3cj3RVYLX0g==
