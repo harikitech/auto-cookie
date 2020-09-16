@@ -428,13 +428,6 @@
     "@wdio/logger" "6.4.7"
     fibers "^4.0.1"
 
-"@wdio/utils@6.4.7":
-  version "6.4.7"
-  resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-6.4.7.tgz#d16ae490cc8f4448514c74316e35b31ef76e2192"
-  integrity sha512-zsDMhLSNReC9ZzQNuEak8sAlEbPyjI6FYLKdX/0vIZ5opgfdaPmTg4j2Y6g7PVg6heQMvP3Ecszdexnmm7UFRQ==
-  dependencies:
-    "@wdio/logger" "6.4.7"
-
 "@wdio/utils@6.5.0":
   version "6.5.0"
   resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-6.5.0.tgz#46398b08e6741eb97a57089b2c909622c480ea22"
@@ -4623,9 +4616,9 @@ prettier-plugin-package@1.0.0:
   integrity sha512-flbKuLB7ftrW2zQYJjb0mF6zY7R0jDrYatpr0BBNj04Eb+g1RLbquOQSJE1LffDZfzU03fwJQ74grqQjQjYa3Q==
 
 prettier@^2.0.2:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.1.1.tgz#d9485dd5e499daa6cb547023b87a6cf51bee37d6"
-  integrity sha512-9bY+5ZWCfqj3ghYBLxApy2zf6m+NJo5GzmLTpr9FsApsfjriNnS2dahWReHMi7qNPhhHl9SYHJs2cHZLgexNIw==
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.1.2.tgz#3050700dae2e4c8b67c4c3f666cdb8af405e1ce5"
+  integrity sha512-16c7K+x4qVlJg9rEbXl7HEGmQyZlG4R9AgP+oHKRMsMsuk8s+ATStlf1NpDqyBI1HpVyfjLOeMhH2LvuNvV5Vg==
 
 pretty-bytes@^5.3.0:
   version "5.3.0"
