@@ -5748,10 +5748,10 @@ traverse@^0.6.6:
   version "0.6.6"
   resolved "https://registry.yarnpkg.com/traverse/-/traverse-0.6.6.tgz#cbdf560fd7b9af632502fed40f918c157ea97137"
 
-ts-loader@8.0.3:
-  version "8.0.3"
-  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-8.0.3.tgz#56858f4296edf1ed55e01f8520552984d3f0911c"
-  integrity sha512-wsqfnVdB7xQiqhqbz2ZPLGHLPZbHVV5Qn/MNFZkCFxRU1miDyxKORucDGxKtsQJ63Rfza0udiUxWF5nHY6bpdQ==
+ts-loader@8.0.4:
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-8.0.4.tgz#02b9c91fbcfdb3114d8b1e98a3829265270eee7a"
+  integrity sha512-5u8KF1SW8eCUb/Ff7At81e3wznPmT/27fvaGRO9CziVy+6NlPVRvrzSox4OwU0/e6OflOUB32Err4VquysCSAQ==
   dependencies:
     chalk "^2.3.0"
     enhanced-resolve "^4.0.0"
@@ -6022,33 +6022,6 @@ webdriver@6.5.0:
     "@wdio/utils" "6.5.0"
     got "^11.0.2"
     lodash.merge "^4.6.1"
-
-webdriverio@6.5.0:
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-6.5.0.tgz#91585d6bedf58a3e82af912983d4f5bcc90bd57a"
-  integrity sha512-hxXYeVRIeg2o6EXsZPNoHKAEW6VGZvAUG7qUTqWWVxjMmXaaMhaVjMghqA1PWBJm9+H7rY29J240q1L1q61J8Q==
-  dependencies:
-    "@types/puppeteer" "^3.0.1"
-    "@wdio/config" "6.4.7"
-    "@wdio/logger" "6.4.7"
-    "@wdio/repl" "6.5.0"
-    "@wdio/utils" "6.5.0"
-    archiver "^5.0.0"
-    atob "^2.1.2"
-    css-value "^0.0.1"
-    devtools "6.5.0"
-    get-port "^5.1.1"
-    grapheme-splitter "^1.0.2"
-    lodash.clonedeep "^4.5.0"
-    lodash.isobject "^3.0.2"
-    lodash.isplainobject "^4.0.6"
-    lodash.zip "^4.2.0"
-    minimatch "^3.0.4"
-    puppeteer-core "^5.1.0"
-    resq "^1.6.0"
-    rgb2hex "^0.2.0"
-    serialize-error "^7.0.0"
-    webdriver "6.5.0"
 
 webdriverio@6.5.2:
   version "6.5.2"
