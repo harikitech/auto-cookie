@@ -328,13 +328,13 @@
     eslint-visitor-keys "^2.0.0"
 
 "@wdio/cli@^6.0.9":
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.5.2.tgz#f1003fc6cd7f288c1aae9e76023a1673f3259ec4"
-  integrity sha512-8LGmysHiHbnxP8y4rkHb1HWOQ4h6AhKISlWm/7e4XbYkE/rCIxAAL+9oRUvNdgNuwkBHxOmX7QxVtJmCZpxvFQ==
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.6.0.tgz#02009e851e697928af751c5eda4ef13133f85707"
+  integrity sha512-cORaRtI9gQUW4Rrp8ByXxBZdMMhAzTPFEQJ1Qlu3BefDintF14jkScOs8qprxto3K9FOgi5oomp9bPOmd0TKwA==
   dependencies:
-    "@wdio/config" "6.4.7"
-    "@wdio/logger" "6.4.7"
-    "@wdio/utils" "6.5.0"
+    "@wdio/config" "6.6.0"
+    "@wdio/logger" "6.6.0"
+    "@wdio/utils" "6.6.0"
     async-exit-hook "^2.0.1"
     chalk "^4.0.0"
     chokidar "^3.0.0"
@@ -347,7 +347,7 @@
     lodash.union "^4.6.0"
     mkdirp "^1.0.4"
     recursive-readdir "^2.2.2"
-    webdriverio "6.5.2"
+    webdriverio "6.6.0"
     yargs "^16.0.3"
     yarn-install "^1.0.0"
 
@@ -2705,10 +2705,10 @@ fs-constants@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs-constants/-/fs-constants-1.0.0.tgz#6be0de9be998ce16af8afc24497b9ee9b7ccd9ad"
   integrity sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow==
 
-fs-extra@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-9.0.0.tgz#b6afc31036e247b2466dc99c29ae797d5d4580a3"
-  integrity sha512-pmEYSk3vYsG/bF651KPUXZ+hvjpgWYw/Gc7W9NFUe3ZVLczKKWIij3IKpOrQcdw4TILtibFslZ0UmR8Vvzig4g==
+fs-extra@^9.0.0, fs-extra@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-9.0.1.tgz#910da0062437ba4c39fedd863f1675ccfefcb9fc"
+  integrity sha512-h2iAoN838FqAFJY2/qVpzFXy+EBxfVE220PalAqQLDVsFOHLJrZvut5puAbCdNv6WJk+B8ihI+k0c7JK5erwqQ==
   dependencies:
     at-least-node "^1.0.0"
     graceful-fs "^4.2.0"
