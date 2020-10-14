@@ -1305,13 +1305,13 @@
     glob "^7.1.2"
 
 "@wdio/local-runner@^6.0.9":
-  version "6.6.3"
-  resolved "https://registry.yarnpkg.com/@wdio/local-runner/-/local-runner-6.6.3.tgz#761f5a4fcab3f008ed3f9ca5da9c25294f7d3dc8"
-  integrity sha512-cNzI6o+j94dqOSyjHihFlqVJ6qiKHXIWyWqCFbaRarYFrc5Y7aI4zW0dH4oTCedyJO/rRBL7gXLZHthr442nhQ==
+  version "6.6.4"
+  resolved "https://registry.yarnpkg.com/@wdio/local-runner/-/local-runner-6.6.4.tgz#5b64abcfb141d4a67e07fd90dd3e94ba1b49c798"
+  integrity sha512-i/8LJnbaHc0xOae54BIBboqy1zGtTeP6LWJlbDgcMXUpdT8wuCqqkxfDTbC2hR7txeci11v6SZPrOIHWgqek5w==
   dependencies:
     "@wdio/logger" "6.6.0"
     "@wdio/repl" "6.6.3"
-    "@wdio/runner" "6.6.3"
+    "@wdio/runner" "6.6.4"
     async-exit-hook "^2.0.1"
     stream-buffers "^3.0.2"
 
@@ -1361,10 +1361,10 @@
   dependencies:
     fs-extra "^9.0.0"
 
-"@wdio/runner@6.6.3":
-  version "6.6.3"
-  resolved "https://registry.yarnpkg.com/@wdio/runner/-/runner-6.6.3.tgz#2bd183b4fd6eb520e24a903a387fe4657b07e1a8"
-  integrity sha512-VpcIpBF+cWV1j6HLZAyFVJgx1yDaWWWFlBL+X5+2BjsAMnNSZnSQotpHr/xLZvdkV6ENY6yjYgYQU5cJQGgKJw==
+"@wdio/runner@6.6.4":
+  version "6.6.4"
+  resolved "https://registry.yarnpkg.com/@wdio/runner/-/runner-6.6.4.tgz#4fbb001b36bb06d78798c283e44a947b063b14be"
+  integrity sha512-J3hYBGUkOYHtrQ0Uvj3H5CY9yBSPOMh0fsET8uyOKSRrTej5Jlj0Ojkl5jG4nbU8jNRMTPHhSdRcqufeORkaAA==
   dependencies:
     "@wdio/config" "6.6.3"
     "@wdio/logger" "6.6.0"
@@ -1372,7 +1372,7 @@
     deepmerge "^4.0.0"
     gaze "^1.1.2"
     webdriver "6.6.3"
-    webdriverio "6.6.3"
+    webdriverio "6.6.4"
 
 "@wdio/spec-reporter@^6.0.8":
   version "6.6.3"
@@ -7920,10 +7920,10 @@ webdriverio@6.6.2:
     serialize-error "^7.0.0"
     webdriver "6.6.2"
 
-webdriverio@6.6.3:
-  version "6.6.3"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-6.6.3.tgz#8b74cf56ff2a5f16f904eb5bab34733f9238d60c"
-  integrity sha512-AU7+djfvWqZZxySVWMIKr2VRDuJi3C3WTanRq8j15KKsdMz4HvbPDY/q5MgiBUEyrZEkBYnrBZW7oi4eomS3SA==
+webdriverio@6.6.4:
+  version "6.6.4"
+  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-6.6.4.tgz#4ce45afa8e2d88c629f31fcf5c0c296724ff4af2"
+  integrity sha512-jDSAX/+2zaByhGUSAg0B6Ela3CnqqDRBodzLqlA4LPaoFnW8TK6Yo5WSD927bVSu4lnY3uMXikrK+kyIyAwkUw==
   dependencies:
     "@types/puppeteer" "^3.0.1"
     "@wdio/config" "6.6.3"
