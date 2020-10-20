@@ -354,9 +354,9 @@
     eslint-visitor-keys "^2.0.0"
 
 "@wdio/cli@^6.0.9":
-  version "6.6.4"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.6.4.tgz#b6288dae6ab6882d9d1079f5afedaf31d02317da"
-  integrity sha512-4xPbs7Llu9/dM0d/848V/RsC/cYL82ODg31dvuSRXH8ZWpIfGHGuOPgLdXMXlgQ1zf3tZR4ZTJUhF5frrOoTzg==
+  version "6.6.6"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.6.6.tgz#8d2d1d4b21a51d70f3ce28499cf5e5a141ec9e17"
+  integrity sha512-tirdaqPfc86e5VlgPmmFe9ekwS9et6G4DiB3aDiVvGvCoelRXAY1vOJKy/rKX4sH1lH5mOJHOPKZz6eRV5BV1g==
   dependencies:
     "@wdio/config" "6.6.3"
     "@wdio/logger" "6.6.0"
@@ -373,7 +373,7 @@
     lodash.union "^4.6.0"
     mkdirp "^1.0.4"
     recursive-readdir "^2.2.2"
-    webdriverio "6.6.4"
+    webdriverio "6.6.6"
     yargs "^16.0.3"
     yarn-install "^1.0.0"
 
