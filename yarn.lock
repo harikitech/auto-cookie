@@ -450,9 +450,9 @@
     webdriverio "6.6.6"
 
 "@wdio/spec-reporter@^6.0.8":
-  version "6.6.6"
-  resolved "https://registry.yarnpkg.com/@wdio/spec-reporter/-/spec-reporter-6.6.6.tgz#26227c54e9bcfd191a9703690ea7fe7f9d1381e5"
-  integrity sha512-pVAirLxe5O1m+9x/3mJlgTn6v40gDv+fjcpAkqdR7LcMziQO/zPEy3+wQ6Bp65PYWpad8q5mb2cfZceuIKJ8ww==
+  version "6.6.8"
+  resolved "https://registry.yarnpkg.com/@wdio/spec-reporter/-/spec-reporter-6.6.8.tgz#3366a5c2d59aa900899fd95e55128628af9b5b78"
+  integrity sha512-mqY0Xaj11wE6viGIk+I0id6JnyVA+GGAwOVom19JpvfpiuhpR0XMJpJ+mHZrAZhq+F+yLCESEEMEyI5Mq03jXg==
   dependencies:
     "@wdio/reporter" "6.6.6"
     chalk "^4.0.0"
