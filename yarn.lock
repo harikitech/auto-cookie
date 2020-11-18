@@ -533,9 +533,9 @@
     pretty-ms "^7.0.0"
 
 "@wdio/sync@^6.0.8":
-  version "6.8.0"
-  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-6.8.0.tgz#7b194a2afb57bb4a6600046529854d502743e884"
-  integrity sha512-PiMZsqmgJI4GzkZB9j4WrYCx0S5IUatCgDZ7LlRQYLlfOKSB1tPzQ7b9fveehlAIGCdbNxOIi40boWMdV28FFA==
+  version "6.9.0"
+  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-6.9.0.tgz#f3b9ad0b5fa3991fd90c26370e9a4a8afaa1bdce"
+  integrity sha512-3QOWlzNyFRsWvRmSGd5J4T5Y0J3M8HaDKVdDZe9QYH9IJFg2XvCphrlhTNK9NtIm23M/DVQ8yi61PR/mRsUkPg==
   dependencies:
     "@types/puppeteer" "^5.4.0"
     "@wdio/logger" "6.8.0"
@@ -4919,39 +4919,6 @@ webdriver@6.8.0:
     "@wdio/utils" "6.8.0"
     got "^11.0.2"
     lodash.merge "^4.6.1"
-
-webdriverio@6.8.0:
-  version "6.8.0"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-6.8.0.tgz#dabb873c7f03772b2380c6c20b47b947be0b3c03"
-  integrity sha512-jVN73xLUcIF3PJYgeqzTbyak0QfqUegq/hjaIkLl8wQWRNubuEA3dN9L4U33AzOokYvcBXinemh3Ein35f1a8A==
-  dependencies:
-    "@types/archiver" "^3.1.1"
-    "@types/atob" "^2.1.2"
-    "@types/fs-extra" "^9.0.2"
-    "@types/lodash.clonedeep" "^4.5.6"
-    "@types/lodash.isplainobject" "^4.0.6"
-    "@types/puppeteer-core" "^2.0.0"
-    "@wdio/config" "6.8.0"
-    "@wdio/logger" "6.8.0"
-    "@wdio/repl" "6.8.0"
-    "@wdio/utils" "6.8.0"
-    archiver "^5.0.0"
-    atob "^2.1.2"
-    css-value "^0.0.1"
-    devtools "6.8.0"
-    fs-extra "^9.0.1"
-    get-port "^5.1.1"
-    grapheme-splitter "^1.0.2"
-    lodash.clonedeep "^4.5.0"
-    lodash.isobject "^3.0.2"
-    lodash.isplainobject "^4.0.6"
-    lodash.zip "^4.2.0"
-    minimatch "^3.0.4"
-    puppeteer-core "^5.1.0"
-    resq "^1.9.1"
-    rgb2hex "^0.2.0"
-    serialize-error "^7.0.0"
-    webdriver "6.8.0"
 
 webdriverio@6.8.1:
   version "6.8.1"
