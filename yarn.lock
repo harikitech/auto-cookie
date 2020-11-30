@@ -543,12 +543,12 @@
     pretty-ms "^7.0.0"
 
 "@wdio/sync@^6.0.8":
-  version "6.10.0"
-  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-6.10.0.tgz#2b2dd6770687fa52b53123fee671d6c349ca6d80"
-  integrity sha512-pAzTGHmGHsY8piVVlhjHwP5bWKCuF/LwauA3/oxNiVcfeNRgqkKEfrQnlchUHbfuimP6BWf1lm7zi5gNqpRmjw==
+  version "6.10.4"
+  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-6.10.4.tgz#fb74820ccb8d9acdce90ae40277ba0ac6bc13f92"
+  integrity sha512-gmqKgyTB3NZXd4s671I6n5y557S7dQ8MwFMwqQWER7kVDlypR2FVlXUzUfrwieP8rHclS88vqgUWXWKjgMA7gw==
   dependencies:
     "@types/puppeteer" "^5.4.0"
-    "@wdio/logger" "6.8.0"
+    "@wdio/logger" "6.10.4"
     fibers "^4.0.1"
 
 "@wdio/utils@6.10.4":
