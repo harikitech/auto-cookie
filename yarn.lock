@@ -567,9 +567,9 @@
     pretty-ms "^7.0.0"
 
 "@wdio/sync@^6.0.8":
-  version "6.10.4"
-  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-6.10.4.tgz#fb74820ccb8d9acdce90ae40277ba0ac6bc13f92"
-  integrity sha512-gmqKgyTB3NZXd4s671I6n5y557S7dQ8MwFMwqQWER7kVDlypR2FVlXUzUfrwieP8rHclS88vqgUWXWKjgMA7gw==
+  version "6.10.7"
+  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-6.10.7.tgz#ee7090f950440fff7eb84ba7356bf60663dd7535"
+  integrity sha512-GIPVgUM4ssvLFepEv99z5CnU3UQ1AD0nqEPuUvZGazm5dwoO1Y/Ml0Rzuy9+NDqFUOEEJm7wbpxmAQYnaS1P/w==
   dependencies:
     "@types/puppeteer" "^5.4.0"
     "@wdio/logger" "6.10.4"
