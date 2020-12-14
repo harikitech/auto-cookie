@@ -486,9 +486,9 @@
     eslint-visitor-keys "^2.0.0"
 
 "@wdio/cli@^6.0.9":
-  version "6.10.9"
-  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.10.9.tgz#05beede11686bf54c2e8963c0cd609c2840d82b2"
-  integrity sha512-Aw1EDwvfePhy+BP5VE4xFDlN7wRG7wNuE49Gg5ROvJn8zWUtCZtfOU7C1zGQW7N3LyH3bExFJSFkso2AvCTPbw==
+  version "6.10.10"
+  resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-6.10.10.tgz#498af5588de7f16f1abcd2092f21e2e431f2e277"
+  integrity sha512-/zfu6jq7Uvx5UTMrh5ARZeutpJ9y9P3Yc0nc09Q5m+1NtBIbT2UE/7fRVLBIZZJplttsa5r45Kl4QMvLwgji9A==
   dependencies:
     "@types/ejs" "^3.0.5"
     "@types/fs-extra" "^9.0.4"
@@ -497,9 +497,9 @@
     "@types/lodash.pickby" "^4.6.6"
     "@types/lodash.union" "^4.6.6"
     "@types/recursive-readdir" "^2.2.0"
-    "@wdio/config" "6.10.6"
-    "@wdio/logger" "6.10.4"
-    "@wdio/utils" "6.10.6"
+    "@wdio/config" "6.10.10"
+    "@wdio/logger" "6.10.10"
+    "@wdio/utils" "6.10.10"
     async-exit-hook "^2.0.1"
     chalk "^4.0.0"
     chokidar "^3.0.0"
@@ -512,7 +512,7 @@
     lodash.union "^4.6.0"
     mkdirp "^1.0.4"
     recursive-readdir "^2.2.2"
-    webdriverio "6.10.7"
+    webdriverio "6.10.10"
     yargs "^16.0.3"
     yarn-install "^1.0.0"
 
