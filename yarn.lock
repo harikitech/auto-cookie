@@ -518,14 +518,14 @@
     glob "^7.1.2"
 
 "@wdio/local-runner@^6.0.9":
-  version "6.10.11"
-  resolved "https://registry.yarnpkg.com/@wdio/local-runner/-/local-runner-6.10.11.tgz#ca5fe3c590aabe676f51526588ed1a18259fc6f7"
-  integrity sha512-PJ7Xw63Fzu84HbFw/d+fsX9oglGZY8QAH7tRbGQM8xeTaYOtY982TOXa66QlT+Gsaxlc9z8fTHvUSrvyBoW3cQ==
+  version "6.10.13"
+  resolved "https://registry.yarnpkg.com/@wdio/local-runner/-/local-runner-6.10.13.tgz#216a15c54e286fe890a66e82acede9aed5047477"
+  integrity sha512-PYI4bfbPQFPAdqHwagzoQX3gO4Qdl4B1hitfX3LmXrbZZL4iZI7f5BD0tdP4dUCAwEL5EeIK+ogrqOQ+BDw+fg==
   dependencies:
     "@types/stream-buffers" "^3.0.3"
     "@wdio/logger" "6.10.10"
     "@wdio/repl" "6.10.11"
-    "@wdio/runner" "6.10.11"
+    "@wdio/runner" "6.10.13"
     async-exit-hook "^2.0.1"
     stream-buffers "^3.0.2"
 
@@ -571,10 +571,10 @@
     "@types/fs-extra" "^9.0.1"
     fs-extra "^9.0.0"
 
-"@wdio/runner@6.10.11":
-  version "6.10.11"
-  resolved "https://registry.yarnpkg.com/@wdio/runner/-/runner-6.10.11.tgz#dc0dc8d07dcfc15cfdb5fdf566aa8cb1d8fdf13a"
-  integrity sha512-4vY0urvKhdvZ6zI8BRlEXmmhQZw3ErngxgNjawdYRW3HQd1nAeY1s0cnspeXZXMNEx9y1nBgnJmLEaE5v1WlCg==
+"@wdio/runner@6.10.13":
+  version "6.10.13"
+  resolved "https://registry.yarnpkg.com/@wdio/runner/-/runner-6.10.13.tgz#db1d236f44314d1005d5ffc49ff7f90df912389f"
+  integrity sha512-bhsvkQNI//vc9YSs1KEF/4HNr+gpNOGh4/ViWS/dlWRWmaVf4w2EKje6Aqfp7IlrHnkJVuPPQcE1zf0p4+T/dw==
   dependencies:
     "@wdio/config" "6.10.11"
     "@wdio/logger" "6.10.10"
