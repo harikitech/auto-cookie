@@ -2,9 +2,9 @@
   "name": "auto-cookie",
   "description": "auto set cookie domain like google-analytics",
   "version": "2.0.0",
-  "author": "UNCOVER TRUTH Inc.",
+  "author": "harikitech",
   "bugs": {
-    "url": "https://github.com/uncovertruth/auto-cookie/issues"
+    "url": "https://github.com/harikitech/auto-cookie/issues"
   },
   "dependencies": {},
   "devDependencies": {
@@ -46,7 +46,7 @@
   "files": [
     "lib/"
   ],
-  "homepage": "https://github.com/uncovertruth/auto-cookie#readme",
+  "homepage": "https://github.com/harikitech/auto-cookie#readme",
   "keywords": [
     "cookie"
   ],
@@ -72,7 +72,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/uncovertruth/auto-cookie.git"
+    "url": "git+ssh://git@github.com/harikitech/auto-cookie.git"
   },
   "scripts": {
     "build": "tsc && webpack --env=production && size-limit",
