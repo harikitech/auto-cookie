@@ -51,7 +51,7 @@
     "chromedriver": "^87.0.1",
     "eslint": "^7.0.0",
     "eslint-plugin-mocha": "^8.0.0",
-    "espower-typescript": "9.0.2",
+    "espower-typescript": "10.0.0",
     "finalhandler": "1.1.2",
     "husky": "^4.2.3",
     "js-cookie": "2.2.1",
