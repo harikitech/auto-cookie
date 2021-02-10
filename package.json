@@ -37,7 +37,7 @@
     "typescript-eslint-parser": "21.0.2",
     "wdio-mocha-framework": "0.6.4",
     "wdio-sauce-service": "0.4.14",
-    "wdio-selenium-standalone-service": "0.0.10",
+    "wdio-selenium-standalone-service": "0.0.12",
     "wdio-spec-reporter": "0.1.5",
     "webdriverio": "4.14.4",
     "webpack": "4.33.0",
