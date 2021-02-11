@@ -65,7 +65,7 @@
     "size-plugin": "^3.0.0",
     "ts-loader": "8.0.17",
     "ts-node": "9.1.1",
-    "typescript": "4.1.4",
+    "typescript": "4.1.5",
     "wdio-chromedriver-service": "^6.0.1",
     "webpack": "5.21.2",
     "webpack-cli": "4.5.0"
