@@ -696,13 +696,6 @@
   dependencies:
     got "^11.8.1"
 
-"@wdio/types@7.0.4":
-  version "7.0.4"
-  resolved "https://registry.yarnpkg.com/@wdio/types/-/types-7.0.4.tgz#52c520d82477e57c595b197cb4b1bc1aa7cf3ad7"
-  integrity sha512-KhqQYOr1jk5KgMjKWf1HZIoasfBAqZJCkbajZ0ozJeLDUcwPwq1UyK0GDIcTcWFXUzK7LR/+4hU5E8c4qJ0oVA==
-  dependencies:
-    got "^11.8.1"
-
 "@wdio/types@7.0.7":
   version "7.0.7"
   resolved "https://registry.yarnpkg.com/@wdio/types/-/types-7.0.7.tgz#5e16cac7f5bd22fb0a28529273dd672a01776a70"
@@ -723,14 +716,6 @@
   integrity sha512-vf0sOQzd28WbI26d6/ORrQ4XKWTzSlWLm9W/K/eJO0NASKPEzR+E+Q2kaa+MJ4FKXUpjbt+Lxfo+C26TzBk7tg==
   dependencies:
     "@wdio/logger" "6.10.10"
-
-"@wdio/utils@7.0.4":
-  version "7.0.4"
-  resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-7.0.4.tgz#ec6733b86049ea15daeffce6c3b3cec83d634196"
-  integrity sha512-81LCPhg1PDkkcoIURfMNrIlhzwqJ/0iondhzb0yA+uLUohMPt41ra8gISMmSeY9sbFnSHVlnHf1a6weAm1UnDQ==
-  dependencies:
-    "@wdio/logger" "7.0.0"
-    "@wdio/types" "7.0.4"
 
 "@wdio/utils@7.0.7":
   version "7.0.7"
@@ -2777,9 +2762,9 @@ human-signals@^2.1.0:
   integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
 
 husky@^5.0.9:
-  version "5.0.9"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-5.0.9.tgz#6d38706643d66ed395bcd4ee952d02e3f15eb3a3"
-  integrity sha512-0SjcaY21a+IRdx7p7r/X33Vc09UR2m8SbP8yfkhUX2/jAmwcz+GR7i9jXkp2pP3GfX23JhMkVP6SWwXB18uXtg==
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-5.1.1.tgz#8678953fd8deb86f387cbf1ad50bb2f7f96e83f2"
+  integrity sha512-80LZ736V0Nr4/st0c2COYaMbEQhHNmAbLMN8J/kLk7/mo0QdUkUGNDjv/7jVkhug377Wh8wfbWyaVXEJ/h2B/Q==
 
 iconv-lite@^0.4.24:
   version "0.4.24"
