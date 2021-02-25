@@ -678,16 +678,16 @@
     pretty-ms "^7.0.0"
 
 "@wdio/sync@^7.0.0":
-  version "7.0.7"
-  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-7.0.7.tgz#81a8f3a8eb40239067970bbf742d9f1075c8b75c"
-  integrity sha512-pEuiBky3lADZJp6UQuer7uYxkCsCHxzzoUYF2cTx0GX0RFhSXFVilMrK2nuUhbIFPf+nd/RGgKieSKYmkNElKg==
+  version "7.0.8"
+  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-7.0.8.tgz#b3d802ba89e134a0e2c03919aa4ebbc8bbc96a81"
+  integrity sha512-H+pyOnMHLMw15Gn/fq+1U8W3eV1+JQYBFrZPMHcVEnyvCRHNBuUJoGHuXGCFtBVgCCkLtd6RVU3ci7SYI8BPPw==
   dependencies:
     "@types/fibers" "^3.1.0"
     "@types/puppeteer" "^5.4.0"
     "@wdio/logger" "7.0.0"
     "@wdio/types" "7.0.7"
     fibers "^5.0.0"
-    webdriverio "7.0.7"
+    webdriverio "7.0.8"
 
 "@wdio/types@7.0.0":
   version "7.0.0"
@@ -1724,10 +1724,10 @@ devtools@6.12.1:
     ua-parser-js "^0.7.21"
     uuid "^8.0.0"
 
-devtools@7.0.7:
-  version "7.0.7"
-  resolved "https://registry.yarnpkg.com/devtools/-/devtools-7.0.7.tgz#f93c4ded06702c01a6b8de52f688204aac06565c"
-  integrity sha512-+WKdY/o6B1OHeyPzPBpJPeYB4yPCuCACT8nh276J2o8aI6IUA0O1AH1mj/HzG6LeNpC3+QisbncX7wA4aKHW+Q==
+devtools@7.0.8:
+  version "7.0.8"
+  resolved "https://registry.yarnpkg.com/devtools/-/devtools-7.0.8.tgz#e4b0d39d717d224ace54d7e01a5a618965cc1fd9"
+  integrity sha512-ahChWsxuDVDk+KGRNkWZNJfm51+KRIF2tNy2Cvn9lKGnN//sxqBY9Nj3fTKp8tIjrJiCKFCtYByensEo08qoPw==
   dependencies:
     "@wdio/config" "7.0.7"
     "@wdio/logger" "7.0.0"
@@ -5202,10 +5202,10 @@ webdriverio@6.12.1:
     serialize-error "^8.0.0"
     webdriver "6.12.1"
 
-webdriverio@7.0.7:
-  version "7.0.7"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-7.0.7.tgz#c661b0673b869fa34e501d9fc864af9f5c5f8992"
-  integrity sha512-2M2gwGW2xiZWMipugt/r/90EyHZGI06wRBh/iGT0NoWRX0BrHix5ehWhiYXJAXWBQoZgMTpYcbFnN1D+9miYpQ==
+webdriverio@7.0.8:
+  version "7.0.8"
+  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-7.0.8.tgz#98bcc5a136f2e4a80be2957bab815c9cd34ac328"
+  integrity sha512-6tmEd22IjTIUGHaBXhksFr10ZMA48QMTZ2jSNg9KvhZq196RKT5JTVxa6jNep6yNl57T5tpL5CTOJcSQRbVsBA==
   dependencies:
     "@wdio/config" "7.0.7"
     "@wdio/logger" "7.0.0"
@@ -5217,7 +5217,7 @@ webdriverio@7.0.7:
     atob "^2.1.2"
     css-shorthand-properties "^1.1.1"
     css-value "^0.0.1"
-    devtools "7.0.7"
+    devtools "7.0.8"
     devtools-protocol "^0.0.852555"
     fs-extra "^9.0.1"
     get-port "^5.1.1"
