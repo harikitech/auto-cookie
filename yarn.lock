@@ -615,14 +615,14 @@
     strip-ansi "^6.0.0"
 
 "@wdio/mocha-framework@^7.0.0":
-  version "7.0.7"
-  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-7.0.7.tgz#3e56075d914d17ff43cb07024d2c123bc7159c43"
-  integrity sha512-zd0S8gKF2mJqmyCSqTd0zb+GXvL9hqQz7fv7yg/UQxXhSlUdt+1xsDOM510P6zNAL8Z1CXl7Adyd4l4VcH/SJA==
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-7.1.1.tgz#52dc41e09b043e9eaf2a53c2eca6f7bd067142eb"
+  integrity sha512-jn3G3mdqKH3e92jQ7fv8sJ3qM4eqJMzpjn7l+ok6bRjbiLpgjycgYHFbSfpp1pnwOgufgobdgQj0Nh4xeKglbw==
   dependencies:
     "@types/mocha" "^8.0.0"
     "@wdio/logger" "7.0.0"
-    "@wdio/types" "7.0.7"
-    "@wdio/utils" "7.0.7"
+    "@wdio/types" "7.1.1"
+    "@wdio/utils" "7.1.1"
     expect-webdriverio "^1.1.5"
     mocha "^8.0.1"
 
