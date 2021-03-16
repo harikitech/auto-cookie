@@ -48,7 +48,7 @@
     "@wdio/mocha-framework": "^7.0.0",
     "@wdio/spec-reporter": "^7.0.0",
     "@wdio/sync": "^7.0.0",
-    "chromedriver": "^88.0.0",
+    "chromedriver": "^89.0.0",
     "eslint": "^7.0.0",
     "eslint-plugin-mocha": "^8.0.0",
     "espower-typescript": "10.0.0",
