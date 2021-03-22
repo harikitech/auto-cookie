@@ -697,16 +697,16 @@
     pretty-ms "^7.0.0"
 
 "@wdio/sync@^7.0.0":
-  version "7.2.1"
-  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-7.2.1.tgz#e1e73c0b8c59b526f0b297ceac8d0337546735d0"
-  integrity sha512-pVEeUEd5VTnYe/avh8x4zJKyQul2UHG6x3ODX3NswjxN3pgcFsaGDaMGYl+wQzPaT9DwypJSnzy/2Hf9rpIxRg==
+  version "7.2.2"
+  resolved "https://registry.yarnpkg.com/@wdio/sync/-/sync-7.2.2.tgz#8663fcc1abaa8f827f931fc4d633b863c66fc6b4"
+  integrity sha512-0yDbsyuKgZH55qNna3gseVR3CawCKlxmNsWuMDyfQtf5Pp6NxjLbtZ2ukYEwGLhVgutsuEJWV2/RU/JVfGolew==
   dependencies:
     "@types/fibers" "^3.1.0"
     "@types/puppeteer" "^5.4.0"
     "@wdio/logger" "7.0.0"
     "@wdio/types" "7.2.1"
     fibers "^5.0.0"
-    webdriverio "7.2.1"
+    webdriverio "7.2.2"
 
 "@wdio/types@7.2.1":
   version "7.2.1"
@@ -5232,10 +5232,10 @@ webdriverio@6.12.1:
     serialize-error "^8.0.0"
     webdriver "6.12.1"
 
-webdriverio@7.2.1:
-  version "7.2.1"
-  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-7.2.1.tgz#a6683304c6d4ab1ceca94554b6b7a714e78c4016"
-  integrity sha512-lHnOJ+4fvgBObgjQA9wDk8/S039C9c59EgB57euQP8jBD+G3kDHsUTiP6KC9nMdXZTgecSLfrqzMgR+O4CfB5w==
+webdriverio@7.2.2:
+  version "7.2.2"
+  resolved "https://registry.yarnpkg.com/webdriverio/-/webdriverio-7.2.2.tgz#5ef27e39409fe0ba9c749c5de57a516300e59bba"
+  integrity sha512-lptj2luxJ+ZTu4+CySvNRSHTx0X5BxTmcJO5I0i6yK1H/vVRSYpp8IUBj4yNQIvuOkXKh4g6Am9dmiXIrXq5IA==
   dependencies:
     "@types/aria-query" "^4.2.1"
     "@wdio/config" "7.2.1"
