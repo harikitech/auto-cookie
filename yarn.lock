@@ -604,16 +604,6 @@
     loglevel-plugin-prefix "^0.8.4"
     strip-ansi "^6.0.0"
 
-"@wdio/logger@7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-7.0.0.tgz#d2e7a595b3daf1285da29571cc0fd7cfcc3c1a68"
-  integrity sha512-P3inCmtc0ms1vnx3v25+U6ccD2dkiuBhaJwmIWPwSbQn8cNQ5AcQIbRWMbnzFHbJ/jSrVBnlwmUArW7L02Zpeg==
-  dependencies:
-    chalk "^4.0.0"
-    loglevel "^1.6.0"
-    loglevel-plugin-prefix "^0.8.4"
-    strip-ansi "^6.0.0"
-
 "@wdio/logger@7.4.1":
   version "7.4.1"
   resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-7.4.1.tgz#13c5f056734e47207b46732e1eb4a727cfb665f3"
@@ -624,15 +614,25 @@
     loglevel-plugin-prefix "^0.8.4"
     strip-ansi "^6.0.0"
 
+"@wdio/logger@7.4.2":
+  version "7.4.2"
+  resolved "https://registry.yarnpkg.com/@wdio/logger/-/logger-7.4.2.tgz#f1c8b624751da2c5462f855071e7205131339a7e"
+  integrity sha512-vYH0glKyw/rIJ/FJ4g+WQfx6MRKnWEPUspejv5Vit32STKa1IPotw/Y/Axv2qy6os1VHAs9CfH43930q9QZLkA==
+  dependencies:
+    chalk "^4.0.0"
+    loglevel "^1.6.0"
+    loglevel-plugin-prefix "^0.8.4"
+    strip-ansi "^6.0.0"
+
 "@wdio/mocha-framework@^7.0.0":
-  version "7.3.1"
-  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-7.3.1.tgz#ac1b6232ad12d793b7eea5f1e8065df6a2eebb8c"
-  integrity sha512-wxtSq8ntB2VhWr8AJMRpTC3LIVPIcMsySbstrw8fufOCEzwYdSzQ9SYTs6BjXqeh5XV8mthYPSSUKJrqoQaOnA==
+  version "7.4.2"
+  resolved "https://registry.yarnpkg.com/@wdio/mocha-framework/-/mocha-framework-7.4.2.tgz#68b3210877b5a2021aea82f3ece5da2600b227ac"
+  integrity sha512-/JpTQb+JrKcx0r8wGazUGViNYM/RF+Cgg5jra73O0c6EShi+juVs8MdL9h4gV7PhKJ19byn3Gq1Fpl/R4wfjIw==
   dependencies:
     "@types/mocha" "^8.0.0"
-    "@wdio/logger" "7.0.0"
-    "@wdio/types" "7.3.1"
-    "@wdio/utils" "7.3.1"
+    "@wdio/logger" "7.4.2"
+    "@wdio/types" "7.4.2"
+    "@wdio/utils" "7.4.2"
     expect-webdriverio "^2.0.0"
     mocha "^8.0.1"
 
@@ -732,6 +732,13 @@
   dependencies:
     got "^11.8.1"
 
+"@wdio/types@7.4.2":
+  version "7.4.2"
+  resolved "https://registry.yarnpkg.com/@wdio/types/-/types-7.4.2.tgz#1fe5911f2bf9c4b381cbfc7cb664fdd0a576b381"
+  integrity sha512-LLSaeC8yCMlQdB75J2TFEE/NAKb7vRCbLAXQmqBm6THNJll1U/Mk9tHIaUK624Eqf5qGBwQ0UKRKnx8qevzPUA==
+  dependencies:
+    got "^11.8.1"
+
 "@wdio/utils@6.10.11":
   version "6.10.11"
   resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-6.10.11.tgz#4cdbedcf30d53fbeb97699d7cbe3d9d1be6c443f"
@@ -746,14 +753,6 @@
   dependencies:
     "@wdio/logger" "6.10.10"
 
-"@wdio/utils@7.3.1":
-  version "7.3.1"
-  resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-7.3.1.tgz#55032f576b029b1fca9cec4bdfe1d9b1d3d6450c"
-  integrity sha512-/Vl3PX5TDqlnAQK3sDXimm3WsTv9Gu7mNYDB/haPDRRkMVQWvgAXjczPWz2n68G/2NQXg19ivg3QzWDancgbEA==
-  dependencies:
-    "@wdio/logger" "7.0.0"
-    "@wdio/types" "7.3.1"
-
 "@wdio/utils@7.4.1":
   version "7.4.1"
   resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-7.4.1.tgz#2d6a0bfbc7f72a684e1f439a2d9f23615155ef70"
@@ -761,6 +760,14 @@
   dependencies:
     "@wdio/logger" "7.4.1"
     "@wdio/types" "7.4.1"
+
+"@wdio/utils@7.4.2":
+  version "7.4.2"
+  resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-7.4.2.tgz#f620f44a79af8e1ce45a688e546d23cf49660666"
+  integrity sha512-74BQbH4nxW8HfLBs/VBtNKHh+zcYHB+kvgrjQfy8XxGpxXmgVAKwI9kURTjJ3W4ZoeHgnW1OxIcmemU4w5zxAw==
+  dependencies:
+    "@wdio/logger" "7.4.2"
+    "@wdio/types" "7.4.2"
 
 "@webassemblyjs/ast@1.11.0":
   version "1.11.0"
