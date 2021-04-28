@@ -715,13 +715,6 @@
   dependencies:
     got "^11.8.1"
 
-"@wdio/types@7.4.2":
-  version "7.4.2"
-  resolved "https://registry.yarnpkg.com/@wdio/types/-/types-7.4.2.tgz#1fe5911f2bf9c4b381cbfc7cb664fdd0a576b381"
-  integrity sha512-LLSaeC8yCMlQdB75J2TFEE/NAKb7vRCbLAXQmqBm6THNJll1U/Mk9tHIaUK624Eqf5qGBwQ0UKRKnx8qevzPUA==
-  dependencies:
-    got "^11.8.1"
-
 "@wdio/types@7.5.2":
   version "7.5.2"
   resolved "https://registry.yarnpkg.com/@wdio/types/-/types-7.5.2.tgz#9f41ee6f175a91c1d213efc020cbf52162b723cb"
@@ -742,14 +735,6 @@
   integrity sha512-vf0sOQzd28WbI26d6/ORrQ4XKWTzSlWLm9W/K/eJO0NASKPEzR+E+Q2kaa+MJ4FKXUpjbt+Lxfo+C26TzBk7tg==
   dependencies:
     "@wdio/logger" "6.10.10"
-
-"@wdio/utils@7.4.6":
-  version "7.4.6"
-  resolved "https://registry.yarnpkg.com/@wdio/utils/-/utils-7.4.6.tgz#e0be2a6a6f0f08a21aae8b031848aa859213f264"
-  integrity sha512-Rdw5/eEEZR+rytK4DmwuzJ74SoR0vBG860w+BCvxgNBWRbr94TySMX4hlxLqLInU0N5Ur38LR0AJej8XTuaQdg==
-  dependencies:
-    "@wdio/logger" "7.4.2"
-    "@wdio/types" "7.4.2"
 
 "@wdio/utils@7.5.2":
   version "7.5.2"
@@ -5272,10 +5257,10 @@ webpack-sources@^2.1.1:
     source-list-map "^2.0.1"
     source-map "^0.6.1"
 
-webpack@5.36.0:
-  version "5.36.0"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.36.0.tgz#d008da31b721f8fecce88ef2adaf1b16dc2161d1"
-  integrity sha512-HdOhLXClUEwTnzQnzpSG9iL00ej23ojvfnGpF49ba0MkuAT2q+WhQilHFFJHOIVRBqbzakQ1vCWQV2K+QLX0Qw==
+webpack@5.36.1:
+  version "5.36.1"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.36.1.tgz#d82bad3384f84ed45a8de3844c31730f56361ab7"
+  integrity sha512-2u25a82T+6quAxSlzEpN/R/RICwt20ONU3z3Ko05S8KVH9FXILcBYb2hD/rQtZT5y7lRAIsIIs05pdndY7ourQ==
   dependencies:
     "@types/eslint-scope" "^3.7.0"
     "@types/estree" "^0.0.47"
