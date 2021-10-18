@@ -89,9 +89,10 @@
   version "10.3.6"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.3.6.tgz#ea8aab9439b59f40d19ec5f13b44642344872b11"
 
-"@types/node@9.6.49":
-  version "9.6.49"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.6.49.tgz#ab4df6e505db088882c8ce5417ae0bc8cbb7a8a6"
+"@types/node@14.17.27":
+  version "14.17.27"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.17.27.tgz#5054610d37bb5f6e21342d0e6d24c494231f3b85"
+  integrity sha512-94+Ahf9IcaDuJTle/2b+wzvjmutxXAEXU6O81JHblYXUg2BDG+dnBy7VxIPHKAyEEDHzCMQydTJuWvrE+Aanzw==
 
 "@types/power-assert-formatter@*":
   version "1.4.28"
